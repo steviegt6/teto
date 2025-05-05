@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
+
+using Discord;
 
 using Tomat.Teto.Bot.Models;
 
@@ -31,6 +34,8 @@ public sealed class TmlTagService
 
     public Dictionary<TmlTagIdentity, TmlTag> Tags { get; } = [];
 
+    private readonly AutocompleteResult[] global_autos;
+
     public TmlTagService()
     {
         var tmlConfig = File.ReadAllText(path);
@@ -51,6 +56,29 @@ public sealed class TmlTagService
             }
 
             Tags[model.Identity] = model;
+        }
+
+        global_autos = GlobalTags.Values.Select(x => new AutocompleteResult(x.Identity.Name, x.Identity.Name)).ToArray();
+    }
+
+    public IEnumerable<AutocompleteResult> GenerateGlobalAutos(string search)
+    {
+        var num = 0;
+
+        foreach (var candidate in global_autos)
+        {
+            if (num >= 25)
+            {
+                yield break;
+            }
+
+            if (!candidate.Name.StartsWith(search, StringComparison.InvariantCultureIgnoreCase))
+            {
+                continue;
+            }
+
+            num++;
+            yield return candidate;
         }
     }
 }
