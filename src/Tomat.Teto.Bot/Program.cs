@@ -3,15 +3,17 @@ using System.Threading;
 using System.Threading.Tasks;
 
 using Discord;
+using Discord.Interactions;
 using Discord.WebSocket;
 
 using Tomat.Teto.Bot.DependencyInjection;
+using Tomat.Teto.Bot.Services;
 
 namespace Tomat.Teto.Bot;
 
 internal static class Program
 {
-    public static async Task Main(string[] args)
+    public static async Task Main()
     {
         var token = Environment.GetEnvironmentVariable("TETO_BOT_TOKEN");
         if (string.IsNullOrEmpty(token))
@@ -23,6 +25,8 @@ internal static class Program
         {
             services.TryAddService(new DiscordSocketConfig()); // todo
             services.TryAddService<DiscordSocketClient>();
+            services.TryAddService(new InteractionService(services.ExpectService<DiscordSocketClient>()));
+            services.TryAddService<InteractionHandler>();
         }
 
         var client = services.ExpectService<DiscordSocketClient>();
@@ -33,6 +37,10 @@ internal static class Program
                 await Task.CompletedTask;
             };
         }
+
+        services.TryAddService(new InteractionService(client.Rest));
+
+        await services.ExpectService<InteractionHandler>().InitializeAsync();
 
         await client.LoginAsync(TokenType.Bot, token);
         await client.StartAsync();
