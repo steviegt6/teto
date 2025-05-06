@@ -28,7 +28,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
             return Task.FromResult(AutocompletionResult.FromSuccess(Tags.GenerateGlobalAutos(autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty)));
         }
     }
-    
+
     private sealed class AuthorTagAutocomplete : AutocompleteHandler
     {
         public TmlTagService Tags { get; set; }
@@ -43,7 +43,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
             return Task.FromResult(AutocompletionResult.FromSuccess(Tags.GenerateAuthorAutos(autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty)));
         }
     }
-    
+
     private sealed class UserTagAutocomplete : AutocompleteHandler
     {
         public TmlTagService Tags { get; set; }
@@ -67,7 +67,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     [SlashCommand("global-tag", description: "Displays a global tML tag")]
     public async Task GlobalTag(
-        [Autocomplete(typeof(GlobalTagAutocomplete))] string name
+        [Autocomplete(typeof(GlobalTagAutocomplete)), Summary("name", "Tag name")] string name
     )
     {
         if (!Tags.GlobalTags.TryGetValue(name.ToLowerInvariant(), out var tag))
@@ -87,8 +87,8 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     [SlashCommand("user-tag", description: "Displays a user-specific tML tag")]
     public async Task UserTag(
-        [Autocomplete(typeof(AuthorTagAutocomplete))] IUser user,
-        [Autocomplete(typeof(UserTagAutocomplete))] string name
+        [Autocomplete(typeof(AuthorTagAutocomplete)), Summary("user", "User @ or ID")] IUser user,
+        [Autocomplete(typeof(UserTagAutocomplete)), Summary("name", "Tag name")] string name
     )
     {
         if (!Tags.UserTags.TryGetValue(user.Id.ToString(), out var userTags))
