@@ -28,13 +28,17 @@ public sealed class TmlTagService
         public List<GuildTag> GuildTags { get; set; } = [];
     }
 
+    private const int auto_max = 25;
     private const string path = "tml_config.json";
 
     public Dictionary<string, TmlTag> GlobalTags { get; } = [];
 
     public Dictionary<TmlTagIdentity, TmlTag> Tags { get; } = [];
 
-    private readonly AutocompleteResult[] global_autos;
+    public Dictionary<string, Dictionary<string, TmlTag>> UserTags { get; } = [];
+
+    private readonly AutocompleteResult[] globalAutos;
+    private readonly AutocompleteResult[] usersWithCommands;
 
     public TmlTagService()
     {
@@ -58,16 +62,27 @@ public sealed class TmlTagService
             Tags[model.Identity] = model;
         }
 
-        global_autos = GlobalTags.Values.Select(x => new AutocompleteResult(x.Identity.Name, x.Identity.Name)).ToArray();
+        foreach (var tag in Tags.Values)
+        {
+            if (!UserTags.TryGetValue(tag.Identity.OwnerString, out var userTags))
+            {
+                userTags = UserTags[tag.Identity.OwnerString] = [];
+            }
+
+            userTags[tag.Identity.Name] = tag;
+        }
+
+        globalAutos = GlobalTags.Values.Select(x => new AutocompleteResult(x.Identity.Name, x.Identity.Name)).ToArray();
+        usersWithCommands = Tags.Select(x => new AutocompleteResult(x.Key.OwnerString, x.Key.OwnerString)).Distinct().ToArray();
     }
 
     public IEnumerable<AutocompleteResult> GenerateGlobalAutos(string search)
     {
         var num = 0;
 
-        foreach (var candidate in global_autos)
+        foreach (var candidate in globalAutos)
         {
-            if (num >= 25)
+            if (num >= auto_max)
             {
                 yield break;
             }
@@ -79,6 +94,53 @@ public sealed class TmlTagService
 
             num++;
             yield return candidate;
+        }
+    }
+
+    public IEnumerable<AutocompleteResult> GenerateAuthorAutos(string search)
+    {
+        var num = 0;
+
+        foreach (var candidate in usersWithCommands)
+        {
+            if (num >= auto_max)
+            {
+                yield break;
+            }
+
+            if (!candidate.Name.StartsWith(search, StringComparison.InvariantCultureIgnoreCase))
+            {
+                continue;
+            }
+
+            num++;
+            yield return candidate;
+        }
+    }
+
+    public IEnumerable<AutocompleteResult> GenerateUserAutos(string search, string userId)
+    {
+        if (!UserTags.TryGetValue(userId, out var userTags))
+        {
+            yield break;
+        }
+
+        var num = 0;
+
+        foreach (var candidate in userTags)
+        {
+            if (num >= auto_max)
+            {
+                yield break;
+            }
+
+            if (!candidate.Value.Identity.Name.StartsWith(search, StringComparison.InvariantCultureIgnoreCase))
+            {
+                continue;
+            }
+
+            num++;
+            yield return new AutocompleteResult(candidate.Value.Identity.Name, candidate.Value.Identity.Name);
         }
     }
 }
