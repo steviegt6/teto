@@ -28,6 +28,7 @@ internal static class Program
             services.TryAddService(new InteractionService(services.ExpectService<DiscordSocketClient>()));
             services.TryAddService<InteractionHandler>();
             services.TryAddService<TmlTagService>();
+            services.TryAddService<PasteService>();
         }
 
         var client = services.ExpectService<DiscordSocketClient>();
