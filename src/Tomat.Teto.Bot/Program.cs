@@ -28,17 +28,17 @@ internal static class Program
             services.TryAddService(new InteractionService(services.ExpectService<DiscordSocketClient>()));
             services.TryAddService<InteractionHandler>();
             services.TryAddService<TmlTagService>();
+            services.TryAddService<TmlIdService>();
             services.TryAddService<PasteService>();
         }
 
         var client = services.ExpectService<DiscordSocketClient>();
+
+        client.Log += async msg =>
         {
-            client.Log += async msg =>
-            {
-                Console.WriteLine(msg);
-                await Task.CompletedTask;
-            };
-        }
+            Console.WriteLine(msg);
+            await Task.CompletedTask;
+        };
 
         services.TryAddService(new InteractionService(client.Rest));
 
