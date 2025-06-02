@@ -82,8 +82,9 @@ public sealed class TmlIdService : IService
 
                 search.DataByInternalName[entry.InternalName.ToLower()] = entry;
 
-                autocompleteByContentType[idName].Add(new AutocompleteResult(entry.InternalName, entry.InternalName));
-                autocompleteByContentType[idName].Add(new AutocompleteResult(entry.Id, entry.Id));
+                // autocompleteByContentType[idName].Add(new AutocompleteResult(entry.InternalName, entry.InternalName));
+                // autocompleteByContentType[idName].Add(new AutocompleteResult(entry.Id, entry.Id));
+                autocompleteByContentType[idName].Add(new AutocompleteResult($"{entry.InternalName} ({entry.Id})", entry.InternalName));
             }
 
             searchByContentType[idName] = search;
