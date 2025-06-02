@@ -1,1 +1,2128 @@
-{"Ids":[{"Id":"1","DisplayName":"Obsidian Skin","Link":"https://terraria.wiki.gg/wiki/Obsidian_Skin_Potion","InternalName":"ObsidianSkin"},{"Id":"2","DisplayName":"Regeneration","Link":"https://terraria.wiki.gg/wiki/Regeneration_Potion","InternalName":"Regeneration"},{"Id":"3","DisplayName":"Swiftness","Link":"https://terraria.wiki.gg/wiki/Swiftness_Potion","InternalName":"Swiftness"},{"Id":"4","DisplayName":"Gills","Link":"https://terraria.wiki.gg/wiki/Gills_Potion","InternalName":"Gills"},{"Id":"5","DisplayName":"Ironskin","Link":"https://terraria.wiki.gg/wiki/Ironskin_Potion","InternalName":"Ironskin"},{"Id":"6","DisplayName":"Mana Regeneration","Link":"https://terraria.wiki.gg/wiki/Mana_Regeneration_Potion","InternalName":"ManaRegeneration"},{"Id":"7","DisplayName":"Magic Power","Link":"https://terraria.wiki.gg/wiki/Magic_Power_Potion","InternalName":"MagicPower"},{"Id":"8","DisplayName":"Featherfall","Link":"https://terraria.wiki.gg/wiki/Featherfall_Potion","InternalName":"Featherfall"},{"Id":"9","DisplayName":"Spelunker","Link":"https://terraria.wiki.gg/wiki/Spelunker_Potion","InternalName":"Spelunker"},{"Id":"10","DisplayName":"Invisibility","Link":"https://terraria.wiki.gg/wiki/Invisibility_Potion","InternalName":"Invisibility"},{"Id":"11","DisplayName":"Shine","Link":"https://terraria.wiki.gg/wiki/Shine_Potion","InternalName":"Shine"},{"Id":"12","DisplayName":"Night Owl","Link":"https://terraria.wiki.gg/wiki/Night_Owl_Potion","InternalName":"NightOwl"},{"Id":"13","DisplayName":"Battle","Link":"https://terraria.wiki.gg/wiki/Battle_Potion","InternalName":"Battle"},{"Id":"14","DisplayName":"Thorns","Link":"https://terraria.wiki.gg/wiki/Thorns_Potion","InternalName":"Thorns"},{"Id":"15","DisplayName":"Water Walking","Link":"https://terraria.wiki.gg/wiki/Water_Walking_Potion","InternalName":"WaterWalking"},{"Id":"16","DisplayName":"Archery","Link":"https://terraria.wiki.gg/wiki/Archery_Potion","InternalName":"Archery"},{"Id":"17","DisplayName":"Hunter","Link":"https://terraria.wiki.gg/wiki/Hunter_Potion","InternalName":"Hunter"},{"Id":"18","DisplayName":"Gravitation","Link":"https://terraria.wiki.gg/wiki/Gravitation_Potion","InternalName":"Gravitation"},{"Id":"19","DisplayName":"Shadow Orb","Link":"https://terraria.wiki.gg/wiki/Shadow_Orb_(item)","InternalName":"ShadowOrb"},{"Id":"20","DisplayName":"Poisoned","Link":"https://terraria.wiki.gg/wiki/Poisoned","InternalName":"Poisoned"},{"Id":"21","DisplayName":"Potion Sickness","Link":"https://terraria.wiki.gg/wiki/Potion_Sickness","InternalName":"PotionSickness"},{"Id":"22","DisplayName":"Darkness","Link":"https://terraria.wiki.gg/wiki/Darkness","InternalName":"Darkness"},{"Id":"23","DisplayName":"Cursed","Link":"https://terraria.wiki.gg/wiki/Cursed","InternalName":"Cursed"},{"Id":"24","DisplayName":"On Fire!","Link":"https://terraria.wiki.gg/wiki/On_Fire!","InternalName":"OnFire"},{"Id":"25","DisplayName":"Tipsy","Link":"https://terraria.wiki.gg/wiki/Tipsy","InternalName":"Tipsy"},{"Id":"26","DisplayName":"Well Fed","Link":"https://terraria.wiki.gg/wiki/Well_Fed","InternalName":"WellFed"},{"Id":"27","DisplayName":"Fairy","Link":"https://terraria.wiki.gg/wiki/Fairy_Bell","InternalName":"FairyBlue"},{"Id":"28","DisplayName":"Werewolf","Link":"https://terraria.wiki.gg/wiki/Moon_Charm","InternalName":"Werewolf"},{"Id":"29","DisplayName":"Clairvoyance","Link":"https://terraria.wiki.gg/wiki/Crystal_Ball","InternalName":"Clairvoyance"},{"Id":"30","DisplayName":"Bleeding","Link":"https://terraria.wiki.gg/wiki/Bleeding","InternalName":"Bleeding"},{"Id":"31","DisplayName":"Confused","Link":"https://terraria.wiki.gg/wiki/Confused","InternalName":"Confused"},{"Id":"32","DisplayName":"Slow","Link":"https://terraria.wiki.gg/wiki/Slow","InternalName":"Slow"},{"Id":"33","DisplayName":"Weak","Link":"https://terraria.wiki.gg/wiki/Weak","InternalName":"Weak"},{"Id":"34","DisplayName":"Merfolk","Link":"https://terraria.wiki.gg/wiki/Neptune%27s_Shell","InternalName":"Merfolk"},{"Id":"35","DisplayName":"Silenced","Link":"https://terraria.wiki.gg/wiki/Silenced","InternalName":"Silenced"},{"Id":"36","DisplayName":"Broken Armor","Link":"https://terraria.wiki.gg/wiki/Broken_Armor","InternalName":"BrokenArmor"},{"Id":"37","DisplayName":"Horrified","Link":"https://terraria.wiki.gg/wiki/Wall_of_Flesh","InternalName":"Horrified"},{"Id":"38","DisplayName":"The Tongue","Link":"https://terraria.wiki.gg/wiki/The_Tongue","InternalName":"TheTongue"},{"Id":"39","DisplayName":"Cursed Inferno","Link":"https://terraria.wiki.gg/wiki/Cursed_Inferno","InternalName":"CursedInferno"},{"Id":"40","DisplayName":"Pet Bunny","Link":"https://terraria.wiki.gg/wiki/Carrot","InternalName":"PetBunny"},{"Id":"41","DisplayName":"Baby Penguin","Link":"https://terraria.wiki.gg/wiki/Fish_(item)","InternalName":"BabyPenguin"},{"Id":"42","DisplayName":"Pet Turtle","Link":"https://terraria.wiki.gg/wiki/Seaweed","InternalName":"PetTurtle"},{"Id":"43","DisplayName":"Paladin's Shield","Link":"https://terraria.wiki.gg/wiki/Paladin%27s_Shield","InternalName":"PaladinsShield"},{"Id":"44","DisplayName":"Frostburn","Link":"https://terraria.wiki.gg/wiki/Frostburn","InternalName":"Frostburn"},{"Id":"45","DisplayName":"Baby Eater","Link":"https://terraria.wiki.gg/wiki/Eater%27s_Bone","InternalName":"BabyEater"},{"Id":"46","DisplayName":"Chilled","Link":"https://terraria.wiki.gg/wiki/Chilled","InternalName":"Chilled"},{"Id":"47","DisplayName":"Frozen","Link":"https://terraria.wiki.gg/wiki/Frozen","InternalName":"Frozen"},{"Id":"48","DisplayName":"Honey","Link":"https://terraria.wiki.gg/wiki/Honey_(buff)","InternalName":"Honey"},{"Id":"49","DisplayName":"Pygmies","Link":"https://terraria.wiki.gg/wiki/Pygmy_Staff","InternalName":"Pygmies"},{"Id":"50","DisplayName":"Baby Skeletron Head","Link":"https://terraria.wiki.gg/wiki/Bone_Key","InternalName":"BabySkeletronHead"},{"Id":"51","DisplayName":"Baby Hornet","Link":"https://terraria.wiki.gg/wiki/Nectar","InternalName":"BabyHornet"},{"Id":"52","DisplayName":"Tiki Spirit","Link":"https://terraria.wiki.gg/wiki/Tiki_Totem","InternalName":"TikiSpirit"},{"Id":"53","DisplayName":"Pet Lizard","Link":"https://terraria.wiki.gg/wiki/Lizard_Egg","InternalName":"PetLizard"},{"Id":"54","DisplayName":"Pet Parrot","Link":"https://terraria.wiki.gg/wiki/Parrot_Cracker","InternalName":"PetParrot"},{"Id":"55","DisplayName":"Baby Truffle","Link":"https://terraria.wiki.gg/wiki/Strange_Glowing_Mushroom","InternalName":"BabyTruffle"},{"Id":"56","DisplayName":"Pet Sapling","Link":"https://terraria.wiki.gg/wiki/Seedling","InternalName":"PetSapling"},{"Id":"57","DisplayName":"Wisp","Link":"https://terraria.wiki.gg/wiki/Wisp_in_a_Bottle","InternalName":"Wisp"},{"Id":"58","DisplayName":"Rapid Healing","Link":"https://terraria.wiki.gg/wiki/Palladium_armor","InternalName":"RapidHealing"},{"Id":"59","DisplayName":"Holy Protection","Link":"https://terraria.wiki.gg/wiki/Hallowed_armor","InternalName":"ShadowDodge"},{"Id":"60","DisplayName":"Leaf Crystal","Link":"https://terraria.wiki.gg/wiki/Chlorophyte_armor","InternalName":"LeafCrystal"},{"Id":"61","DisplayName":"Baby Dinosaur","Link":"https://terraria.wiki.gg/wiki/Amber_Mosquito","InternalName":"BabyDinosaur"},{"Id":"62","DisplayName":"Ice Barrier","Link":"https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell","InternalName":"IceBarrier"},{"Id":"63","DisplayName":"Panic!","Link":"https://terraria.wiki.gg/wiki/Panic_Necklace","InternalName":"Panic"},{"Id":"64","DisplayName":"Baby Slime","Link":"https://terraria.wiki.gg/wiki/Slime_Staff","InternalName":"BabySlime"},{"Id":"65","DisplayName":"Eyeball Spring","Link":"https://terraria.wiki.gg/wiki/Eye_Spring","InternalName":"EyeballSpring"},{"Id":"66","DisplayName":"Baby Snowman","Link":"https://terraria.wiki.gg/wiki/Toy_Sled","InternalName":"BabySnowman"},{"Id":"67","DisplayName":"Burning","Link":"https://terraria.wiki.gg/wiki/Burning","InternalName":"Burning"},{"Id":"68","DisplayName":"Suffocation","Link":"https://terraria.wiki.gg/wiki/Suffocation","InternalName":"Suffocation"},{"Id":"69","DisplayName":"Ichor","Link":"https://terraria.wiki.gg/wiki/Ichor_(debuff)","InternalName":"Ichor"},{"Id":"70","DisplayName":"Acid Venom","Link":"https://terraria.wiki.gg/wiki/Acid_Venom","InternalName":"Venom"},{"Id":"71","DisplayName":"Weapon Imbue: Acid Venom","Link":"https://terraria.wiki.gg/wiki/Flask_of_Venom","InternalName":"WeaponImbueVenom"},{"Id":"72","DisplayName":"Midas","Link":"https://terraria.wiki.gg/wiki/Midas","InternalName":"Midas"},{"Id":"73","DisplayName":"Weapon Imbue: Cursed Flames","Link":"https://terraria.wiki.gg/wiki/Flask_of_Cursed_Flames","InternalName":"WeaponImbueCursedFlames"},{"Id":"74","DisplayName":"Weapon Imbue: Fire","Link":"https://terraria.wiki.gg/wiki/Flask_of_Fire","InternalName":"WeaponImbueFire"},{"Id":"75","DisplayName":"Weapon Imbue: Gold","Link":"https://terraria.wiki.gg/wiki/Flask_of_Gold","InternalName":"WeaponImbueGold"},{"Id":"76","DisplayName":"Weapon Imbue: Ichor","Link":"https://terraria.wiki.gg/wiki/Flask_of_Ichor","InternalName":"WeaponImbueIchor"},{"Id":"77","DisplayName":"Weapon Imbue: Nanites","Link":"https://terraria.wiki.gg/wiki/Flask_of_Nanites","InternalName":"WeaponImbueNanites"},{"Id":"78","DisplayName":"Weapon Imbue: Confetti","Link":"https://terraria.wiki.gg/wiki/Flask_of_Party","InternalName":"WeaponImbueConfetti"},{"Id":"79","DisplayName":"Weapon Imbue: Poison","Link":"https://terraria.wiki.gg/wiki/Flask_of_Poison","InternalName":"WeaponImbuePoison"},{"Id":"80","DisplayName":"Blackout","Link":"https://terraria.wiki.gg/wiki/Blackout","InternalName":"Blackout"},{"Id":"81","DisplayName":"Pet Spider","Link":"https://terraria.wiki.gg/wiki/Spider_Egg","InternalName":"PetSpider"},{"Id":"82","DisplayName":"Squashling","Link":"https://terraria.wiki.gg/wiki/Magical_Pumpkin_Seed","InternalName":"Squashling"},{"Id":"83","DisplayName":"Ravens","Link":"https://terraria.wiki.gg/wiki/Raven_Staff","InternalName":"Ravens"},{"Id":"84","DisplayName":"Black Cat","Link":"https://terraria.wiki.gg/wiki/Unlucky_Yarn","InternalName":"BlackCat"},{"Id":"85","DisplayName":"Cursed Sapling","Link":"https://terraria.wiki.gg/wiki/Cursed_Sapling","InternalName":"CursedSapling"},{"Id":"86","DisplayName":"Water Candle","Link":"https://terraria.wiki.gg/wiki/Water_Candle","InternalName":"WaterCandle"},{"Id":"87","DisplayName":"Cozy Fire","Link":"https://terraria.wiki.gg/wiki/Campfires","InternalName":"Campfire"},{"Id":"88","DisplayName":"Chaos State","Link":"https://terraria.wiki.gg/wiki/Rod_of_Discord","InternalName":"ChaosState"},{"Id":"89","DisplayName":"Heart Lamp","Link":"https://terraria.wiki.gg/wiki/Heart_Lantern","InternalName":"HeartLamp"},{"Id":"90","DisplayName":"Rudolph","Link":"https://terraria.wiki.gg/wiki/Reindeer_Bells","InternalName":"Rudolph"},{"Id":"91","DisplayName":"Puppy","Link":"https://terraria.wiki.gg/wiki/Dog_Whistle","InternalName":"Puppy"},{"Id":"92","DisplayName":"Baby Grinch","Link":"https://terraria.wiki.gg/wiki/Baby_Grinch%27s_Mischief_Whistle","InternalName":"BabyGrinch"},{"Id":"93","DisplayName":"Ammo Box","Link":"https://terraria.wiki.gg/wiki/Ammo_Box","InternalName":"AmmoBox"},{"Id":"94","DisplayName":"Mana Sickness","Link":"https://terraria.wiki.gg/wiki/Mana_Sickness","InternalName":"ManaSickness"},{"Id":"95","DisplayName":"Beetle Endurance","Link":"https://terraria.wiki.gg/wiki/Beetle_Endurance","InternalName":"BeetleEndurance1"},{"Id":"96","DisplayName":"Beetle Endurance","Link":"https://terraria.wiki.gg/wiki/Beetle_Endurance","InternalName":"BeetleEndurance2"},{"Id":"97","DisplayName":"Beetle Endurance","Link":"https://terraria.wiki.gg/wiki/Beetle_Endurance","InternalName":"BeetleEndurance3"},{"Id":"98","DisplayName":"Beetle Might","Link":"https://terraria.wiki.gg/wiki/Beetle_Might","InternalName":"BeetleMight1"},{"Id":"99","DisplayName":"Beetle Might","Link":"https://terraria.wiki.gg/wiki/Beetle_Might","InternalName":"BeetleMight2"},{"Id":"100","DisplayName":"Beetle Might","Link":"https://terraria.wiki.gg/wiki/Beetle_Might","InternalName":"BeetleMight3"},{"Id":"101","DisplayName":"Fairy","Link":"https://terraria.wiki.gg/wiki/Fairy_Bell","InternalName":"FairyRed"},{"Id":"102","DisplayName":"Fairy","Link":"https://terraria.wiki.gg/wiki/Fairy_Bell","InternalName":"FairyGreen"},{"Id":"103","DisplayName":"Wet","Link":"https://terraria.wiki.gg/wiki/Wet","InternalName":"Wet"},{"Id":"104","DisplayName":"Mining","Link":"https://terraria.wiki.gg/wiki/Mining_Potion","InternalName":"Mining"},{"Id":"105","DisplayName":"Heartreach","Link":"https://terraria.wiki.gg/wiki/Heartreach_Potion","InternalName":"Heartreach"},{"Id":"106","DisplayName":"Calm","Link":"https://terraria.wiki.gg/wiki/Calming_Potion","InternalName":"Calm"},{"Id":"107","DisplayName":"Builder","Link":"https://terraria.wiki.gg/wiki/Builder_Potion","InternalName":"Builder"},{"Id":"108","DisplayName":"Titan","Link":"https://terraria.wiki.gg/wiki/Titan_Potion","InternalName":"Titan"},{"Id":"109","DisplayName":"Flipper","Link":"https://terraria.wiki.gg/wiki/Flipper_Potion","InternalName":"Flipper"},{"Id":"110","DisplayName":"Summoning","Link":"https://terraria.wiki.gg/wiki/Summoning_Potion","InternalName":"Summoning"},{"Id":"111","DisplayName":"Dangersense","Link":"https://terraria.wiki.gg/wiki/Dangersense_Potion","InternalName":"Dangersense"},{"Id":"112","DisplayName":"Ammo Reservation","Link":"https://terraria.wiki.gg/wiki/Ammo_Reservation_Potion","InternalName":"AmmoReservation"},{"Id":"113","DisplayName":"Lifeforce","Link":"https://terraria.wiki.gg/wiki/Lifeforce_Potion","InternalName":"Lifeforce"},{"Id":"114","DisplayName":"Endurance","Link":"https://terraria.wiki.gg/wiki/Endurance_Potion","InternalName":"Endurance"},{"Id":"115","DisplayName":"Rage","Link":"https://terraria.wiki.gg/wiki/Rage_Potion","InternalName":"Rage"},{"Id":"116","DisplayName":"Inferno","Link":"https://terraria.wiki.gg/wiki/Inferno_Potion","InternalName":"Inferno"},{"Id":"117","DisplayName":"Wrath","Link":"https://terraria.wiki.gg/wiki/Wrath_Potion","InternalName":"Wrath"},{"Id":"118","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"MinecartLeft"},{"Id":"119","DisplayName":"Lovestruck","Link":"https://terraria.wiki.gg/wiki/Love_Potion","InternalName":"Lovestruck"},{"Id":"120","DisplayName":"Stinky","Link":"https://terraria.wiki.gg/wiki/Stinky","InternalName":"Stinky"},{"Id":"121","DisplayName":"Fishing","Link":"https://terraria.wiki.gg/wiki/Fishing_Potion","InternalName":"Fishing"},{"Id":"122","DisplayName":"Sonar","Link":"https://terraria.wiki.gg/wiki/Sonar_Potion","InternalName":"Sonar"},{"Id":"123","DisplayName":"Crate","Link":"https://terraria.wiki.gg/wiki/Crate_Potion","InternalName":"Crate"},{"Id":"124","DisplayName":"Warmth","Link":"https://terraria.wiki.gg/wiki/Warmth_Potion","InternalName":"Warmth"},{"Id":"125","DisplayName":"Hornet","Link":"https://terraria.wiki.gg/wiki/Hornet_Staff","InternalName":"HornetMinion"},{"Id":"126","DisplayName":"Imp","Link":"https://terraria.wiki.gg/wiki/Imp_Staff","InternalName":"ImpMinion"},{"Id":"127","DisplayName":"Zephyr Fish","Link":"https://terraria.wiki.gg/wiki/Zephyr_Fish","InternalName":"ZephyrFish"},{"Id":"128","DisplayName":"Bunny Mount","Link":"https://terraria.wiki.gg/wiki/Fuzzy_Carrot","InternalName":"BunnyMount"},{"Id":"129","DisplayName":"Pigron Mount","Link":"https://terraria.wiki.gg/wiki/Scaly_Truffle","InternalName":"PigronMount"},{"Id":"130","DisplayName":"Slime Mount","Link":"https://terraria.wiki.gg/wiki/Slimy_Saddle","InternalName":"SlimeMount"},{"Id":"131","DisplayName":"Turtle Mount","Link":"https://terraria.wiki.gg/wiki/Hardy_Saddle","InternalName":"TurtleMount"},{"Id":"132","DisplayName":"Bee Mount","Link":"https://terraria.wiki.gg/wiki/Honeyed_Goggles","InternalName":"BeeMount"},{"Id":"133","DisplayName":"Spider","Link":"https://terraria.wiki.gg/wiki/Spider_Staff","InternalName":"SpiderMinion"},{"Id":"134","DisplayName":"Twins","Link":"https://terraria.wiki.gg/wiki/Optic_Staff","InternalName":"TwinEyesMinion"},{"Id":"135","DisplayName":"Pirate","Link":"https://terraria.wiki.gg/wiki/Pirate_Staff","InternalName":"PirateMinion"},{"Id":"136","DisplayName":"Mini Minotaur","Link":"https://terraria.wiki.gg/wiki/Tartar_Sauce","InternalName":"MiniMinotaur"},{"Id":"137","DisplayName":"Slime","Link":"https://terraria.wiki.gg/wiki/Slime_Gun","InternalName":"Slimed"},{"Id":"138","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"MinecartRight"},{"Id":"139","DisplayName":"Sharknado","Link":"https://terraria.wiki.gg/wiki/Tempest_Staff","InternalName":"SharknadoMinion"},{"Id":"140","DisplayName":"UFO","Link":"https://terraria.wiki.gg/wiki/Xeno_Staff","InternalName":"UFOMinion"},{"Id":"141","DisplayName":"UFO Mount","Link":"https://terraria.wiki.gg/wiki/Cosmic_Car_Key","InternalName":"UFOMount"},{"Id":"142","DisplayName":"Drill Mount","Link":"https://terraria.wiki.gg/wiki/Drill_Containment_Unit","InternalName":"DrillMount"},{"Id":"143","DisplayName":"Scutlix Mount","Link":"https://terraria.wiki.gg/wiki/Brain_Scrambler_(item)","InternalName":"ScutlixMount"},{"Id":"144","DisplayName":"Electrified","Link":"https://terraria.wiki.gg/wiki/Electrified","InternalName":"Electrified"},{"Id":"145","DisplayName":"Moon Bite","Link":"https://terraria.wiki.gg/wiki/Moon_Bite","InternalName":"MoonLeech"},{"Id":"146","DisplayName":"Happy!","Link":"https://terraria.wiki.gg/wiki/Sunflower","InternalName":"Sunflower"},{"Id":"147","DisplayName":"Banner","Link":"https://terraria.wiki.gg/wiki/Banners_(enemy)","InternalName":"MonsterBanner"},{"Id":"148","DisplayName":"Feral Bite","Link":"https://terraria.wiki.gg/wiki/Feral_Bite","InternalName":"Rabies"},{"Id":"149","DisplayName":"Webbed","Link":"https://terraria.wiki.gg/wiki/Webbed","InternalName":"Webbed"},{"Id":"150","DisplayName":"Bewitched","Link":"https://terraria.wiki.gg/wiki/Bewitching_Table","InternalName":"Bewitched"},{"Id":"151","DisplayName":"Life Drain","Link":"https://terraria.wiki.gg/wiki/Life_Drain","InternalName":"SoulDrain"},{"Id":"152","DisplayName":"Magic Lantern","Link":"https://terraria.wiki.gg/wiki/Magic_Lantern","InternalName":"MagicLantern"},{"Id":"153","DisplayName":"Shadowflame","Link":"https://terraria.wiki.gg/wiki/Shadowflame","InternalName":"ShadowFlame"},{"Id":"154","DisplayName":"Baby Face Monster","Link":"https://terraria.wiki.gg/wiki/Bone_Rattle","InternalName":"BabyFaceMonster"},{"Id":"155","DisplayName":"Crimson Heart","Link":"https://terraria.wiki.gg/wiki/Crimson_Heart_(item)","InternalName":"CrimsonHeart"},{"Id":"156","DisplayName":"Stoned","Link":"https://terraria.wiki.gg/wiki/Stoned","InternalName":"Stoned"},{"Id":"157","DisplayName":"Peace Candle","Link":"https://terraria.wiki.gg/wiki/Peace_Candle","InternalName":"PeaceCandle"},{"Id":"158","DisplayName":"Star in a Bottle","Link":"https://terraria.wiki.gg/wiki/Star_in_a_Bottle","InternalName":"StarInBottle"},{"Id":"159","DisplayName":"Sharpened","Link":"https://terraria.wiki.gg/wiki/Sharpening_Station","InternalName":"Sharpened"},{"Id":"160","DisplayName":"Dazed","Link":"https://terraria.wiki.gg/wiki/Dazed","InternalName":"Dazed"},{"Id":"161","DisplayName":"Deadly Sphere","Link":"https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff","InternalName":"DeadlySphere"},{"Id":"162","DisplayName":"Unicorn Mount","Link":"https://terraria.wiki.gg/wiki/Blessed_Apple","InternalName":"UnicornMount"},{"Id":"163","DisplayName":"Obstructed","Link":"https://terraria.wiki.gg/wiki/Brain_Suckler","InternalName":"Obstructed"},{"Id":"164","DisplayName":"Distorted","Link":"https://terraria.wiki.gg/wiki/Alien_Queen","InternalName":"VortexDebuff"},{"Id":"165","DisplayName":"Dryad's Blessing","Link":"https://terraria.wiki.gg/wiki/Dryad%27s_Blessing","InternalName":"DryadsWard"},{"Id":"166","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Mechanical_Cart","InternalName":"MinecartRightMech"},{"Id":"167","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Mechanical_Cart","InternalName":"MinecartLeftMech"},{"Id":"168","DisplayName":"Cute Fishron Mount","Link":"https://terraria.wiki.gg/wiki/Shrimpy_Truffle","InternalName":"CuteFishronMount"},{"Id":"169","DisplayName":"Penetrated","Link":"https://terraria.wiki.gg/wiki/Bone_Javelin","InternalName":"BoneJavelin"},{"Id":"170","DisplayName":"Solar Blaze","Link":"https://terraria.wiki.gg/wiki/Solar_Flare_armor","InternalName":"SolarShield1"},{"Id":"171","DisplayName":"Solar Blaze","Link":"https://terraria.wiki.gg/wiki/Solar_Flare_armor","InternalName":"SolarShield2"},{"Id":"172","DisplayName":"Solar Blaze","Link":"https://terraria.wiki.gg/wiki/Solar_Flare_armor","InternalName":"SolarShield3"},{"Id":"173","DisplayName":"Life Nebula","Link":"https://terraria.wiki.gg/wiki/Life_Booster","InternalName":"NebulaUpLife1"},{"Id":"174","DisplayName":"Life Nebula","Link":"https://terraria.wiki.gg/wiki/Life_Booster","InternalName":"NebulaUpLife2"},{"Id":"175","DisplayName":"Life Nebula","Link":"https://terraria.wiki.gg/wiki/Life_Booster","InternalName":"NebulaUpLife3"},{"Id":"176","DisplayName":"Mana Nebula","Link":"https://terraria.wiki.gg/wiki/Mana_Booster","InternalName":"NebulaUpMana1"},{"Id":"177","DisplayName":"Mana Nebula","Link":"https://terraria.wiki.gg/wiki/Mana_Booster","InternalName":"NebulaUpMana2"},{"Id":"178","DisplayName":"Mana Nebula","Link":"https://terraria.wiki.gg/wiki/Mana_Booster","InternalName":"NebulaUpMana3"},{"Id":"179","DisplayName":"Damage Nebula","Link":"https://terraria.wiki.gg/wiki/Damage_Booster","InternalName":"NebulaUpDmg1"},{"Id":"180","DisplayName":"Damage Nebula","Link":"https://terraria.wiki.gg/wiki/Damage_Booster","InternalName":"NebulaUpDmg2"},{"Id":"181","DisplayName":"Damage Nebula","Link":"https://terraria.wiki.gg/wiki/Damage_Booster","InternalName":"NebulaUpDmg3"},{"Id":"182","DisplayName":"Stardust Cell","Link":"https://terraria.wiki.gg/wiki/Stardust_Cell_Staff","InternalName":"StardustMinion"},{"Id":"183","DisplayName":"Celled","Link":"https://terraria.wiki.gg/wiki/Stardust_Cell_Staff","InternalName":"StardustMinionBleed"},{"Id":"184","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"MinecartLeftWood"},{"Id":"185","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"MinecartRightWood"},{"Id":"186","DisplayName":"Dryad's Bane","Link":"https://terraria.wiki.gg/wiki/Dryad%27s_Blessing","InternalName":"DryadsWardDebuff"},{"Id":"187","DisplayName":"Stardust Guardian","Link":"https://terraria.wiki.gg/wiki/Stardust_armor","InternalName":"StardustGuardianMinion"},{"Id":"188","DisplayName":"Stardust Dragon","Link":"https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff","InternalName":"StardustDragonMinion"},{"Id":"189","DisplayName":"Daybroken","Link":"https://terraria.wiki.gg/wiki/Daybroken","InternalName":"Daybreak"},{"Id":"190","DisplayName":"Suspicious Looking Eye","Link":"https://terraria.wiki.gg/wiki/Suspicious_Looking_Tentacle","InternalName":"SuspiciousTentacle"},{"Id":"191","DisplayName":"Companion Cube","Link":"https://terraria.wiki.gg/wiki/Companion_Cube","InternalName":"CompanionCube"},{"Id":"192","DisplayName":"Sugar Rush","Link":"https://terraria.wiki.gg/wiki/Slice_of_Cake","InternalName":"SugarRush"},{"Id":"193","DisplayName":"Basilisk Mount","Link":"https://terraria.wiki.gg/wiki/Ancient_Horn","InternalName":"BasiliskMount"},{"Id":"194","DisplayName":"Mighty Wind","Link":"https://terraria.wiki.gg/wiki/Mighty_Wind","InternalName":"WindPushed"},{"Id":"195","DisplayName":"Withered Armor","Link":"https://terraria.wiki.gg/wiki/Wither_Beast","InternalName":"WitheredArmor"},{"Id":"196","DisplayName":"Withered Weapon","Link":"https://terraria.wiki.gg/wiki/Etherian_Lightning_Bug","InternalName":"WitheredWeapon"},{"Id":"197","DisplayName":"Oozed","Link":"https://terraria.wiki.gg/wiki/Ogre","InternalName":"OgreSpit"},{"Id":"198","DisplayName":"Striking Moment","Link":"https://terraria.wiki.gg/wiki/Striking_Moment","InternalName":"ParryDamageBuff"},{"Id":"199","DisplayName":"Creative Shock","Link":"https://terraria.wiki.gg/wiki/Creative_Shock","InternalName":"NoBuilding"},{"Id":"200","DisplayName":"Propeller Gato","Link":"https://terraria.wiki.gg/wiki/Gato_Egg","InternalName":"PetDD2Gato"},{"Id":"201","DisplayName":"Flickerwick","Link":"https://terraria.wiki.gg/wiki/Creeper_Egg","InternalName":"PetDD2Ghost"},{"Id":"202","DisplayName":"Hoardagron","Link":"https://terraria.wiki.gg/wiki/Dragon_Egg","InternalName":"PetDD2Dragon"},{"Id":"203","DisplayName":"Betsy's Curse","Link":"https://terraria.wiki.gg/wiki/Betsy%27s_Wrath","InternalName":"BetsysCurse"},{"Id":"204","DisplayName":"Oiled","Link":"https://terraria.wiki.gg/wiki/Oiled","InternalName":"Oiled"},{"Id":"205","DisplayName":"Ballista Panic!","Link":"https://terraria.wiki.gg/wiki/Ballista_Panic!","InternalName":"BallistaPanic"},{"Id":"206","DisplayName":"Plenty Satisfied","Link":"https://terraria.wiki.gg/wiki/Well_Fed","InternalName":"WellFed2"},{"Id":"207","DisplayName":"Exquisitely Stuffed","Link":"https://terraria.wiki.gg/wiki/Well_Fed","InternalName":"WellFed3"},{"Id":"208","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"DesertMinecartRight"},{"Id":"209","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"DesertMinecartLeft"},{"Id":"210","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"FishMinecartRight"},{"Id":"211","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"FishMinecartLeft"},{"Id":"212","DisplayName":"Golf Cart","Link":"https://terraria.wiki.gg/wiki/Golf_Cart_Keys","InternalName":"GolfCartMount"},{"Id":"213","DisplayName":"Sanguine Bat","Link":"https://terraria.wiki.gg/wiki/Sanguine_Staff","InternalName":"BatOfLight"},{"Id":"214","DisplayName":"Vampire Frog","Link":"https://terraria.wiki.gg/wiki/Vampire_Frog_Staff","InternalName":"VampireFrog"},{"Id":"215","DisplayName":"The Bast Defense","Link":"https://terraria.wiki.gg/wiki/Bast_Statue","InternalName":"CatBast"},{"Id":"216","DisplayName":"Baby Finch","Link":"https://terraria.wiki.gg/wiki/Finch_Staff","InternalName":"BabyBird"},{"Id":"217","DisplayName":"Estee","Link":"https://terraria.wiki.gg/wiki/Celestial_Wand","InternalName":"UpbeatStar"},{"Id":"218","DisplayName":"Sugar Glider","Link":"https://terraria.wiki.gg/wiki/Eucalyptus_Sap","InternalName":"SugarGlider"},{"Id":"219","DisplayName":"Shark Pup","Link":"https://terraria.wiki.gg/wiki/Shark_Bait","InternalName":"SharkPup"},{"Id":"220","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"BeeMinecartRight"},{"Id":"221","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"BeeMinecartLeft"},{"Id":"222","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"LadybugMinecartRight"},{"Id":"223","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"LadybugMinecartLeft"},{"Id":"224","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"PigronMinecartRight"},{"Id":"225","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"PigronMinecartLeft"},{"Id":"226","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"SunflowerMinecartRight"},{"Id":"227","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"SunflowerMinecartLeft"},{"Id":"228","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"HellMinecartRight"},{"Id":"229","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"HellMinecartLeft"},{"Id":"230","DisplayName":"Witch's Broom","Link":"https://terraria.wiki.gg/wiki/Witch%27s_Broom","InternalName":"WitchBroom"},{"Id":"231","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"ShroomMinecartRight"},{"Id":"232","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"ShroomMinecartLeft"},{"Id":"233","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"AmethystMinecartRight"},{"Id":"234","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"AmethystMinecartLeft"},{"Id":"235","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"TopazMinecartRight"},{"Id":"236","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"TopazMinecartLeft"},{"Id":"237","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"SapphireMinecartRight"},{"Id":"238","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"SapphireMinecartLeft"},{"Id":"239","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"EmeraldMinecartRight"},{"Id":"240","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"EmeraldMinecartLeft"},{"Id":"241","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"RubyMinecartRight"},{"Id":"242","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"RubyMinecartLeft"},{"Id":"243","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"DiamondMinecartRight"},{"Id":"244","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"DiamondMinecartLeft"},{"Id":"245","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"AmberMinecartRight"},{"Id":"246","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"AmberMinecartLeft"},{"Id":"247","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"BeetleMinecartRight"},{"Id":"248","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"BeetleMinecartLeft"},{"Id":"249","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"MeowmereMinecartRight"},{"Id":"250","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"MeowmereMinecartLeft"},{"Id":"251","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"PartyMinecartRight"},{"Id":"252","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"PartyMinecartLeft"},{"Id":"253","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"PirateMinecartRight"},{"Id":"254","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"PirateMinecartLeft"},{"Id":"255","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"SteampunkMinecartRight"},{"Id":"256","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"SteampunkMinecartLeft"},{"Id":"257","DisplayName":"Lucky","Link":"https://terraria.wiki.gg/wiki/Lucky_(buff)","InternalName":"Lucky"},{"Id":"258","DisplayName":"Lil' Harpy","Link":"https://terraria.wiki.gg/wiki/Birdie_Rattle","InternalName":"LilHarpy"},{"Id":"259","DisplayName":"Fennec Fox","Link":"https://terraria.wiki.gg/wiki/Exotic_Chew_Toy","InternalName":"FennecFox"},{"Id":"260","DisplayName":"Glittery Butterfly","Link":"https://terraria.wiki.gg/wiki/Bedazzled_Nectar","InternalName":"GlitteryButterfly"},{"Id":"261","DisplayName":"Baby Imp","Link":"https://terraria.wiki.gg/wiki/Slice_of_Hell_Cake","InternalName":"BabyImp"},{"Id":"262","DisplayName":"Baby Red Panda","Link":"https://terraria.wiki.gg/wiki/Bamboo_Leaf","InternalName":"BabyRedPanda"},{"Id":"263","DisplayName":"Desert Tiger","Link":"https://terraria.wiki.gg/wiki/Desert_Tiger_Staff","InternalName":"StormTiger"},{"Id":"264","DisplayName":"Plantero","Link":"https://terraria.wiki.gg/wiki/Mud_Bud","InternalName":"Plantero"},{"Id":"265","DisplayName":"Flamingo","Link":"https://terraria.wiki.gg/wiki/Mollusk_Whistle","InternalName":"Flamingo"},{"Id":"266","DisplayName":"Dynamite Kitten","Link":"https://terraria.wiki.gg/wiki/Ball_O%27_Fuse_Wire","InternalName":"DynamiteKitten"},{"Id":"267","DisplayName":"Baby Werewolf","Link":"https://terraria.wiki.gg/wiki/Full_Moon_Squeaky_Toy","InternalName":"BabyWerewolf"},{"Id":"268","DisplayName":"Shadow Mimic","Link":"https://terraria.wiki.gg/wiki/Ornate_Shadow_Key","InternalName":"ShadowMimic"},{"Id":"269","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"CoffinMinecartRight"},{"Id":"270","DisplayName":"Minecart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"CoffinMinecartLeft"},{"Id":"271","DisplayName":"Enchanted Daggers","Link":"https://terraria.wiki.gg/wiki/Blade_Staff","InternalName":"Smolstar"},{"Id":"272","DisplayName":"Digging Molecart","Link":"https://terraria.wiki.gg/wiki/Digging_Molecart","InternalName":"DiggingMoleMinecartRight"},{"Id":"273","DisplayName":"Digging Molecart","Link":"https://terraria.wiki.gg/wiki/Digging_Molecart","InternalName":"DiggingMoleMinecartLeft"},{"Id":"274","DisplayName":"Volt Bunny","Link":"https://terraria.wiki.gg/wiki/Lightning_Carrot","InternalName":"VoltBunny"},{"Id":"275","DisplayName":"Painted Horse Mount","Link":"https://terraria.wiki.gg/wiki/Saddles","InternalName":"PaintedHorseMount"},{"Id":"276","DisplayName":"Majestic Horse Mount","Link":"https://terraria.wiki.gg/wiki/Saddles","InternalName":"MajesticHorseMount"},{"Id":"277","DisplayName":"Dark Horse Mount","Link":"https://terraria.wiki.gg/wiki/Saddles","InternalName":"DarkHorseMount"},{"Id":"278","DisplayName":"Pogo Stick Mount","Link":"https://terraria.wiki.gg/wiki/Pogo_Stick","InternalName":"PogoStickMount"},{"Id":"279","DisplayName":"Pirate Ship Mount","Link":"https://terraria.wiki.gg/wiki/The_Black_Spot","InternalName":"PirateShipMount"},{"Id":"280","DisplayName":"Tree Mount","Link":"https://terraria.wiki.gg/wiki/Hexxed_Branch","InternalName":"SpookyWoodMount"},{"Id":"281","DisplayName":"Santank Mount","Link":"https://terraria.wiki.gg/wiki/Toy_Tank","InternalName":"SantankMount"},{"Id":"282","DisplayName":"Goat Mount","Link":"https://terraria.wiki.gg/wiki/Goat_Skull","InternalName":"WallOfFleshGoatMount"},{"Id":"283","DisplayName":"Book Mount","Link":"https://terraria.wiki.gg/wiki/Dark_Mage%27s_Tome","InternalName":"DarkMageBookMount"},{"Id":"284","DisplayName":"Slime Prince","Link":"https://terraria.wiki.gg/wiki/Royal_Delight","InternalName":"KingSlimePet"},{"Id":"285","DisplayName":"Suspicious Eye","Link":"https://terraria.wiki.gg/wiki/Suspicious_Grinning_Eye","InternalName":"EyeOfCthulhuPet"},{"Id":"286","DisplayName":"Eater of Worms","Link":"https://terraria.wiki.gg/wiki/Writhing_Remains","InternalName":"EaterOfWorldsPet"},{"Id":"287","DisplayName":"Spider Brain","Link":"https://terraria.wiki.gg/wiki/Brain_in_a_Jar","InternalName":"BrainOfCthulhuPet"},{"Id":"288","DisplayName":"Skeletron Jr.","Link":"https://terraria.wiki.gg/wiki/Possessed_Skull","InternalName":"SkeletronPet"},{"Id":"289","DisplayName":"Honey Bee","Link":"https://terraria.wiki.gg/wiki/Sparkling_Honey","InternalName":"QueenBeePet"},{"Id":"290","DisplayName":"Destroyer-Lite","Link":"https://terraria.wiki.gg/wiki/Deactivated_Probe","InternalName":"DestroyerPet"},{"Id":"291","DisplayName":"Rez and Spaz","Link":"https://terraria.wiki.gg/wiki/Pair_of_Eyeballs","InternalName":"TwinsPet"},{"Id":"292","DisplayName":"Mini Prime","Link":"https://terraria.wiki.gg/wiki/Robotic_Skull","InternalName":"SkeletronPrimePet"},{"Id":"293","DisplayName":"Plantera Seedling","Link":"https://terraria.wiki.gg/wiki/Plantera_Seedling","InternalName":"PlanteraPet"},{"Id":"294","DisplayName":"Toy Golem","Link":"https://terraria.wiki.gg/wiki/Guardian_Golem","InternalName":"GolemPet"},{"Id":"295","DisplayName":"Tiny Fishron","Link":"https://terraria.wiki.gg/wiki/Pork_of_the_Sea","InternalName":"DukeFishronPet"},{"Id":"296","DisplayName":"Phantasmal Dragon","Link":"https://terraria.wiki.gg/wiki/Tablet_Fragment","InternalName":"LunaticCultistPet"},{"Id":"297","DisplayName":"Moonling","Link":"https://terraria.wiki.gg/wiki/Piece_of_Moon_Squid","InternalName":"MoonLordPet"},{"Id":"298","DisplayName":"Fairy Princess","Link":"https://terraria.wiki.gg/wiki/Jewel_of_Light","InternalName":"FairyQueenPet"},{"Id":"299","DisplayName":"Jack 'O Lantern","Link":"https://terraria.wiki.gg/wiki/Pumpkin_Scented_Candle","InternalName":"PumpkingPet"},{"Id":"300","DisplayName":"Everscream Sapling","Link":"https://terraria.wiki.gg/wiki/Shrub_Star","InternalName":"EverscreamPet"},{"Id":"301","DisplayName":"Ice Queen","Link":"https://terraria.wiki.gg/wiki/Frozen_Crown","InternalName":"IceQueenPet"},{"Id":"302","DisplayName":"Alien Skater","Link":"https://terraria.wiki.gg/wiki/Cosmic_Skateboard","InternalName":"MartianPet"},{"Id":"303","DisplayName":"Baby Ogre","Link":"https://terraria.wiki.gg/wiki/Ogre%27s_Club","InternalName":"DD2OgrePet"},{"Id":"304","DisplayName":"Itsy Betsy","Link":"https://terraria.wiki.gg/wiki/Betsy%27s_Egg","InternalName":"DD2BetsyPet"},{"Id":"305","DisplayName":"Lava Shark Mount","Link":"https://terraria.wiki.gg/wiki/Superheated_Blood","InternalName":"LavaSharkMount"},{"Id":"306","DisplayName":"Titanium Barrier","Link":"https://terraria.wiki.gg/wiki/Titanium_armor","InternalName":"TitaniumStorm"},{"Id":"307","DisplayName":"","Link":"No link","InternalName":"BlandWhipEnemyDebuff"},{"Id":"308","DisplayName":"Durendal's Blessing","Link":"https://terraria.wiki.gg/wiki/Durendal","InternalName":"SwordWhipPlayerBuff"},{"Id":"309","DisplayName":"","Link":"No link","InternalName":"SwordWhipNPCDebuff"},{"Id":"310","DisplayName":"","Link":"No link","InternalName":"ScytheWhipEnemyDebuff"},{"Id":"311","DisplayName":"Harvest Time","Link":"https://terraria.wiki.gg/wiki/Dark_Harvest","InternalName":"ScytheWhipPlayerBuff"},{"Id":"312","DisplayName":"A Nice Buff","Link":"https://terraria.wiki.gg/wiki/Cool_Whip","InternalName":"CoolWhipPlayerBuff"},{"Id":"313","DisplayName":"","Link":"No link","InternalName":"FlameWhipEnemyDebuff"},{"Id":"314","DisplayName":"Jungle's Fury","Link":"https://terraria.wiki.gg/wiki/Snapthorn","InternalName":"ThornWhipPlayerBuff"},{"Id":"315","DisplayName":"","Link":"No link","InternalName":"ThornWhipNPCDebuff"},{"Id":"316","DisplayName":"","Link":"No link","InternalName":"RainbowWhipNPCDebuff"},{"Id":"317","DisplayName":"Slime Princess","Link":"https://terraria.wiki.gg/wiki/Regal_Delicacy","InternalName":"QueenSlimePet"},{"Id":"318","DisplayName":"Winged Slime Mount","Link":"https://terraria.wiki.gg/wiki/Gelatinous_Pillion","InternalName":"QueenSlimeMount"},{"Id":"319","DisplayName":"","Link":"No link","InternalName":"MaceWhipNPCDebuff"},{"Id":"320","DisplayName":"Sparkle Slime","Link":"https://terraria.wiki.gg/wiki/Sparkle_Slime_Balloon","InternalName":"GelBalloonBuff"},{"Id":"321","DisplayName":"Cerebral Mindtrick","Link":"https://terraria.wiki.gg/wiki/Brain_of_Confusion","InternalName":"BrainOfConfusionBuff"},{"Id":"322","DisplayName":"Terraprisma","Link":"https://terraria.wiki.gg/wiki/Terraprisma","InternalName":"EmpressBlade"},{"Id":"323","DisplayName":"Hellfire","Link":"https://terraria.wiki.gg/wiki/Hellfire","InternalName":"OnFire3"},{"Id":"324","DisplayName":"Frostbite","Link":"https://terraria.wiki.gg/wiki/Frostbite","InternalName":"Frostburn2"},{"Id":"325","DisplayName":"Flinx","Link":"https://terraria.wiki.gg/wiki/Flinx_Staff","InternalName":"FlinxMinion"},{"Id":"326","DisplayName":"","Link":"No link","InternalName":"BoneWhipNPCDebuff"},{"Id":"327","DisplayName":"Bernie","Link":"https://terraria.wiki.gg/wiki/Bernie%27s_Button","InternalName":"BerniePet"},{"Id":"328","DisplayName":"Glommer","Link":"https://terraria.wiki.gg/wiki/Glommer%27s_Flower","InternalName":"GlommerPet"},{"Id":"329","DisplayName":"Tiny Deerclops","Link":"https://terraria.wiki.gg/wiki/Deerclops_Eyeball","InternalName":"DeerclopsPet"},{"Id":"330","DisplayName":"Pig","Link":"https://terraria.wiki.gg/wiki/Monster_Meat","InternalName":"PigPet"},{"Id":"331","DisplayName":"Chester","Link":"https://terraria.wiki.gg/wiki/Eye_Bone","InternalName":"ChesterPet"},{"Id":"332","DisplayName":"Peckish","Link":"https://terraria.wiki.gg/wiki/Hunger","InternalName":"NeutralHunger"},{"Id":"333","DisplayName":"Hungry","Link":"https://terraria.wiki.gg/wiki/Hunger","InternalName":"Hunger"},{"Id":"334","DisplayName":"Starving","Link":"https://terraria.wiki.gg/wiki/Hunger","InternalName":"Starving"},{"Id":"335","DisplayName":"Abigail","Link":"https://terraria.wiki.gg/wiki/Abigail%27s_Flower","InternalName":"AbigailMinion"},{"Id":"336","DisplayName":"Hearty Meal","Link":"https://terraria.wiki.gg/wiki/Ham_Bat","InternalName":"HeartyMeal"},{"Id":"337","DisplayName":"","Link":"No link","InternalName":"TentacleSpike"},{"Id":"338","DisplayName":"Fart Kart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"FartMinecartRight"},{"Id":"339","DisplayName":"Fart Kart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"FartMinecartLeft"},{"Id":"340","DisplayName":"","Link":"No link","InternalName":"CoolWhipNPCDebuff"},{"Id":"341","DisplayName":"Slime Royals","Link":"https://terraria.wiki.gg/wiki/Resplendent_Dessert","InternalName":"DualSlimePet"},{"Id":"342","DisplayName":"Blessing of the Moon","Link":"https://terraria.wiki.gg/wiki/Lilith%27s_Necklace","InternalName":"WolfMount"},{"Id":"343","DisplayName":"Biome Sight","Link":"https://terraria.wiki.gg/wiki/Biome_Sight_Potion","InternalName":"BiomeSight"},{"Id":"344","DisplayName":"Blood Butchered","Link":"https://terraria.wiki.gg/wiki/Blood_Butcherer","InternalName":"BloodButcherer"},{"Id":"345","DisplayName":"Junimo","Link":"https://terraria.wiki.gg/wiki/Stardrop","InternalName":"JunimoPet"},{"Id":"346","DisplayName":"Terra Fart Kart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"TerraFartMinecartRight"},{"Id":"347","DisplayName":"Terra Fart Kart","Link":"https://terraria.wiki.gg/wiki/Minecart","InternalName":"TerraFartMinecartLeft"},{"Id":"348","DisplayName":"Strategist","Link":"https://terraria.wiki.gg/wiki/War_Table","InternalName":"WarTable"},{"Id":"349","DisplayName":"Blue Chicken","Link":"https://terraria.wiki.gg/wiki/Blue_Chicken_Egg","InternalName":"BlueChickenPet"},{"Id":"350","DisplayName":"Shadow Candle","Link":"https://terraria.wiki.gg/wiki/Shadow_Candle","InternalName":"ShadowCandle"},{"Id":"351","DisplayName":"Spiffo","Link":"https://terraria.wiki.gg/wiki/Spiffo_Plush","InternalName":"Spiffo"},{"Id":"352","DisplayName":"Caveling Gardener","Link":"https://terraria.wiki.gg/wiki/Glow_Tulip","InternalName":"CavelingGardener"},{"Id":"353","DisplayName":"Shimmering","Link":"https://terraria.wiki.gg/wiki/Shimmering","InternalName":"Shimmer"},{"Id":"354","DisplayName":"The Dirtiest Block","Link":"https://terraria.wiki.gg/wiki/The_Dirtiest_Block","InternalName":"DirtiestBlock"}]}
+{
+  "Ids": [
+    {
+      "Id": "1",
+      "DisplayName": "Obsidian Skin",
+      "Link": "https://terraria.wiki.gg/wiki/Obsidian_Skin_Potion",
+      "InternalName": "ObsidianSkin"
+    },
+    {
+      "Id": "2",
+      "DisplayName": "Regeneration",
+      "Link": "https://terraria.wiki.gg/wiki/Regeneration_Potion",
+      "InternalName": "Regeneration"
+    },
+    {
+      "Id": "3",
+      "DisplayName": "Swiftness",
+      "Link": "https://terraria.wiki.gg/wiki/Swiftness_Potion",
+      "InternalName": "Swiftness"
+    },
+    {
+      "Id": "4",
+      "DisplayName": "Gills",
+      "Link": "https://terraria.wiki.gg/wiki/Gills_Potion",
+      "InternalName": "Gills"
+    },
+    {
+      "Id": "5",
+      "DisplayName": "Ironskin",
+      "Link": "https://terraria.wiki.gg/wiki/Ironskin_Potion",
+      "InternalName": "Ironskin"
+    },
+    {
+      "Id": "6",
+      "DisplayName": "Mana Regeneration",
+      "Link": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Potion",
+      "InternalName": "ManaRegeneration"
+    },
+    {
+      "Id": "7",
+      "DisplayName": "Magic Power",
+      "Link": "https://terraria.wiki.gg/wiki/Magic_Power_Potion",
+      "InternalName": "MagicPower"
+    },
+    {
+      "Id": "8",
+      "DisplayName": "Featherfall",
+      "Link": "https://terraria.wiki.gg/wiki/Featherfall_Potion",
+      "InternalName": "Featherfall"
+    },
+    {
+      "Id": "9",
+      "DisplayName": "Spelunker",
+      "Link": "https://terraria.wiki.gg/wiki/Spelunker_Potion",
+      "InternalName": "Spelunker"
+    },
+    {
+      "Id": "10",
+      "DisplayName": "Invisibility",
+      "Link": "https://terraria.wiki.gg/wiki/Invisibility_Potion",
+      "InternalName": "Invisibility"
+    },
+    {
+      "Id": "11",
+      "DisplayName": "Shine",
+      "Link": "https://terraria.wiki.gg/wiki/Shine_Potion",
+      "InternalName": "Shine"
+    },
+    {
+      "Id": "12",
+      "DisplayName": "Night Owl",
+      "Link": "https://terraria.wiki.gg/wiki/Night_Owl_Potion",
+      "InternalName": "NightOwl"
+    },
+    {
+      "Id": "13",
+      "DisplayName": "Battle",
+      "Link": "https://terraria.wiki.gg/wiki/Battle_Potion",
+      "InternalName": "Battle"
+    },
+    {
+      "Id": "14",
+      "DisplayName": "Thorns",
+      "Link": "https://terraria.wiki.gg/wiki/Thorns_Potion",
+      "InternalName": "Thorns"
+    },
+    {
+      "Id": "15",
+      "DisplayName": "Water Walking",
+      "Link": "https://terraria.wiki.gg/wiki/Water_Walking_Potion",
+      "InternalName": "WaterWalking"
+    },
+    {
+      "Id": "16",
+      "DisplayName": "Archery",
+      "Link": "https://terraria.wiki.gg/wiki/Archery_Potion",
+      "InternalName": "Archery"
+    },
+    {
+      "Id": "17",
+      "DisplayName": "Hunter",
+      "Link": "https://terraria.wiki.gg/wiki/Hunter_Potion",
+      "InternalName": "Hunter"
+    },
+    {
+      "Id": "18",
+      "DisplayName": "Gravitation",
+      "Link": "https://terraria.wiki.gg/wiki/Gravitation_Potion",
+      "InternalName": "Gravitation"
+    },
+    {
+      "Id": "19",
+      "DisplayName": "Shadow Orb",
+      "Link": "https://terraria.wiki.gg/wiki/Shadow_Orb_(item)",
+      "InternalName": "ShadowOrb"
+    },
+    {
+      "Id": "20",
+      "DisplayName": "Poisoned",
+      "Link": "https://terraria.wiki.gg/wiki/Poisoned",
+      "InternalName": "Poisoned"
+    },
+    {
+      "Id": "21",
+      "DisplayName": "Potion Sickness",
+      "Link": "https://terraria.wiki.gg/wiki/Potion_Sickness",
+      "InternalName": "PotionSickness"
+    },
+    {
+      "Id": "22",
+      "DisplayName": "Darkness",
+      "Link": "https://terraria.wiki.gg/wiki/Darkness",
+      "InternalName": "Darkness"
+    },
+    {
+      "Id": "23",
+      "DisplayName": "Cursed",
+      "Link": "https://terraria.wiki.gg/wiki/Cursed",
+      "InternalName": "Cursed"
+    },
+    {
+      "Id": "24",
+      "DisplayName": "On Fire!",
+      "Link": "https://terraria.wiki.gg/wiki/On_Fire!",
+      "InternalName": "OnFire"
+    },
+    {
+      "Id": "25",
+      "DisplayName": "Tipsy",
+      "Link": "https://terraria.wiki.gg/wiki/Tipsy",
+      "InternalName": "Tipsy"
+    },
+    {
+      "Id": "26",
+      "DisplayName": "Well Fed",
+      "Link": "https://terraria.wiki.gg/wiki/Well_Fed",
+      "InternalName": "WellFed"
+    },
+    {
+      "Id": "27",
+      "DisplayName": "Fairy",
+      "Link": "https://terraria.wiki.gg/wiki/Fairy_Bell",
+      "InternalName": "FairyBlue"
+    },
+    {
+      "Id": "28",
+      "DisplayName": "Werewolf",
+      "Link": "https://terraria.wiki.gg/wiki/Moon_Charm",
+      "InternalName": "Werewolf"
+    },
+    {
+      "Id": "29",
+      "DisplayName": "Clairvoyance",
+      "Link": "https://terraria.wiki.gg/wiki/Crystal_Ball",
+      "InternalName": "Clairvoyance"
+    },
+    {
+      "Id": "30",
+      "DisplayName": "Bleeding",
+      "Link": "https://terraria.wiki.gg/wiki/Bleeding",
+      "InternalName": "Bleeding"
+    },
+    {
+      "Id": "31",
+      "DisplayName": "Confused",
+      "Link": "https://terraria.wiki.gg/wiki/Confused",
+      "InternalName": "Confused"
+    },
+    {
+      "Id": "32",
+      "DisplayName": "Slow",
+      "Link": "https://terraria.wiki.gg/wiki/Slow",
+      "InternalName": "Slow"
+    },
+    {
+      "Id": "33",
+      "DisplayName": "Weak",
+      "Link": "https://terraria.wiki.gg/wiki/Weak",
+      "InternalName": "Weak"
+    },
+    {
+      "Id": "34",
+      "DisplayName": "Merfolk",
+      "Link": "https://terraria.wiki.gg/wiki/Neptune%27s_Shell",
+      "InternalName": "Merfolk"
+    },
+    {
+      "Id": "35",
+      "DisplayName": "Silenced",
+      "Link": "https://terraria.wiki.gg/wiki/Silenced",
+      "InternalName": "Silenced"
+    },
+    {
+      "Id": "36",
+      "DisplayName": "Broken Armor",
+      "Link": "https://terraria.wiki.gg/wiki/Broken_Armor",
+      "InternalName": "BrokenArmor"
+    },
+    {
+      "Id": "37",
+      "DisplayName": "Horrified",
+      "Link": "https://terraria.wiki.gg/wiki/Wall_of_Flesh",
+      "InternalName": "Horrified"
+    },
+    {
+      "Id": "38",
+      "DisplayName": "The Tongue",
+      "Link": "https://terraria.wiki.gg/wiki/The_Tongue",
+      "InternalName": "TheTongue"
+    },
+    {
+      "Id": "39",
+      "DisplayName": "Cursed Inferno",
+      "Link": "https://terraria.wiki.gg/wiki/Cursed_Inferno",
+      "InternalName": "CursedInferno"
+    },
+    {
+      "Id": "40",
+      "DisplayName": "Pet Bunny",
+      "Link": "https://terraria.wiki.gg/wiki/Carrot",
+      "InternalName": "PetBunny"
+    },
+    {
+      "Id": "41",
+      "DisplayName": "Baby Penguin",
+      "Link": "https://terraria.wiki.gg/wiki/Fish_(item)",
+      "InternalName": "BabyPenguin"
+    },
+    {
+      "Id": "42",
+      "DisplayName": "Pet Turtle",
+      "Link": "https://terraria.wiki.gg/wiki/Seaweed",
+      "InternalName": "PetTurtle"
+    },
+    {
+      "Id": "43",
+      "DisplayName": "Paladin's Shield",
+      "Link": "https://terraria.wiki.gg/wiki/Paladin%27s_Shield",
+      "InternalName": "PaladinsShield"
+    },
+    {
+      "Id": "44",
+      "DisplayName": "Frostburn",
+      "Link": "https://terraria.wiki.gg/wiki/Frostburn",
+      "InternalName": "Frostburn"
+    },
+    {
+      "Id": "45",
+      "DisplayName": "Baby Eater",
+      "Link": "https://terraria.wiki.gg/wiki/Eater%27s_Bone",
+      "InternalName": "BabyEater"
+    },
+    {
+      "Id": "46",
+      "DisplayName": "Chilled",
+      "Link": "https://terraria.wiki.gg/wiki/Chilled",
+      "InternalName": "Chilled"
+    },
+    {
+      "Id": "47",
+      "DisplayName": "Frozen",
+      "Link": "https://terraria.wiki.gg/wiki/Frozen",
+      "InternalName": "Frozen"
+    },
+    {
+      "Id": "48",
+      "DisplayName": "Honey",
+      "Link": "https://terraria.wiki.gg/wiki/Honey_(buff)",
+      "InternalName": "Honey"
+    },
+    {
+      "Id": "49",
+      "DisplayName": "Pygmies",
+      "Link": "https://terraria.wiki.gg/wiki/Pygmy_Staff",
+      "InternalName": "Pygmies"
+    },
+    {
+      "Id": "50",
+      "DisplayName": "Baby Skeletron Head",
+      "Link": "https://terraria.wiki.gg/wiki/Bone_Key",
+      "InternalName": "BabySkeletronHead"
+    },
+    {
+      "Id": "51",
+      "DisplayName": "Baby Hornet",
+      "Link": "https://terraria.wiki.gg/wiki/Nectar",
+      "InternalName": "BabyHornet"
+    },
+    {
+      "Id": "52",
+      "DisplayName": "Tiki Spirit",
+      "Link": "https://terraria.wiki.gg/wiki/Tiki_Totem",
+      "InternalName": "TikiSpirit"
+    },
+    {
+      "Id": "53",
+      "DisplayName": "Pet Lizard",
+      "Link": "https://terraria.wiki.gg/wiki/Lizard_Egg",
+      "InternalName": "PetLizard"
+    },
+    {
+      "Id": "54",
+      "DisplayName": "Pet Parrot",
+      "Link": "https://terraria.wiki.gg/wiki/Parrot_Cracker",
+      "InternalName": "PetParrot"
+    },
+    {
+      "Id": "55",
+      "DisplayName": "Baby Truffle",
+      "Link": "https://terraria.wiki.gg/wiki/Strange_Glowing_Mushroom",
+      "InternalName": "BabyTruffle"
+    },
+    {
+      "Id": "56",
+      "DisplayName": "Pet Sapling",
+      "Link": "https://terraria.wiki.gg/wiki/Seedling",
+      "InternalName": "PetSapling"
+    },
+    {
+      "Id": "57",
+      "DisplayName": "Wisp",
+      "Link": "https://terraria.wiki.gg/wiki/Wisp_in_a_Bottle",
+      "InternalName": "Wisp"
+    },
+    {
+      "Id": "58",
+      "DisplayName": "Rapid Healing",
+      "Link": "https://terraria.wiki.gg/wiki/Palladium_armor",
+      "InternalName": "RapidHealing"
+    },
+    {
+      "Id": "59",
+      "DisplayName": "Holy Protection",
+      "Link": "https://terraria.wiki.gg/wiki/Hallowed_armor",
+      "InternalName": "ShadowDodge"
+    },
+    {
+      "Id": "60",
+      "DisplayName": "Leaf Crystal",
+      "Link": "https://terraria.wiki.gg/wiki/Chlorophyte_armor",
+      "InternalName": "LeafCrystal"
+    },
+    {
+      "Id": "61",
+      "DisplayName": "Baby Dinosaur",
+      "Link": "https://terraria.wiki.gg/wiki/Amber_Mosquito",
+      "InternalName": "BabyDinosaur"
+    },
+    {
+      "Id": "62",
+      "DisplayName": "Ice Barrier",
+      "Link": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
+      "InternalName": "IceBarrier"
+    },
+    {
+      "Id": "63",
+      "DisplayName": "Panic!",
+      "Link": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+      "InternalName": "Panic"
+    },
+    {
+      "Id": "64",
+      "DisplayName": "Baby Slime",
+      "Link": "https://terraria.wiki.gg/wiki/Slime_Staff",
+      "InternalName": "BabySlime"
+    },
+    {
+      "Id": "65",
+      "DisplayName": "Eyeball Spring",
+      "Link": "https://terraria.wiki.gg/wiki/Eye_Spring",
+      "InternalName": "EyeballSpring"
+    },
+    {
+      "Id": "66",
+      "DisplayName": "Baby Snowman",
+      "Link": "https://terraria.wiki.gg/wiki/Toy_Sled",
+      "InternalName": "BabySnowman"
+    },
+    {
+      "Id": "67",
+      "DisplayName": "Burning",
+      "Link": "https://terraria.wiki.gg/wiki/Burning",
+      "InternalName": "Burning"
+    },
+    {
+      "Id": "68",
+      "DisplayName": "Suffocation",
+      "Link": "https://terraria.wiki.gg/wiki/Suffocation",
+      "InternalName": "Suffocation"
+    },
+    {
+      "Id": "69",
+      "DisplayName": "Ichor",
+      "Link": "https://terraria.wiki.gg/wiki/Ichor_(debuff)",
+      "InternalName": "Ichor"
+    },
+    {
+      "Id": "70",
+      "DisplayName": "Acid Venom",
+      "Link": "https://terraria.wiki.gg/wiki/Acid_Venom",
+      "InternalName": "Venom"
+    },
+    {
+      "Id": "71",
+      "DisplayName": "Weapon Imbue: Acid Venom",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Venom",
+      "InternalName": "WeaponImbueVenom"
+    },
+    {
+      "Id": "72",
+      "DisplayName": "Midas",
+      "Link": "https://terraria.wiki.gg/wiki/Midas",
+      "InternalName": "Midas"
+    },
+    {
+      "Id": "73",
+      "DisplayName": "Weapon Imbue: Cursed Flames",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Cursed_Flames",
+      "InternalName": "WeaponImbueCursedFlames"
+    },
+    {
+      "Id": "74",
+      "DisplayName": "Weapon Imbue: Fire",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Fire",
+      "InternalName": "WeaponImbueFire"
+    },
+    {
+      "Id": "75",
+      "DisplayName": "Weapon Imbue: Gold",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Gold",
+      "InternalName": "WeaponImbueGold"
+    },
+    {
+      "Id": "76",
+      "DisplayName": "Weapon Imbue: Ichor",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Ichor",
+      "InternalName": "WeaponImbueIchor"
+    },
+    {
+      "Id": "77",
+      "DisplayName": "Weapon Imbue: Nanites",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Nanites",
+      "InternalName": "WeaponImbueNanites"
+    },
+    {
+      "Id": "78",
+      "DisplayName": "Weapon Imbue: Confetti",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Party",
+      "InternalName": "WeaponImbueConfetti"
+    },
+    {
+      "Id": "79",
+      "DisplayName": "Weapon Imbue: Poison",
+      "Link": "https://terraria.wiki.gg/wiki/Flask_of_Poison",
+      "InternalName": "WeaponImbuePoison"
+    },
+    {
+      "Id": "80",
+      "DisplayName": "Blackout",
+      "Link": "https://terraria.wiki.gg/wiki/Blackout",
+      "InternalName": "Blackout"
+    },
+    {
+      "Id": "81",
+      "DisplayName": "Pet Spider",
+      "Link": "https://terraria.wiki.gg/wiki/Spider_Egg",
+      "InternalName": "PetSpider"
+    },
+    {
+      "Id": "82",
+      "DisplayName": "Squashling",
+      "Link": "https://terraria.wiki.gg/wiki/Magical_Pumpkin_Seed",
+      "InternalName": "Squashling"
+    },
+    {
+      "Id": "83",
+      "DisplayName": "Ravens",
+      "Link": "https://terraria.wiki.gg/wiki/Raven_Staff",
+      "InternalName": "Ravens"
+    },
+    {
+      "Id": "84",
+      "DisplayName": "Black Cat",
+      "Link": "https://terraria.wiki.gg/wiki/Unlucky_Yarn",
+      "InternalName": "BlackCat"
+    },
+    {
+      "Id": "85",
+      "DisplayName": "Cursed Sapling",
+      "Link": "https://terraria.wiki.gg/wiki/Cursed_Sapling",
+      "InternalName": "CursedSapling"
+    },
+    {
+      "Id": "86",
+      "DisplayName": "Water Candle",
+      "Link": "https://terraria.wiki.gg/wiki/Water_Candle",
+      "InternalName": "WaterCandle"
+    },
+    {
+      "Id": "87",
+      "DisplayName": "Cozy Fire",
+      "Link": "https://terraria.wiki.gg/wiki/Campfires",
+      "InternalName": "Campfire"
+    },
+    {
+      "Id": "88",
+      "DisplayName": "Chaos State",
+      "Link": "https://terraria.wiki.gg/wiki/Rod_of_Discord",
+      "InternalName": "ChaosState"
+    },
+    {
+      "Id": "89",
+      "DisplayName": "Heart Lamp",
+      "Link": "https://terraria.wiki.gg/wiki/Heart_Lantern",
+      "InternalName": "HeartLamp"
+    },
+    {
+      "Id": "90",
+      "DisplayName": "Rudolph",
+      "Link": "https://terraria.wiki.gg/wiki/Reindeer_Bells",
+      "InternalName": "Rudolph"
+    },
+    {
+      "Id": "91",
+      "DisplayName": "Puppy",
+      "Link": "https://terraria.wiki.gg/wiki/Dog_Whistle",
+      "InternalName": "Puppy"
+    },
+    {
+      "Id": "92",
+      "DisplayName": "Baby Grinch",
+      "Link": "https://terraria.wiki.gg/wiki/Baby_Grinch%27s_Mischief_Whistle",
+      "InternalName": "BabyGrinch"
+    },
+    {
+      "Id": "93",
+      "DisplayName": "Ammo Box",
+      "Link": "https://terraria.wiki.gg/wiki/Ammo_Box",
+      "InternalName": "AmmoBox"
+    },
+    {
+      "Id": "94",
+      "DisplayName": "Mana Sickness",
+      "Link": "https://terraria.wiki.gg/wiki/Mana_Sickness",
+      "InternalName": "ManaSickness"
+    },
+    {
+      "Id": "95",
+      "DisplayName": "Beetle Endurance",
+      "Link": "https://terraria.wiki.gg/wiki/Beetle_Endurance",
+      "InternalName": "BeetleEndurance1"
+    },
+    {
+      "Id": "96",
+      "DisplayName": "Beetle Endurance",
+      "Link": "https://terraria.wiki.gg/wiki/Beetle_Endurance",
+      "InternalName": "BeetleEndurance2"
+    },
+    {
+      "Id": "97",
+      "DisplayName": "Beetle Endurance",
+      "Link": "https://terraria.wiki.gg/wiki/Beetle_Endurance",
+      "InternalName": "BeetleEndurance3"
+    },
+    {
+      "Id": "98",
+      "DisplayName": "Beetle Might",
+      "Link": "https://terraria.wiki.gg/wiki/Beetle_Might",
+      "InternalName": "BeetleMight1"
+    },
+    {
+      "Id": "99",
+      "DisplayName": "Beetle Might",
+      "Link": "https://terraria.wiki.gg/wiki/Beetle_Might",
+      "InternalName": "BeetleMight2"
+    },
+    {
+      "Id": "100",
+      "DisplayName": "Beetle Might",
+      "Link": "https://terraria.wiki.gg/wiki/Beetle_Might",
+      "InternalName": "BeetleMight3"
+    },
+    {
+      "Id": "101",
+      "DisplayName": "Fairy",
+      "Link": "https://terraria.wiki.gg/wiki/Fairy_Bell",
+      "InternalName": "FairyRed"
+    },
+    {
+      "Id": "102",
+      "DisplayName": "Fairy",
+      "Link": "https://terraria.wiki.gg/wiki/Fairy_Bell",
+      "InternalName": "FairyGreen"
+    },
+    {
+      "Id": "103",
+      "DisplayName": "Wet",
+      "Link": "https://terraria.wiki.gg/wiki/Wet",
+      "InternalName": "Wet"
+    },
+    {
+      "Id": "104",
+      "DisplayName": "Mining",
+      "Link": "https://terraria.wiki.gg/wiki/Mining_Potion",
+      "InternalName": "Mining"
+    },
+    {
+      "Id": "105",
+      "DisplayName": "Heartreach",
+      "Link": "https://terraria.wiki.gg/wiki/Heartreach_Potion",
+      "InternalName": "Heartreach"
+    },
+    {
+      "Id": "106",
+      "DisplayName": "Calm",
+      "Link": "https://terraria.wiki.gg/wiki/Calming_Potion",
+      "InternalName": "Calm"
+    },
+    {
+      "Id": "107",
+      "DisplayName": "Builder",
+      "Link": "https://terraria.wiki.gg/wiki/Builder_Potion",
+      "InternalName": "Builder"
+    },
+    {
+      "Id": "108",
+      "DisplayName": "Titan",
+      "Link": "https://terraria.wiki.gg/wiki/Titan_Potion",
+      "InternalName": "Titan"
+    },
+    {
+      "Id": "109",
+      "DisplayName": "Flipper",
+      "Link": "https://terraria.wiki.gg/wiki/Flipper_Potion",
+      "InternalName": "Flipper"
+    },
+    {
+      "Id": "110",
+      "DisplayName": "Summoning",
+      "Link": "https://terraria.wiki.gg/wiki/Summoning_Potion",
+      "InternalName": "Summoning"
+    },
+    {
+      "Id": "111",
+      "DisplayName": "Dangersense",
+      "Link": "https://terraria.wiki.gg/wiki/Dangersense_Potion",
+      "InternalName": "Dangersense"
+    },
+    {
+      "Id": "112",
+      "DisplayName": "Ammo Reservation",
+      "Link": "https://terraria.wiki.gg/wiki/Ammo_Reservation_Potion",
+      "InternalName": "AmmoReservation"
+    },
+    {
+      "Id": "113",
+      "DisplayName": "Lifeforce",
+      "Link": "https://terraria.wiki.gg/wiki/Lifeforce_Potion",
+      "InternalName": "Lifeforce"
+    },
+    {
+      "Id": "114",
+      "DisplayName": "Endurance",
+      "Link": "https://terraria.wiki.gg/wiki/Endurance_Potion",
+      "InternalName": "Endurance"
+    },
+    {
+      "Id": "115",
+      "DisplayName": "Rage",
+      "Link": "https://terraria.wiki.gg/wiki/Rage_Potion",
+      "InternalName": "Rage"
+    },
+    {
+      "Id": "116",
+      "DisplayName": "Inferno",
+      "Link": "https://terraria.wiki.gg/wiki/Inferno_Potion",
+      "InternalName": "Inferno"
+    },
+    {
+      "Id": "117",
+      "DisplayName": "Wrath",
+      "Link": "https://terraria.wiki.gg/wiki/Wrath_Potion",
+      "InternalName": "Wrath"
+    },
+    {
+      "Id": "118",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "MinecartLeft"
+    },
+    {
+      "Id": "119",
+      "DisplayName": "Lovestruck",
+      "Link": "https://terraria.wiki.gg/wiki/Love_Potion",
+      "InternalName": "Lovestruck"
+    },
+    {
+      "Id": "120",
+      "DisplayName": "Stinky",
+      "Link": "https://terraria.wiki.gg/wiki/Stinky",
+      "InternalName": "Stinky"
+    },
+    {
+      "Id": "121",
+      "DisplayName": "Fishing",
+      "Link": "https://terraria.wiki.gg/wiki/Fishing_Potion",
+      "InternalName": "Fishing"
+    },
+    {
+      "Id": "122",
+      "DisplayName": "Sonar",
+      "Link": "https://terraria.wiki.gg/wiki/Sonar_Potion",
+      "InternalName": "Sonar"
+    },
+    {
+      "Id": "123",
+      "DisplayName": "Crate",
+      "Link": "https://terraria.wiki.gg/wiki/Crate_Potion",
+      "InternalName": "Crate"
+    },
+    {
+      "Id": "124",
+      "DisplayName": "Warmth",
+      "Link": "https://terraria.wiki.gg/wiki/Warmth_Potion",
+      "InternalName": "Warmth"
+    },
+    {
+      "Id": "125",
+      "DisplayName": "Hornet",
+      "Link": "https://terraria.wiki.gg/wiki/Hornet_Staff",
+      "InternalName": "HornetMinion"
+    },
+    {
+      "Id": "126",
+      "DisplayName": "Imp",
+      "Link": "https://terraria.wiki.gg/wiki/Imp_Staff",
+      "InternalName": "ImpMinion"
+    },
+    {
+      "Id": "127",
+      "DisplayName": "Zephyr Fish",
+      "Link": "https://terraria.wiki.gg/wiki/Zephyr_Fish",
+      "InternalName": "ZephyrFish"
+    },
+    {
+      "Id": "128",
+      "DisplayName": "Bunny Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Fuzzy_Carrot",
+      "InternalName": "BunnyMount"
+    },
+    {
+      "Id": "129",
+      "DisplayName": "Pigron Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Scaly_Truffle",
+      "InternalName": "PigronMount"
+    },
+    {
+      "Id": "130",
+      "DisplayName": "Slime Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Slimy_Saddle",
+      "InternalName": "SlimeMount"
+    },
+    {
+      "Id": "131",
+      "DisplayName": "Turtle Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Hardy_Saddle",
+      "InternalName": "TurtleMount"
+    },
+    {
+      "Id": "132",
+      "DisplayName": "Bee Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Honeyed_Goggles",
+      "InternalName": "BeeMount"
+    },
+    {
+      "Id": "133",
+      "DisplayName": "Spider",
+      "Link": "https://terraria.wiki.gg/wiki/Spider_Staff",
+      "InternalName": "SpiderMinion"
+    },
+    {
+      "Id": "134",
+      "DisplayName": "Twins",
+      "Link": "https://terraria.wiki.gg/wiki/Optic_Staff",
+      "InternalName": "TwinEyesMinion"
+    },
+    {
+      "Id": "135",
+      "DisplayName": "Pirate",
+      "Link": "https://terraria.wiki.gg/wiki/Pirate_Staff",
+      "InternalName": "PirateMinion"
+    },
+    {
+      "Id": "136",
+      "DisplayName": "Mini Minotaur",
+      "Link": "https://terraria.wiki.gg/wiki/Tartar_Sauce",
+      "InternalName": "MiniMinotaur"
+    },
+    {
+      "Id": "137",
+      "DisplayName": "Slime",
+      "Link": "https://terraria.wiki.gg/wiki/Slime_Gun",
+      "InternalName": "Slimed"
+    },
+    {
+      "Id": "138",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "MinecartRight"
+    },
+    {
+      "Id": "139",
+      "DisplayName": "Sharknado",
+      "Link": "https://terraria.wiki.gg/wiki/Tempest_Staff",
+      "InternalName": "SharknadoMinion"
+    },
+    {
+      "Id": "140",
+      "DisplayName": "UFO",
+      "Link": "https://terraria.wiki.gg/wiki/Xeno_Staff",
+      "InternalName": "UFOMinion"
+    },
+    {
+      "Id": "141",
+      "DisplayName": "UFO Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Cosmic_Car_Key",
+      "InternalName": "UFOMount"
+    },
+    {
+      "Id": "142",
+      "DisplayName": "Drill Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Drill_Containment_Unit",
+      "InternalName": "DrillMount"
+    },
+    {
+      "Id": "143",
+      "DisplayName": "Scutlix Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Brain_Scrambler_(item)",
+      "InternalName": "ScutlixMount"
+    },
+    {
+      "Id": "144",
+      "DisplayName": "Electrified",
+      "Link": "https://terraria.wiki.gg/wiki/Electrified",
+      "InternalName": "Electrified"
+    },
+    {
+      "Id": "145",
+      "DisplayName": "Moon Bite",
+      "Link": "https://terraria.wiki.gg/wiki/Moon_Bite",
+      "InternalName": "MoonLeech"
+    },
+    {
+      "Id": "146",
+      "DisplayName": "Happy!",
+      "Link": "https://terraria.wiki.gg/wiki/Sunflower",
+      "InternalName": "Sunflower"
+    },
+    {
+      "Id": "147",
+      "DisplayName": "Banner",
+      "Link": "https://terraria.wiki.gg/wiki/Banners_(enemy)",
+      "InternalName": "MonsterBanner"
+    },
+    {
+      "Id": "148",
+      "DisplayName": "Feral Bite",
+      "Link": "https://terraria.wiki.gg/wiki/Feral_Bite",
+      "InternalName": "Rabies"
+    },
+    {
+      "Id": "149",
+      "DisplayName": "Webbed",
+      "Link": "https://terraria.wiki.gg/wiki/Webbed",
+      "InternalName": "Webbed"
+    },
+    {
+      "Id": "150",
+      "DisplayName": "Bewitched",
+      "Link": "https://terraria.wiki.gg/wiki/Bewitching_Table",
+      "InternalName": "Bewitched"
+    },
+    {
+      "Id": "151",
+      "DisplayName": "Life Drain",
+      "Link": "https://terraria.wiki.gg/wiki/Life_Drain",
+      "InternalName": "SoulDrain"
+    },
+    {
+      "Id": "152",
+      "DisplayName": "Magic Lantern",
+      "Link": "https://terraria.wiki.gg/wiki/Magic_Lantern",
+      "InternalName": "MagicLantern"
+    },
+    {
+      "Id": "153",
+      "DisplayName": "Shadowflame",
+      "Link": "https://terraria.wiki.gg/wiki/Shadowflame",
+      "InternalName": "ShadowFlame"
+    },
+    {
+      "Id": "154",
+      "DisplayName": "Baby Face Monster",
+      "Link": "https://terraria.wiki.gg/wiki/Bone_Rattle",
+      "InternalName": "BabyFaceMonster"
+    },
+    {
+      "Id": "155",
+      "DisplayName": "Crimson Heart",
+      "Link": "https://terraria.wiki.gg/wiki/Crimson_Heart_(item)",
+      "InternalName": "CrimsonHeart"
+    },
+    {
+      "Id": "156",
+      "DisplayName": "Stoned",
+      "Link": "https://terraria.wiki.gg/wiki/Stoned",
+      "InternalName": "Stoned"
+    },
+    {
+      "Id": "157",
+      "DisplayName": "Peace Candle",
+      "Link": "https://terraria.wiki.gg/wiki/Peace_Candle",
+      "InternalName": "PeaceCandle"
+    },
+    {
+      "Id": "158",
+      "DisplayName": "Star in a Bottle",
+      "Link": "https://terraria.wiki.gg/wiki/Star_in_a_Bottle",
+      "InternalName": "StarInBottle"
+    },
+    {
+      "Id": "159",
+      "DisplayName": "Sharpened",
+      "Link": "https://terraria.wiki.gg/wiki/Sharpening_Station",
+      "InternalName": "Sharpened"
+    },
+    {
+      "Id": "160",
+      "DisplayName": "Dazed",
+      "Link": "https://terraria.wiki.gg/wiki/Dazed",
+      "InternalName": "Dazed"
+    },
+    {
+      "Id": "161",
+      "DisplayName": "Deadly Sphere",
+      "Link": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff",
+      "InternalName": "DeadlySphere"
+    },
+    {
+      "Id": "162",
+      "DisplayName": "Unicorn Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Blessed_Apple",
+      "InternalName": "UnicornMount"
+    },
+    {
+      "Id": "163",
+      "DisplayName": "Obstructed",
+      "Link": "https://terraria.wiki.gg/wiki/Brain_Suckler",
+      "InternalName": "Obstructed"
+    },
+    {
+      "Id": "164",
+      "DisplayName": "Distorted",
+      "Link": "https://terraria.wiki.gg/wiki/Alien_Queen",
+      "InternalName": "VortexDebuff"
+    },
+    {
+      "Id": "165",
+      "DisplayName": "Dryad's Blessing",
+      "Link": "https://terraria.wiki.gg/wiki/Dryad%27s_Blessing",
+      "InternalName": "DryadsWard"
+    },
+    {
+      "Id": "166",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Mechanical_Cart",
+      "InternalName": "MinecartRightMech"
+    },
+    {
+      "Id": "167",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Mechanical_Cart",
+      "InternalName": "MinecartLeftMech"
+    },
+    {
+      "Id": "168",
+      "DisplayName": "Cute Fishron Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Shrimpy_Truffle",
+      "InternalName": "CuteFishronMount"
+    },
+    {
+      "Id": "169",
+      "DisplayName": "Penetrated",
+      "Link": "https://terraria.wiki.gg/wiki/Bone_Javelin",
+      "InternalName": "BoneJavelin"
+    },
+    {
+      "Id": "170",
+      "DisplayName": "Solar Blaze",
+      "Link": "https://terraria.wiki.gg/wiki/Solar_Flare_armor",
+      "InternalName": "SolarShield1"
+    },
+    {
+      "Id": "171",
+      "DisplayName": "Solar Blaze",
+      "Link": "https://terraria.wiki.gg/wiki/Solar_Flare_armor",
+      "InternalName": "SolarShield2"
+    },
+    {
+      "Id": "172",
+      "DisplayName": "Solar Blaze",
+      "Link": "https://terraria.wiki.gg/wiki/Solar_Flare_armor",
+      "InternalName": "SolarShield3"
+    },
+    {
+      "Id": "173",
+      "DisplayName": "Life Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Life_Booster",
+      "InternalName": "NebulaUpLife1"
+    },
+    {
+      "Id": "174",
+      "DisplayName": "Life Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Life_Booster",
+      "InternalName": "NebulaUpLife2"
+    },
+    {
+      "Id": "175",
+      "DisplayName": "Life Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Life_Booster",
+      "InternalName": "NebulaUpLife3"
+    },
+    {
+      "Id": "176",
+      "DisplayName": "Mana Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Mana_Booster",
+      "InternalName": "NebulaUpMana1"
+    },
+    {
+      "Id": "177",
+      "DisplayName": "Mana Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Mana_Booster",
+      "InternalName": "NebulaUpMana2"
+    },
+    {
+      "Id": "178",
+      "DisplayName": "Mana Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Mana_Booster",
+      "InternalName": "NebulaUpMana3"
+    },
+    {
+      "Id": "179",
+      "DisplayName": "Damage Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Damage_Booster",
+      "InternalName": "NebulaUpDmg1"
+    },
+    {
+      "Id": "180",
+      "DisplayName": "Damage Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Damage_Booster",
+      "InternalName": "NebulaUpDmg2"
+    },
+    {
+      "Id": "181",
+      "DisplayName": "Damage Nebula",
+      "Link": "https://terraria.wiki.gg/wiki/Damage_Booster",
+      "InternalName": "NebulaUpDmg3"
+    },
+    {
+      "Id": "182",
+      "DisplayName": "Stardust Cell",
+      "Link": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff",
+      "InternalName": "StardustMinion"
+    },
+    {
+      "Id": "183",
+      "DisplayName": "Celled",
+      "Link": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff",
+      "InternalName": "StardustMinionBleed"
+    },
+    {
+      "Id": "184",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "MinecartLeftWood"
+    },
+    {
+      "Id": "185",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "MinecartRightWood"
+    },
+    {
+      "Id": "186",
+      "DisplayName": "Dryad's Bane",
+      "Link": "https://terraria.wiki.gg/wiki/Dryad%27s_Blessing",
+      "InternalName": "DryadsWardDebuff"
+    },
+    {
+      "Id": "187",
+      "DisplayName": "Stardust Guardian",
+      "Link": "https://terraria.wiki.gg/wiki/Stardust_armor",
+      "InternalName": "StardustGuardianMinion"
+    },
+    {
+      "Id": "188",
+      "DisplayName": "Stardust Dragon",
+      "Link": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff",
+      "InternalName": "StardustDragonMinion"
+    },
+    {
+      "Id": "189",
+      "DisplayName": "Daybroken",
+      "Link": "https://terraria.wiki.gg/wiki/Daybroken",
+      "InternalName": "Daybreak"
+    },
+    {
+      "Id": "190",
+      "DisplayName": "Suspicious Looking Eye",
+      "Link": "https://terraria.wiki.gg/wiki/Suspicious_Looking_Tentacle",
+      "InternalName": "SuspiciousTentacle"
+    },
+    {
+      "Id": "191",
+      "DisplayName": "Companion Cube",
+      "Link": "https://terraria.wiki.gg/wiki/Companion_Cube",
+      "InternalName": "CompanionCube"
+    },
+    {
+      "Id": "192",
+      "DisplayName": "Sugar Rush",
+      "Link": "https://terraria.wiki.gg/wiki/Slice_of_Cake",
+      "InternalName": "SugarRush"
+    },
+    {
+      "Id": "193",
+      "DisplayName": "Basilisk Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Ancient_Horn",
+      "InternalName": "BasiliskMount"
+    },
+    {
+      "Id": "194",
+      "DisplayName": "Mighty Wind",
+      "Link": "https://terraria.wiki.gg/wiki/Mighty_Wind",
+      "InternalName": "WindPushed"
+    },
+    {
+      "Id": "195",
+      "DisplayName": "Withered Armor",
+      "Link": "https://terraria.wiki.gg/wiki/Wither_Beast",
+      "InternalName": "WitheredArmor"
+    },
+    {
+      "Id": "196",
+      "DisplayName": "Withered Weapon",
+      "Link": "https://terraria.wiki.gg/wiki/Etherian_Lightning_Bug",
+      "InternalName": "WitheredWeapon"
+    },
+    {
+      "Id": "197",
+      "DisplayName": "Oozed",
+      "Link": "https://terraria.wiki.gg/wiki/Ogre",
+      "InternalName": "OgreSpit"
+    },
+    {
+      "Id": "198",
+      "DisplayName": "Striking Moment",
+      "Link": "https://terraria.wiki.gg/wiki/Striking_Moment",
+      "InternalName": "ParryDamageBuff"
+    },
+    {
+      "Id": "199",
+      "DisplayName": "Creative Shock",
+      "Link": "https://terraria.wiki.gg/wiki/Creative_Shock",
+      "InternalName": "NoBuilding"
+    },
+    {
+      "Id": "200",
+      "DisplayName": "Propeller Gato",
+      "Link": "https://terraria.wiki.gg/wiki/Gato_Egg",
+      "InternalName": "PetDD2Gato"
+    },
+    {
+      "Id": "201",
+      "DisplayName": "Flickerwick",
+      "Link": "https://terraria.wiki.gg/wiki/Creeper_Egg",
+      "InternalName": "PetDD2Ghost"
+    },
+    {
+      "Id": "202",
+      "DisplayName": "Hoardagron",
+      "Link": "https://terraria.wiki.gg/wiki/Dragon_Egg",
+      "InternalName": "PetDD2Dragon"
+    },
+    {
+      "Id": "203",
+      "DisplayName": "Betsy's Curse",
+      "Link": "https://terraria.wiki.gg/wiki/Betsy%27s_Wrath",
+      "InternalName": "BetsysCurse"
+    },
+    {
+      "Id": "204",
+      "DisplayName": "Oiled",
+      "Link": "https://terraria.wiki.gg/wiki/Oiled",
+      "InternalName": "Oiled"
+    },
+    {
+      "Id": "205",
+      "DisplayName": "Ballista Panic!",
+      "Link": "https://terraria.wiki.gg/wiki/Ballista_Panic!",
+      "InternalName": "BallistaPanic"
+    },
+    {
+      "Id": "206",
+      "DisplayName": "Plenty Satisfied",
+      "Link": "https://terraria.wiki.gg/wiki/Well_Fed",
+      "InternalName": "WellFed2"
+    },
+    {
+      "Id": "207",
+      "DisplayName": "Exquisitely Stuffed",
+      "Link": "https://terraria.wiki.gg/wiki/Well_Fed",
+      "InternalName": "WellFed3"
+    },
+    {
+      "Id": "208",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "DesertMinecartRight"
+    },
+    {
+      "Id": "209",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "DesertMinecartLeft"
+    },
+    {
+      "Id": "210",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "FishMinecartRight"
+    },
+    {
+      "Id": "211",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "FishMinecartLeft"
+    },
+    {
+      "Id": "212",
+      "DisplayName": "Golf Cart",
+      "Link": "https://terraria.wiki.gg/wiki/Golf_Cart_Keys",
+      "InternalName": "GolfCartMount"
+    },
+    {
+      "Id": "213",
+      "DisplayName": "Sanguine Bat",
+      "Link": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
+      "InternalName": "BatOfLight"
+    },
+    {
+      "Id": "214",
+      "DisplayName": "Vampire Frog",
+      "Link": "https://terraria.wiki.gg/wiki/Vampire_Frog_Staff",
+      "InternalName": "VampireFrog"
+    },
+    {
+      "Id": "215",
+      "DisplayName": "The Bast Defense",
+      "Link": "https://terraria.wiki.gg/wiki/Bast_Statue",
+      "InternalName": "CatBast"
+    },
+    {
+      "Id": "216",
+      "DisplayName": "Baby Finch",
+      "Link": "https://terraria.wiki.gg/wiki/Finch_Staff",
+      "InternalName": "BabyBird"
+    },
+    {
+      "Id": "217",
+      "DisplayName": "Estee",
+      "Link": "https://terraria.wiki.gg/wiki/Celestial_Wand",
+      "InternalName": "UpbeatStar"
+    },
+    {
+      "Id": "218",
+      "DisplayName": "Sugar Glider",
+      "Link": "https://terraria.wiki.gg/wiki/Eucalyptus_Sap",
+      "InternalName": "SugarGlider"
+    },
+    {
+      "Id": "219",
+      "DisplayName": "Shark Pup",
+      "Link": "https://terraria.wiki.gg/wiki/Shark_Bait",
+      "InternalName": "SharkPup"
+    },
+    {
+      "Id": "220",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "BeeMinecartRight"
+    },
+    {
+      "Id": "221",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "BeeMinecartLeft"
+    },
+    {
+      "Id": "222",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "LadybugMinecartRight"
+    },
+    {
+      "Id": "223",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "LadybugMinecartLeft"
+    },
+    {
+      "Id": "224",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "PigronMinecartRight"
+    },
+    {
+      "Id": "225",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "PigronMinecartLeft"
+    },
+    {
+      "Id": "226",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "SunflowerMinecartRight"
+    },
+    {
+      "Id": "227",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "SunflowerMinecartLeft"
+    },
+    {
+      "Id": "228",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "HellMinecartRight"
+    },
+    {
+      "Id": "229",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "HellMinecartLeft"
+    },
+    {
+      "Id": "230",
+      "DisplayName": "Witch's Broom",
+      "Link": "https://terraria.wiki.gg/wiki/Witch%27s_Broom",
+      "InternalName": "WitchBroom"
+    },
+    {
+      "Id": "231",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "ShroomMinecartRight"
+    },
+    {
+      "Id": "232",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "ShroomMinecartLeft"
+    },
+    {
+      "Id": "233",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "AmethystMinecartRight"
+    },
+    {
+      "Id": "234",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "AmethystMinecartLeft"
+    },
+    {
+      "Id": "235",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "TopazMinecartRight"
+    },
+    {
+      "Id": "236",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "TopazMinecartLeft"
+    },
+    {
+      "Id": "237",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "SapphireMinecartRight"
+    },
+    {
+      "Id": "238",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "SapphireMinecartLeft"
+    },
+    {
+      "Id": "239",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "EmeraldMinecartRight"
+    },
+    {
+      "Id": "240",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "EmeraldMinecartLeft"
+    },
+    {
+      "Id": "241",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "RubyMinecartRight"
+    },
+    {
+      "Id": "242",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "RubyMinecartLeft"
+    },
+    {
+      "Id": "243",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "DiamondMinecartRight"
+    },
+    {
+      "Id": "244",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "DiamondMinecartLeft"
+    },
+    {
+      "Id": "245",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "AmberMinecartRight"
+    },
+    {
+      "Id": "246",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "AmberMinecartLeft"
+    },
+    {
+      "Id": "247",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "BeetleMinecartRight"
+    },
+    {
+      "Id": "248",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "BeetleMinecartLeft"
+    },
+    {
+      "Id": "249",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "MeowmereMinecartRight"
+    },
+    {
+      "Id": "250",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "MeowmereMinecartLeft"
+    },
+    {
+      "Id": "251",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "PartyMinecartRight"
+    },
+    {
+      "Id": "252",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "PartyMinecartLeft"
+    },
+    {
+      "Id": "253",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "PirateMinecartRight"
+    },
+    {
+      "Id": "254",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "PirateMinecartLeft"
+    },
+    {
+      "Id": "255",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "SteampunkMinecartRight"
+    },
+    {
+      "Id": "256",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "SteampunkMinecartLeft"
+    },
+    {
+      "Id": "257",
+      "DisplayName": "Lucky",
+      "Link": "https://terraria.wiki.gg/wiki/Lucky_(buff)",
+      "InternalName": "Lucky"
+    },
+    {
+      "Id": "258",
+      "DisplayName": "Lil' Harpy",
+      "Link": "https://terraria.wiki.gg/wiki/Birdie_Rattle",
+      "InternalName": "LilHarpy"
+    },
+    {
+      "Id": "259",
+      "DisplayName": "Fennec Fox",
+      "Link": "https://terraria.wiki.gg/wiki/Exotic_Chew_Toy",
+      "InternalName": "FennecFox"
+    },
+    {
+      "Id": "260",
+      "DisplayName": "Glittery Butterfly",
+      "Link": "https://terraria.wiki.gg/wiki/Bedazzled_Nectar",
+      "InternalName": "GlitteryButterfly"
+    },
+    {
+      "Id": "261",
+      "DisplayName": "Baby Imp",
+      "Link": "https://terraria.wiki.gg/wiki/Slice_of_Hell_Cake",
+      "InternalName": "BabyImp"
+    },
+    {
+      "Id": "262",
+      "DisplayName": "Baby Red Panda",
+      "Link": "https://terraria.wiki.gg/wiki/Bamboo_Leaf",
+      "InternalName": "BabyRedPanda"
+    },
+    {
+      "Id": "263",
+      "DisplayName": "Desert Tiger",
+      "Link": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff",
+      "InternalName": "StormTiger"
+    },
+    {
+      "Id": "264",
+      "DisplayName": "Plantero",
+      "Link": "https://terraria.wiki.gg/wiki/Mud_Bud",
+      "InternalName": "Plantero"
+    },
+    {
+      "Id": "265",
+      "DisplayName": "Flamingo",
+      "Link": "https://terraria.wiki.gg/wiki/Mollusk_Whistle",
+      "InternalName": "Flamingo"
+    },
+    {
+      "Id": "266",
+      "DisplayName": "Dynamite Kitten",
+      "Link": "https://terraria.wiki.gg/wiki/Ball_O%27_Fuse_Wire",
+      "InternalName": "DynamiteKitten"
+    },
+    {
+      "Id": "267",
+      "DisplayName": "Baby Werewolf",
+      "Link": "https://terraria.wiki.gg/wiki/Full_Moon_Squeaky_Toy",
+      "InternalName": "BabyWerewolf"
+    },
+    {
+      "Id": "268",
+      "DisplayName": "Shadow Mimic",
+      "Link": "https://terraria.wiki.gg/wiki/Ornate_Shadow_Key",
+      "InternalName": "ShadowMimic"
+    },
+    {
+      "Id": "269",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "CoffinMinecartRight"
+    },
+    {
+      "Id": "270",
+      "DisplayName": "Minecart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "CoffinMinecartLeft"
+    },
+    {
+      "Id": "271",
+      "DisplayName": "Enchanted Daggers",
+      "Link": "https://terraria.wiki.gg/wiki/Blade_Staff",
+      "InternalName": "Smolstar"
+    },
+    {
+      "Id": "272",
+      "DisplayName": "Digging Molecart",
+      "Link": "https://terraria.wiki.gg/wiki/Digging_Molecart",
+      "InternalName": "DiggingMoleMinecartRight"
+    },
+    {
+      "Id": "273",
+      "DisplayName": "Digging Molecart",
+      "Link": "https://terraria.wiki.gg/wiki/Digging_Molecart",
+      "InternalName": "DiggingMoleMinecartLeft"
+    },
+    {
+      "Id": "274",
+      "DisplayName": "Volt Bunny",
+      "Link": "https://terraria.wiki.gg/wiki/Lightning_Carrot",
+      "InternalName": "VoltBunny"
+    },
+    {
+      "Id": "275",
+      "DisplayName": "Painted Horse Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Saddles",
+      "InternalName": "PaintedHorseMount"
+    },
+    {
+      "Id": "276",
+      "DisplayName": "Majestic Horse Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Saddles",
+      "InternalName": "MajesticHorseMount"
+    },
+    {
+      "Id": "277",
+      "DisplayName": "Dark Horse Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Saddles",
+      "InternalName": "DarkHorseMount"
+    },
+    {
+      "Id": "278",
+      "DisplayName": "Pogo Stick Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Pogo_Stick",
+      "InternalName": "PogoStickMount"
+    },
+    {
+      "Id": "279",
+      "DisplayName": "Pirate Ship Mount",
+      "Link": "https://terraria.wiki.gg/wiki/The_Black_Spot",
+      "InternalName": "PirateShipMount"
+    },
+    {
+      "Id": "280",
+      "DisplayName": "Tree Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Hexxed_Branch",
+      "InternalName": "SpookyWoodMount"
+    },
+    {
+      "Id": "281",
+      "DisplayName": "Santank Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Toy_Tank",
+      "InternalName": "SantankMount"
+    },
+    {
+      "Id": "282",
+      "DisplayName": "Goat Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Goat_Skull",
+      "InternalName": "WallOfFleshGoatMount"
+    },
+    {
+      "Id": "283",
+      "DisplayName": "Book Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Dark_Mage%27s_Tome",
+      "InternalName": "DarkMageBookMount"
+    },
+    {
+      "Id": "284",
+      "DisplayName": "Slime Prince",
+      "Link": "https://terraria.wiki.gg/wiki/Royal_Delight",
+      "InternalName": "KingSlimePet"
+    },
+    {
+      "Id": "285",
+      "DisplayName": "Suspicious Eye",
+      "Link": "https://terraria.wiki.gg/wiki/Suspicious_Grinning_Eye",
+      "InternalName": "EyeOfCthulhuPet"
+    },
+    {
+      "Id": "286",
+      "DisplayName": "Eater of Worms",
+      "Link": "https://terraria.wiki.gg/wiki/Writhing_Remains",
+      "InternalName": "EaterOfWorldsPet"
+    },
+    {
+      "Id": "287",
+      "DisplayName": "Spider Brain",
+      "Link": "https://terraria.wiki.gg/wiki/Brain_in_a_Jar",
+      "InternalName": "BrainOfCthulhuPet"
+    },
+    {
+      "Id": "288",
+      "DisplayName": "Skeletron Jr.",
+      "Link": "https://terraria.wiki.gg/wiki/Possessed_Skull",
+      "InternalName": "SkeletronPet"
+    },
+    {
+      "Id": "289",
+      "DisplayName": "Honey Bee",
+      "Link": "https://terraria.wiki.gg/wiki/Sparkling_Honey",
+      "InternalName": "QueenBeePet"
+    },
+    {
+      "Id": "290",
+      "DisplayName": "Destroyer-Lite",
+      "Link": "https://terraria.wiki.gg/wiki/Deactivated_Probe",
+      "InternalName": "DestroyerPet"
+    },
+    {
+      "Id": "291",
+      "DisplayName": "Rez and Spaz",
+      "Link": "https://terraria.wiki.gg/wiki/Pair_of_Eyeballs",
+      "InternalName": "TwinsPet"
+    },
+    {
+      "Id": "292",
+      "DisplayName": "Mini Prime",
+      "Link": "https://terraria.wiki.gg/wiki/Robotic_Skull",
+      "InternalName": "SkeletronPrimePet"
+    },
+    {
+      "Id": "293",
+      "DisplayName": "Plantera Seedling",
+      "Link": "https://terraria.wiki.gg/wiki/Plantera_Seedling",
+      "InternalName": "PlanteraPet"
+    },
+    {
+      "Id": "294",
+      "DisplayName": "Toy Golem",
+      "Link": "https://terraria.wiki.gg/wiki/Guardian_Golem",
+      "InternalName": "GolemPet"
+    },
+    {
+      "Id": "295",
+      "DisplayName": "Tiny Fishron",
+      "Link": "https://terraria.wiki.gg/wiki/Pork_of_the_Sea",
+      "InternalName": "DukeFishronPet"
+    },
+    {
+      "Id": "296",
+      "DisplayName": "Phantasmal Dragon",
+      "Link": "https://terraria.wiki.gg/wiki/Tablet_Fragment",
+      "InternalName": "LunaticCultistPet"
+    },
+    {
+      "Id": "297",
+      "DisplayName": "Moonling",
+      "Link": "https://terraria.wiki.gg/wiki/Piece_of_Moon_Squid",
+      "InternalName": "MoonLordPet"
+    },
+    {
+      "Id": "298",
+      "DisplayName": "Fairy Princess",
+      "Link": "https://terraria.wiki.gg/wiki/Jewel_of_Light",
+      "InternalName": "FairyQueenPet"
+    },
+    {
+      "Id": "299",
+      "DisplayName": "Jack 'O Lantern",
+      "Link": "https://terraria.wiki.gg/wiki/Pumpkin_Scented_Candle",
+      "InternalName": "PumpkingPet"
+    },
+    {
+      "Id": "300",
+      "DisplayName": "Everscream Sapling",
+      "Link": "https://terraria.wiki.gg/wiki/Shrub_Star",
+      "InternalName": "EverscreamPet"
+    },
+    {
+      "Id": "301",
+      "DisplayName": "Ice Queen",
+      "Link": "https://terraria.wiki.gg/wiki/Frozen_Crown",
+      "InternalName": "IceQueenPet"
+    },
+    {
+      "Id": "302",
+      "DisplayName": "Alien Skater",
+      "Link": "https://terraria.wiki.gg/wiki/Cosmic_Skateboard",
+      "InternalName": "MartianPet"
+    },
+    {
+      "Id": "303",
+      "DisplayName": "Baby Ogre",
+      "Link": "https://terraria.wiki.gg/wiki/Ogre%27s_Club",
+      "InternalName": "DD2OgrePet"
+    },
+    {
+      "Id": "304",
+      "DisplayName": "Itsy Betsy",
+      "Link": "https://terraria.wiki.gg/wiki/Betsy%27s_Egg",
+      "InternalName": "DD2BetsyPet"
+    },
+    {
+      "Id": "305",
+      "DisplayName": "Lava Shark Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Superheated_Blood",
+      "InternalName": "LavaSharkMount"
+    },
+    {
+      "Id": "306",
+      "DisplayName": "Titanium Barrier",
+      "Link": "https://terraria.wiki.gg/wiki/Titanium_armor",
+      "InternalName": "TitaniumStorm"
+    },
+    {
+      "Id": "307",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "BlandWhipEnemyDebuff"
+    },
+    {
+      "Id": "308",
+      "DisplayName": "Durendal's Blessing",
+      "Link": "https://terraria.wiki.gg/wiki/Durendal",
+      "InternalName": "SwordWhipPlayerBuff"
+    },
+    {
+      "Id": "309",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "SwordWhipNPCDebuff"
+    },
+    {
+      "Id": "310",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "ScytheWhipEnemyDebuff"
+    },
+    {
+      "Id": "311",
+      "DisplayName": "Harvest Time",
+      "Link": "https://terraria.wiki.gg/wiki/Dark_Harvest",
+      "InternalName": "ScytheWhipPlayerBuff"
+    },
+    {
+      "Id": "312",
+      "DisplayName": "A Nice Buff",
+      "Link": "https://terraria.wiki.gg/wiki/Cool_Whip",
+      "InternalName": "CoolWhipPlayerBuff"
+    },
+    {
+      "Id": "313",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "FlameWhipEnemyDebuff"
+    },
+    {
+      "Id": "314",
+      "DisplayName": "Jungle's Fury",
+      "Link": "https://terraria.wiki.gg/wiki/Snapthorn",
+      "InternalName": "ThornWhipPlayerBuff"
+    },
+    {
+      "Id": "315",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "ThornWhipNPCDebuff"
+    },
+    {
+      "Id": "316",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "RainbowWhipNPCDebuff"
+    },
+    {
+      "Id": "317",
+      "DisplayName": "Slime Princess",
+      "Link": "https://terraria.wiki.gg/wiki/Regal_Delicacy",
+      "InternalName": "QueenSlimePet"
+    },
+    {
+      "Id": "318",
+      "DisplayName": "Winged Slime Mount",
+      "Link": "https://terraria.wiki.gg/wiki/Gelatinous_Pillion",
+      "InternalName": "QueenSlimeMount"
+    },
+    {
+      "Id": "319",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "MaceWhipNPCDebuff"
+    },
+    {
+      "Id": "320",
+      "DisplayName": "Sparkle Slime",
+      "Link": "https://terraria.wiki.gg/wiki/Sparkle_Slime_Balloon",
+      "InternalName": "GelBalloonBuff"
+    },
+    {
+      "Id": "321",
+      "DisplayName": "Cerebral Mindtrick",
+      "Link": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+      "InternalName": "BrainOfConfusionBuff"
+    },
+    {
+      "Id": "322",
+      "DisplayName": "Terraprisma",
+      "Link": "https://terraria.wiki.gg/wiki/Terraprisma",
+      "InternalName": "EmpressBlade"
+    },
+    {
+      "Id": "323",
+      "DisplayName": "Hellfire",
+      "Link": "https://terraria.wiki.gg/wiki/Hellfire",
+      "InternalName": "OnFire3"
+    },
+    {
+      "Id": "324",
+      "DisplayName": "Frostbite",
+      "Link": "https://terraria.wiki.gg/wiki/Frostbite",
+      "InternalName": "Frostburn2"
+    },
+    {
+      "Id": "325",
+      "DisplayName": "Flinx",
+      "Link": "https://terraria.wiki.gg/wiki/Flinx_Staff",
+      "InternalName": "FlinxMinion"
+    },
+    {
+      "Id": "326",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "BoneWhipNPCDebuff"
+    },
+    {
+      "Id": "327",
+      "DisplayName": "Bernie",
+      "Link": "https://terraria.wiki.gg/wiki/Bernie%27s_Button",
+      "InternalName": "BerniePet"
+    },
+    {
+      "Id": "328",
+      "DisplayName": "Glommer",
+      "Link": "https://terraria.wiki.gg/wiki/Glommer%27s_Flower",
+      "InternalName": "GlommerPet"
+    },
+    {
+      "Id": "329",
+      "DisplayName": "Tiny Deerclops",
+      "Link": "https://terraria.wiki.gg/wiki/Deerclops_Eyeball",
+      "InternalName": "DeerclopsPet"
+    },
+    {
+      "Id": "330",
+      "DisplayName": "Pig",
+      "Link": "https://terraria.wiki.gg/wiki/Monster_Meat",
+      "InternalName": "PigPet"
+    },
+    {
+      "Id": "331",
+      "DisplayName": "Chester",
+      "Link": "https://terraria.wiki.gg/wiki/Eye_Bone",
+      "InternalName": "ChesterPet"
+    },
+    {
+      "Id": "332",
+      "DisplayName": "Peckish",
+      "Link": "https://terraria.wiki.gg/wiki/Hunger",
+      "InternalName": "NeutralHunger"
+    },
+    {
+      "Id": "333",
+      "DisplayName": "Hungry",
+      "Link": "https://terraria.wiki.gg/wiki/Hunger",
+      "InternalName": "Hunger"
+    },
+    {
+      "Id": "334",
+      "DisplayName": "Starving",
+      "Link": "https://terraria.wiki.gg/wiki/Hunger",
+      "InternalName": "Starving"
+    },
+    {
+      "Id": "335",
+      "DisplayName": "Abigail",
+      "Link": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
+      "InternalName": "AbigailMinion"
+    },
+    {
+      "Id": "336",
+      "DisplayName": "Hearty Meal",
+      "Link": "https://terraria.wiki.gg/wiki/Ham_Bat",
+      "InternalName": "HeartyMeal"
+    },
+    {
+      "Id": "337",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "TentacleSpike"
+    },
+    {
+      "Id": "338",
+      "DisplayName": "Fart Kart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "FartMinecartRight"
+    },
+    {
+      "Id": "339",
+      "DisplayName": "Fart Kart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "FartMinecartLeft"
+    },
+    {
+      "Id": "340",
+      "DisplayName": "",
+      "Link": "No link",
+      "InternalName": "CoolWhipNPCDebuff"
+    },
+    {
+      "Id": "341",
+      "DisplayName": "Slime Royals",
+      "Link": "https://terraria.wiki.gg/wiki/Resplendent_Dessert",
+      "InternalName": "DualSlimePet"
+    },
+    {
+      "Id": "342",
+      "DisplayName": "Blessing of the Moon",
+      "Link": "https://terraria.wiki.gg/wiki/Lilith%27s_Necklace",
+      "InternalName": "WolfMount"
+    },
+    {
+      "Id": "343",
+      "DisplayName": "Biome Sight",
+      "Link": "https://terraria.wiki.gg/wiki/Biome_Sight_Potion",
+      "InternalName": "BiomeSight"
+    },
+    {
+      "Id": "344",
+      "DisplayName": "Blood Butchered",
+      "Link": "https://terraria.wiki.gg/wiki/Blood_Butcherer",
+      "InternalName": "BloodButcherer"
+    },
+    {
+      "Id": "345",
+      "DisplayName": "Junimo",
+      "Link": "https://terraria.wiki.gg/wiki/Stardrop",
+      "InternalName": "JunimoPet"
+    },
+    {
+      "Id": "346",
+      "DisplayName": "Terra Fart Kart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "TerraFartMinecartRight"
+    },
+    {
+      "Id": "347",
+      "DisplayName": "Terra Fart Kart",
+      "Link": "https://terraria.wiki.gg/wiki/Minecart",
+      "InternalName": "TerraFartMinecartLeft"
+    },
+    {
+      "Id": "348",
+      "DisplayName": "Strategist",
+      "Link": "https://terraria.wiki.gg/wiki/War_Table",
+      "InternalName": "WarTable"
+    },
+    {
+      "Id": "349",
+      "DisplayName": "Blue Chicken",
+      "Link": "https://terraria.wiki.gg/wiki/Blue_Chicken_Egg",
+      "InternalName": "BlueChickenPet"
+    },
+    {
+      "Id": "350",
+      "DisplayName": "Shadow Candle",
+      "Link": "https://terraria.wiki.gg/wiki/Shadow_Candle",
+      "InternalName": "ShadowCandle"
+    },
+    {
+      "Id": "351",
+      "DisplayName": "Spiffo",
+      "Link": "https://terraria.wiki.gg/wiki/Spiffo_Plush",
+      "InternalName": "Spiffo"
+    },
+    {
+      "Id": "352",
+      "DisplayName": "Caveling Gardener",
+      "Link": "https://terraria.wiki.gg/wiki/Glow_Tulip",
+      "InternalName": "CavelingGardener"
+    },
+    {
+      "Id": "353",
+      "DisplayName": "Shimmering",
+      "Link": "https://terraria.wiki.gg/wiki/Shimmering",
+      "InternalName": "Shimmer"
+    },
+    {
+      "Id": "354",
+      "DisplayName": "The Dirtiest Block",
+      "Link": "https://terraria.wiki.gg/wiki/The_Dirtiest_Block",
+      "InternalName": "DirtiestBlock"
+    }
+  ]
+}
