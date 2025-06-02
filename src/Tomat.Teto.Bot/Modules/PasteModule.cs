@@ -31,25 +31,35 @@ public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext
 
     private async Task GeneratePastes(IMessage message, bool genMessage, bool genAttachments)
     {
+        await RespondAsync("Generating pastes...");
+
         if (genAttachments && !genMessage && message.Attachments.Count == 0)
         {
-            await RespondAsync(
-                embed: new EmbedBuilder()
-                      .WithTitle("No attachments")
-                      .WithDescription("Cannot make pastes for message with no attachments")
-                      .WithCurrentTimestamp()
-                      .Build()
+            await ModifyOriginalResponseAsync(
+                x =>
+                {
+                    x.Content = null;
+                    x.Embed = new EmbedBuilder()
+                             .WithTitle("No attachments")
+                             .WithDescription("Cannot make pastes for message with no attachments")
+                             .WithCurrentTimestamp()
+                             .Build();
+                }
             );
             return;
         }
 
         var links = await Paste.GenerateLinks(message, genMessage, genAttachments);
-        await RespondAsync(
-            embed: new EmbedBuilder()
-                  .WithTitle("Pastes")
-                  .WithDescription(string.Join('\n', links))
-                  .WithCurrentTimestamp()
-                  .Build()
+        await ModifyOriginalResponseAsync(
+            x =>
+            {
+                x.Content = null;
+                x.Embed = new EmbedBuilder()
+                         .WithTitle("Pastes")
+                         .WithDescription(string.Join('\n', links))
+                         .WithCurrentTimestamp()
+                         .Build();
+            }
         );
     }
 }
