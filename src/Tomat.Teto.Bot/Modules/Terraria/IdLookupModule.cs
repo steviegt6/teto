@@ -1,7 +1,9 @@
 using Discord;
 using Discord.Interactions;
+
 using System;
 using System.Threading.Tasks;
+
 using Tomat.Teto.Bot.Services;
 
 namespace Tomat.Teto.Bot.Modules.Terraria;
@@ -11,69 +13,113 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
     public TmlIdService Ids { get; set; }
 
     [SlashCommand("ammo-id", description: "Gets data about an ammo using its ID or internal name.")]
-    public async Task AmmoId([Autocomplete(typeof(AmmoAutocomplete)), Summary("AmmoID", "Ammo ID or internal name.")] string id)
-        => await ContentQuery("ammoid", id);
+    public async Task AmmoId(
+        [Autocomplete(typeof(AmmoAutocomplete)), Summary("id", "Ammo ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Ammo ID", "ammoid", id);
+    }
 
     [SlashCommand("buff-id", description: "Gets data about a buff using its ID or internal name.")]
-    public async Task BuffId([Autocomplete(typeof(BuffAutocomplete)), Summary("BuffID", "Buff ID or internal name.")] string id)
-        => await ContentQuery("buffid", id);
+    public async Task BuffId(
+        [Autocomplete(typeof(BuffAutocomplete)), Summary("id", "Buff ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Buff ID", "buffid", id);
+    }
 
     [SlashCommand("dust-id", description: "Gets data about a dust using its ID or internal name.")]
-    public async Task DustId([Autocomplete(typeof(DustAutocomplete)), Summary("DustID", "Dust ID or internal name.")] string id)
-        => await ContentQuery("dustid", id);
+    public async Task DustId(
+        [Autocomplete(typeof(DustAutocomplete)), Summary("id", "Dust ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Dust ID", "dustid", id);
+    }
 
     [SlashCommand("glowmask-id", description: "Gets data about a glow mask using its ID or internal name.")]
-    public async Task GlowMaskId([Autocomplete(typeof(GlowMaskAutocomplete)), Summary("GlowMaskID", "GlowMask ID or internal name.")] string id)
-        => await ContentQuery("glowmaskid", id);
+    public async Task GlowmaskId(
+        [Autocomplete(typeof(GlowMaskAutocomplete)), Summary("id", "Glowmask ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Glowmask ID", "glowmaskid", id);
+    }
 
     [SlashCommand("gore-id", description: "Gets data about a gore using its ID or internal name.")]
-    public async Task GoreId([Autocomplete(typeof(GoreAutocomplete)), Summary("GoreID", "Gore ID or internal name.")] string id)
-        => await ContentQuery("goreid", id);
+    public async Task GoreId(
+        [Autocomplete(typeof(GoreAutocomplete)), Summary("id", "Gore ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Gore ID", "goreid", id);
+    }
 
     [SlashCommand("item-id", description: "Gets data about an item using its ID or internal name.")]
-    public async Task ItemId([Autocomplete(typeof(ItemAutocomplete)), Summary("ItemID", "Item ID or internal name.")] string id)
-        => await ContentQuery("itemid", id);
+    public async Task ItemId(
+        [Autocomplete(typeof(ItemAutocomplete)), Summary("id", "Item ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Item ID", "itemid", id);
+    }
 
     [SlashCommand("mount-id", description: "Gets data about a mount using its ID or internal name.")]
-    public async Task MountId([Autocomplete(typeof(MountAutocomplete)), Summary("MountID", "Mount ID or internal name.")] string id)
-        => await ContentQuery("mountid", id);
+    public async Task MountId(
+        [Autocomplete(typeof(MountAutocomplete)), Summary("id", "Mount ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Mount ID", "mountid", id);
+    }
 
     [SlashCommand("npc-id", description: "Gets data about an NPC using its ID or internal name.")]
-    public async Task NPCId([Autocomplete(typeof(NPCAutocomplete)), Summary("NPCID", "NPC ID or internal name.")] string id)
-        => await ContentQuery("npcid", id);
+    public async Task NpcId(
+        [Autocomplete(typeof(NPCAutocomplete)), Summary("id", "NPC ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("NPC ID", "npcid", id);
+    }
 
     [SlashCommand("prefix-id", description: "Gets data about a prefix using its ID or internal name.")]
-    public async Task PrefixId([Autocomplete(typeof(PrefixAutocomplete)), Summary("PrefixID", "Prefix ID or internal name.")] string id)
-        => await ContentQuery("prefixid", id);
+    public async Task PrefixId(
+        [Autocomplete(typeof(PrefixAutocomplete)), Summary("id", "Prefix ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Prefix ID", "prefixid", id);
+    }
 
     [SlashCommand("projectile-id", description: "Gets data about a projectile using its ID or internal name.")]
-    public async Task ProjectileId([Autocomplete(typeof(ProjectileAutocomplete)), Summary("ProjectileID", "Projectile ID or internal name.")] string id)
-        => await ContentQuery("projectileid", id);
+    public async Task ProjectileId(
+        [Autocomplete(typeof(ProjectileAutocomplete)), Summary("id", "Projectile ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Projectile ID", "projectileid", id);
+    }
 
     [SlashCommand("sound-id", description: "Gets data about a sound using its ID or internal name.")]
-    public async Task SoundId([Autocomplete(typeof(SoundAutocomplete)), Summary("SoundID", "Sound ID or internal name.")] string id)
-        => await ContentQuery("soundid", id);
+    public async Task SoundId(
+        [Autocomplete(typeof(SoundAutocomplete)), Summary("id", "Sound ID or internal name.")] string id
+    )
+    {
+        await ContentQuery("Sound ID", "soundid", id);
+    }
 
     [SlashCommand("wall-id", description: "Gets data about a wall using its ID or internal name.")]
-    public async Task WallId([Autocomplete(typeof(WallAutocomplete)), Summary("WallID", "Wall ID or internal name.")] string id)
-        => await ContentQuery("wallid", id);
-
-    public async Task ContentQuery(string content, string id)
+    public async Task WallId(
+        [Autocomplete(typeof(WallAutocomplete)), Summary("id", "Wall ID or internal name.")] string id
+    )
     {
-        TmlIdService.IdSearch search = Ids.SearchByContentType[content];
+        await ContentQuery("Wall ID", "wallid", id);
+    }
 
-        TmlIdService.IdData data = null;
+    private async Task ContentQuery(string idDisplayName, string content, string id)
+    {
+        var search = Ids.SearchByContentType[content];
 
-        if (!search.DataByNumericalId.TryGetValue(id, out data))
+        if (!search.DataByNumericalId.TryGetValue(id, out var data)
+         && !search.DataByInternalName.TryGetValue(id.ToLower(), out data))
         {
-            if (!search.DataByInternalName.TryGetValue(id.ToLower(), out data))
-            {
-                await Failure();
-                return;
-            }
+            await Failure();
+            return;
         }
 
-        if (data == null)
+        if (data is null)
         {
             await Failure();
             return;
@@ -83,18 +129,19 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         {
             await RespondAsync(
                 embed: new EmbedBuilder()
-                .WithTitle("ID not found")
-                .WithDescription($"Could not find content with the identifier \"{id}\".")
-                .WithCurrentTimestamp()
-                .Build());
+                      .WithTitle("ID not found")
+                      .WithDescription($"Could not find content with the identifier \"{id}\".")
+                      .WithCurrentTimestamp()
+                      .Build()
+            );
         }
 
         var builder = new EmbedBuilder()
-            .WithTitle($"{content.ToUpper()} data for '{id}'")
-            .WithCurrentTimestamp()
-            .AddField("# ID:", data.Id)
-            .AddField("Internal:", $"`{data.InternalName}`")
-            .AddField("Display Name:", data.DisplayName);
+                     .WithTitle($"{idDisplayName} data for '{id}'")
+                     .WithCurrentTimestamp()
+                     .AddField("# ID:", data.Id)
+                     .AddField("Internal:", $"`{data.InternalName}`")
+                     .AddField("Display Name:", data.DisplayName);
 
         if (data.Link != "No link")
         {
@@ -117,9 +164,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("ammoid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("ammoid", current)
+                )
+            );
         }
     }
 
@@ -135,9 +184,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("buffid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("buffid", current)
+                )
+            );
         }
     }
 
@@ -153,9 +204,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("dustid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("dustid", current)
+                )
+            );
         }
     }
 
@@ -171,9 +224,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("glowmaskid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("glowmaskid", current)
+                )
+            );
         }
     }
 
@@ -189,9 +244,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("goreid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("goreid", current)
+                )
+            );
         }
     }
 
@@ -207,9 +264,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("itemid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("itemid", current)
+                )
+            );
         }
     }
 
@@ -225,9 +284,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("mountid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("mountid", current)
+                )
+            );
         }
     }
 
@@ -243,9 +304,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("npcid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("npcid", current)
+                )
+            );
         }
     }
 
@@ -261,9 +324,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("prefixid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("prefixid", current)
+                )
+            );
         }
     }
 
@@ -279,9 +344,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("projectileid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("projectileid", current)
+                )
+            );
         }
     }
 
@@ -297,9 +364,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("soundid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("soundid", current)
+                )
+            );
         }
     }
 
@@ -315,9 +384,11 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         )
         {
             var current = autocompleteInteraction.Data.Current.Value?.ToString() ?? string.Empty;
-            return Task.FromResult(AutocompletionResult.FromSuccess(
-                Ids.GenerateContentAutos("wallid", current)
-            ));
+            return Task.FromResult(
+                AutocompletionResult.FromSuccess(
+                    Ids.GenerateContentAutos("wallid", current)
+                )
+            );
         }
     }
 }

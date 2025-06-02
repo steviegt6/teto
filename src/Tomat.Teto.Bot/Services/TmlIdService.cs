@@ -2,25 +2,31 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+
 using Discord;
+
+using Tomat.Teto.Bot.DependencyInjection;
 
 namespace Tomat.Teto.Bot.Services;
 
-public sealed class TmlIdService
+public sealed class TmlIdService : IService
 {
     public sealed class IdData(string id, string displayName, string link, string internalName)
     {
         public string Id { get; set; } = id;
+
         public string DisplayName { get; set; } = displayName;
+
         public string Link { get; set; } = link;
+
         public string InternalName { get; set; } = internalName;
     }
 
     public sealed class IdSearch
     {
-        public Dictionary<string, IdData> DataByNumericalId { get; set; } = [];
+        public Dictionary<string, IdData?> DataByNumericalId { get; set; } = [];
 
-        public Dictionary<string, IdData> DataByInternalName { get; set; } = [];
+        public Dictionary<string, IdData?> DataByInternalName { get; set; } = [];
     }
 
     private sealed class IdCollection
@@ -42,26 +48,26 @@ public sealed class TmlIdService
         searchByContentType = [];
         autocompleteByContentType = [];
 
-        string[] idFiles = Directory.GetFiles(id_directory);
+        var idFiles = Directory.GetFiles(id_directory);
 
-        foreach (string idFile in idFiles)
+        foreach (var idFile in idFiles)
         {
-            string data = File.ReadAllText(idFile);
+            var data = File.ReadAllText(idFile);
 
-            IdCollection idData = JsonSerializer.Deserialize<IdCollection>(data) ?? throw new Exception();
+            var idData = JsonSerializer.Deserialize<IdCollection>(data) ?? throw new Exception();
 
-            string lowerId = Path.GetFileNameWithoutExtension(idFile).ToLower();
+            var lowerId = Path.GetFileNameWithoutExtension(idFile).ToLower();
 
             // Remove the trailing s from 'ids'.
-            string idName = lowerId.Substring(0, lowerId.Length - 1);
+            var idName = lowerId[..^1];
 
             IdSearch search = new();
 
             autocompleteByContentType[idName] = [];
 
-            foreach (IdData entry in idData.Ids)
+            foreach (var entry in idData.Ids)
             {
-                string correctedDualId = entry.Id.Replace(" ", "_");
+                var correctedDualId = entry.Id.Replace(" ", "_");
 
                 // Replace HTML spaces with a regular one.
                 entry.DisplayName = entry.DisplayName.Replace("&nbsp;", " ");
