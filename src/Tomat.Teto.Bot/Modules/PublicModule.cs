@@ -43,6 +43,8 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
                             + $"\nThis bot is admin'd by @tomat and @olihh and is not officially endorsed by any servers it's in (notably not endorsed by tModLoader)."
                             + $"\nSupport the bot's development here: https://ko-fi.com/steviegt6"
                             + $"\nJoin this server for assistance: discord.gg/6Fm4ZTHVub"
+                            + $"\n"
+                            + $"\nThis bot is open-source software available here (give it a star!): https://github.com/steviegt6/teto"
                           )
                          .WithCurrentTimestamp()
                          .Build();
