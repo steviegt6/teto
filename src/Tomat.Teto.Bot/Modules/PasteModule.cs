@@ -23,7 +23,7 @@ public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext
     [SlashCommand("genpastes", "Generates pastes")]
     public async Task GeneratePaste(Mode mode)
     {
-        if (MessageSelect.GetUserMessage(Context.User, pop: true) is not { } msg)
+        if (MessageSelect.GetUserMessage(Context.User, pop: false) is not { } msg)
         {
             await RespondAsync("No message selected!", ephemeral: true);
             return;
