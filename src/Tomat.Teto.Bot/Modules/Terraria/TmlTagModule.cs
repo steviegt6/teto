@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 
 using Discord;
 using Discord.Interactions;
+using Discord.Interactions.Builders;
 using Discord.WebSocket;
 
 using Tomat.Teto.Bot.Models;
@@ -84,6 +85,13 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
     public DiscordSocketClient Client { get; set; }
 
     public TmlTagService Tags { get; set; }
+
+    public override void Construct(ModuleBuilder builder, InteractionService commandService)
+    {
+        base.Construct(builder, commandService);
+
+        Client.ButtonExecuted += ButtonExecuted_HandleTagInfo;
+    }
 
     [SlashCommand("t", description: "Displays a global or user tML tag")]
     public async Task GenericTag(
@@ -192,8 +200,60 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private async Task DisplayTag(TmlTag tag)
     {
-        var message = tag.Value + $"\n-# tag: {tag.Identity.Name} (owner: {tag.Identity.OwnerString}, global: {tag.IsGlobal.ToString().ToLowerInvariant()})";
+        /*var message = tag.Value + $"\n-# tag: {tag.Identity.Name} (owner: {tag.Identity.OwnerString}, global: {tag.IsGlobal.ToString().ToLowerInvariant()})";
 
-        await RespondAsync(message);
+        await RespondAsync(message);*/
+
+        await RespondAsync(
+            text: tag.Value,
+            components: new ComponentBuilder()
+                       .WithButton(
+                            label: "Tag Info",
+                            customId: $"tag {tag.Identity.Owner} {tag.Identity.Name}",
+                            emote: Emoji.Parse(":information_source:")
+                        ).Build()
+        );
+    }
+
+    private async Task ButtonExecuted_HandleTagInfo(SocketMessageComponent component)
+    {
+        if (component.Data.CustomId.Split(' ') is not { Length: 3 } args)
+        {
+            return;
+        }
+
+        if (args[0] != "tag")
+        {
+            return;
+        }
+
+        if (!Tags.UserTags.TryGetValue(args[1], out var userTags))
+        {
+            return;
+        }
+
+        if (!userTags.TryGetValue(args[2], out var tag))
+        {
+            return;
+        }
+
+        var user = Client.GetUser(tag.Identity.Owner);
+        var userInfo = user is null ? $"({tag.Identity.OwnerString})" : $"({user.Username}, {tag.Identity.OwnerString})";
+        var author = user is null ? new EmbedAuthorBuilder().WithName(tag.Identity.OwnerString) : new EmbedAuthorBuilder().WithName(user.Username).WithIconUrl(user.GetAvatarUrl());
+
+        await component.RespondAsync(
+            embed: new EmbedBuilder()
+                  .WithTitle($"Tag: {tag.Identity.Name}")
+                  .WithAuthor(author)
+                  .WithDescription(
+                       $"Author: <@{tag.Identity.OwnerString}> {userInfo}"
+                     + $"\nIs global: {tag.IsGlobal.ToString().ToLowerInvariant()}"
+                     + $"\n"
+                     + $"\nThis bot uses an archive of the tModLoader bot tags provided May 1 2025 5:10 PM CDT and may not reflect the most update-to-date tag repository (message [here](https://canary.discord.com/channels/103110554649894912/445276626352209920/1367624237212369036))."
+                   )
+                  .WithCurrentTimestamp()
+                  .Build(),
+            ephemeral: true
+        );
     }
 }
