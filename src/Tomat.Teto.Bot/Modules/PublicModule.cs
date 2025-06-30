@@ -44,7 +44,7 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
                             + $"\nSupport the bot's development here: https://ko-fi.com/steviegt6"
                             + $"\nJoin this server for assistance: discord.gg/6Fm4ZTHVub"
                             + $"\n"
-                            + $"\nThis bot is open-source software available here (give it a star!): https://github.com/steviegt6/teto"
+                            + $"\nThis bot is free and open-source software available here (give it a star!): https://github.com/steviegt6/teto"
                           )
                          .WithCurrentTimestamp()
                          .Build();
