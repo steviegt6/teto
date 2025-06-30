@@ -41,6 +41,7 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
                             + $"\nBot up-time: <t:{UptimeService.StartTime.ToUnixTimeSeconds()}:R> ({UptimeService.Uptime.Days}d {UptimeService.Uptime.Hours}h {UptimeService.Uptime.Minutes}m {UptimeService.Uptime.Seconds}s)"
                             + $"\n"
                             + $"\nThis bot is admin'd by @tomat and @olihh and is not officially endorsed by any servers it's in (notably not endorsed by tModLoader)."
+                            + $"\nSupport the bot's development here: https://ko-fi.com/steviegt6"
                             + $"\nJoin this server for assistance: discord.gg/6Fm4ZTHVub"
                           )
                          .WithCurrentTimestamp()
