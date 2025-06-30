@@ -9,24 +9,27 @@ namespace Tomat.Teto.Bot.Modules;
 
 public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext>
 {
+    public enum Mode
+    {
+        Message,
+        Attachments,
+        Both,
+    }
+    
     public PasteService Paste { get; set; }
 
-    [MessageCommand("Hastebin: messages & attachments")]
-    public async Task GeneratePasteAll(IMessage message)
-    {
-        await GeneratePastes(message, genMessage: true, genAttachments: true);
-    }
+    public MessageSelectService MessageSelect { get; set; }
 
-    [MessageCommand("Hastebin: message")]
-    public async Task GeneratePasteMessage(IMessage message)
+    [SlashCommand("genpastes", "Generates pastes")]
+    public async Task GeneratePaste(Mode mode)
     {
-        await GeneratePastes(message, genMessage: true, genAttachments: false);
-    }
-
-    [MessageCommand("Hastebin: attachments")]
-    public async Task GeneratePasteAttachments(IMessage message)
-    {
-        await GeneratePastes(message, genMessage: false, genAttachments: true);
+        if (MessageSelect.GetUserMessage(Context.User, pop: true) is not { } msg)
+        {
+            await RespondAsync("No message selected!", ephemeral: true);
+            return;
+        }
+        
+        await GeneratePastes(msg, genMessage: mode is Mode.Message or Mode.Both, genAttachments: mode is Mode.Attachments or Mode.Both);
     }
 
     private async Task GeneratePastes(IMessage message, bool genMessage, bool genAttachments)

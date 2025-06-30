@@ -31,6 +31,7 @@ internal static class Program
             services.TryAddService<TmlIdService>();
             services.TryAddService<PasteService>();
             services.TryAddService<UptimeService>();
+            services.TryAddService<MessageSelectService>();
         }
 
         var client = services.ExpectService<DiscordSocketClient>();
