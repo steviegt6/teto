@@ -12,7 +12,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
 {
     public TmlIdService Ids { get; set; }
 
-    [SlashCommand("ammo-id", description: "Gets data about an ammo using its ID or internal name.")]
+    [SlashCommand("ammoid", description: "Gets data about an ammo using its ID or internal name.")]
     public async Task AmmoId(
         [Autocomplete(typeof(AmmoAutocomplete)), Summary("id", "Ammo ID or internal name.")] string id
     )
@@ -20,7 +20,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Ammo ID", "ammoid", id);
     }
 
-    [SlashCommand("buff-id", description: "Gets data about a buff using its ID or internal name.")]
+    [SlashCommand("buffid", description: "Gets data about a buff using its ID or internal name.")]
     public async Task BuffId(
         [Autocomplete(typeof(BuffAutocomplete)), Summary("id", "Buff ID or internal name.")] string id
     )
@@ -28,7 +28,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Buff ID", "buffid", id);
     }
 
-    [SlashCommand("dust-id", description: "Gets data about a dust using its ID or internal name.")]
+    [SlashCommand("dustid", description: "Gets data about a dust using its ID or internal name.")]
     public async Task DustId(
         [Autocomplete(typeof(DustAutocomplete)), Summary("id", "Dust ID or internal name.")] string id
     )
@@ -36,7 +36,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Dust ID", "dustid", id);
     }
 
-    [SlashCommand("glowmask-id", description: "Gets data about a glow mask using its ID or internal name.")]
+    [SlashCommand("glowmaskid", description: "Gets data about a glow mask using its ID or internal name.")]
     public async Task GlowmaskId(
         [Autocomplete(typeof(GlowMaskAutocomplete)), Summary("id", "Glowmask ID or internal name.")] string id
     )
@@ -44,7 +44,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Glowmask ID", "glowmaskid", id);
     }
 
-    [SlashCommand("gore-id", description: "Gets data about a gore using its ID or internal name.")]
+    [SlashCommand("goreid", description: "Gets data about a gore using its ID or internal name.")]
     public async Task GoreId(
         [Autocomplete(typeof(GoreAutocomplete)), Summary("id", "Gore ID or internal name.")] string id
     )
@@ -52,7 +52,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Gore ID", "goreid", id);
     }
 
-    [SlashCommand("item-id", description: "Gets data about an item using its ID or internal name.")]
+    [SlashCommand("itemid", description: "Gets data about an item using its ID or internal name.")]
     public async Task ItemId(
         [Autocomplete(typeof(ItemAutocomplete)), Summary("id", "Item ID or internal name.")] string id
     )
@@ -60,7 +60,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Item ID", "itemid", id);
     }
 
-    [SlashCommand("mount-id", description: "Gets data about a mount using its ID or internal name.")]
+    [SlashCommand("mountid", description: "Gets data about a mount using its ID or internal name.")]
     public async Task MountId(
         [Autocomplete(typeof(MountAutocomplete)), Summary("id", "Mount ID or internal name.")] string id
     )
@@ -68,7 +68,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Mount ID", "mountid", id);
     }
 
-    [SlashCommand("npc-id", description: "Gets data about an NPC using its ID or internal name.")]
+    [SlashCommand("npcid", description: "Gets data about an NPC using its ID or internal name.")]
     public async Task NpcId(
         [Autocomplete(typeof(NPCAutocomplete)), Summary("id", "NPC ID or internal name.")] string id
     )
@@ -76,7 +76,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("NPC ID", "npcid", id);
     }
 
-    [SlashCommand("prefix-id", description: "Gets data about a prefix using its ID or internal name.")]
+    [SlashCommand("prefixid", description: "Gets data about a prefix using its ID or internal name.")]
     public async Task PrefixId(
         [Autocomplete(typeof(PrefixAutocomplete)), Summary("id", "Prefix ID or internal name.")] string id
     )
@@ -84,7 +84,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Prefix ID", "prefixid", id);
     }
 
-    [SlashCommand("projectile-id", description: "Gets data about a projectile using its ID or internal name.")]
+    [SlashCommand("projectileid", description: "Gets data about a projectile using its ID or internal name.")]
     public async Task ProjectileId(
         [Autocomplete(typeof(ProjectileAutocomplete)), Summary("id", "Projectile ID or internal name.")] string id
     )
@@ -92,7 +92,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Projectile ID", "projectileid", id);
     }
 
-    [SlashCommand("sound-id", description: "Gets data about a sound using its ID or internal name.")]
+    [SlashCommand("soundid", description: "Gets data about a sound using its ID or internal name.")]
     public async Task SoundId(
         [Autocomplete(typeof(SoundAutocomplete)), Summary("id", "Sound ID or internal name.")] string id
     )
@@ -100,7 +100,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
         await ContentQuery("Sound ID", "soundid", id);
     }
 
-    [SlashCommand("wall-id", description: "Gets data about a wall using its ID or internal name.")]
+    [SlashCommand("wallid", description: "Gets data about a wall using its ID or internal name.")]
     public async Task WallId(
         [Autocomplete(typeof(WallAutocomplete)), Summary("id", "Wall ID or internal name.")] string id
     )
