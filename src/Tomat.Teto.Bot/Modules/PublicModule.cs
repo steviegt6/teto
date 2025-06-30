@@ -25,13 +25,7 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
     {
         var s = Stopwatch.StartNew();
         {
-            await RespondAsync(
-                embed: new EmbedBuilder()
-                      .WithTitle("Pong!")
-                      .WithDescription($"Latency: {Client.Latency}ms")
-                      .WithCurrentTimestamp()
-                      .Build()
-            );
+            await RespondAsync(text: "Pinging...");
             s.Stop();
         }
         var responseLatency = s.ElapsedMilliseconds;
@@ -40,10 +34,15 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
             {
                 m.Embed = new EmbedBuilder()
                          .WithTitle("Pong!")
-                         .WithDescription($"Latency: {Client.Latency}ms"
-                                        + $"\nMessage delta: {responseLatency}ms"
-                                        + $"\n"
-                                        + $"\nBot up-time: <t:{UptimeService.StartTime.ToUnixTimeSeconds()}:R> ({UptimeService.Uptime.Days}d {UptimeService.Uptime.Hours}h {UptimeService.Uptime.Minutes}m {UptimeService.Uptime.Seconds}s)")
+                         .WithDescription(
+                              $"Latency: {Client.Latency}ms"
+                            + $"\nMessage delta: {responseLatency}ms"
+                            + $"\n"
+                            + $"\nBot up-time: <t:{UptimeService.StartTime.ToUnixTimeSeconds()}:R> ({UptimeService.Uptime.Days}d {UptimeService.Uptime.Hours}h {UptimeService.Uptime.Minutes}m {UptimeService.Uptime.Seconds}s)"
+                            + $"\n"
+                            + $"\nThis bot is admin'd by @tomat and @olihh and is not officially endorsed by any servers it's in (notably not endorsed by tModLoader)."
+                            + $"\nJoin this server for assistance: discord.gg/6Fm4ZTHVub"
+                          )
                          .WithCurrentTimestamp()
                          .Build();
             }
