@@ -42,7 +42,7 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
                             + $"\n"
                             + $"\nThis bot is admin'd by @tomat and @olihh and is not officially endorsed by any servers it's in (notably not endorsed by tModLoader)."
                             + $"\nSupport the bot's development here: https://ko-fi.com/steviegt6"
-                            + $"\nJoin this server for assistance: discord.gg/6Fm4ZTHVub"
+                            + $"\nJoin this server for assistance: https://discord.gg/6Fm4ZTHVub"
                             + $"\n"
                             + $"\nThis bot is free and open-source software available here (give it a star!): https://github.com/steviegt6/teto"
                           )
