@@ -3,13 +3,14 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 using Discord;
 
-using Tomat.FNB.Common.IO;
 using Tomat.FNB.TMOD;
 using Tomat.FNB.TMOD.Converters.Extractors;
+using Tomat.FNB.TMOD.Utilities;
 using Tomat.Teto.Bot.DependencyInjection;
 
 namespace Tomat.Teto.Bot.Services;
@@ -27,43 +28,38 @@ public sealed class ModExtractService : IService
             {
                 Status = "Downloading file...";
 
-                var s = Get(attachment.Url);
-                var r = new ByteReader(s);
+                using var s = Get(attachment.Url);
 
                 try
                 {
                     Status = "Reading file...";
-                    var modFile = TmodFile.Read(ref r, Span<byte>.Empty, Span<byte>.Empty, ownsStream: true);
+                    var tmodFile = SerializableTmodFile.FromStream(s);
 
-                    Status = "Extracting files...";
+                    Status = "Converting files...";
+                    var convertedFile = tmodFile.Convert([RawimgExtractor.GetRawimgExtractor(accelerate: false), new InfoExtractor()]);
 
+                    Status = "Packing files...";
                     using var ms = new MemoryStream();
                     using (var archive = new ZipArchive(ms, ZipArchiveMode.Create, true))
                     {
-                        modFile.ProcessFiles(
-                            [new InfoExtractor(), RawImgExtractor.GetInstance()],
-                            (path, bytes) =>
-                            {
-                                var entry = archive.CreateEntry(path);
-                                using var es = entry.Open();
-                                using var sw = new StreamWriter(es);
-                                sw.Write(bytes.ToArray());
-                            }
-                        );
+                        foreach (var entry in convertedFile.Entries)
+                        {
+                            var archiveEntry = archive.CreateEntry(entry.Key);
+                            using var es = archiveEntry.Open();
+                            using var sw = new StreamWriter(es);
+                            sw.Write(entry.Value.ToArray());
+                        }
                     }
 
                     Status = "Uploading ZIP archive...";
-                    Status = UploadFileAsync(ms).GetAwaiter().GetResult();
+                    Status = UploadFileAsync(ms.ToArray(), attachment.Filename).GetAwaiter().GetResult();
 
                     Done = true;
                 }
                 catch (Exception e)
                 {
-                    Status = e.Message.Contains("magic header") ? "Wrong header, skipping" : "Failed to read";
+                    Status = e.Message.Contains("Invalid TMOD header") ? "Wrong header, skipping" : "Failed to read";
                     Done = true;
-
-                    r.Dispose();
-                    s.Dispose();
                 }
             }
             catch
@@ -106,13 +102,16 @@ public sealed class ModExtractService : IService
         await msgUpdate(string.Join('\n', extractRequests.Select(x => x.ToString())));
     }
 
-    private static async Task<string> UploadFileAsync(Stream stream)
+    private static async Task<string> UploadFileAsync(byte[] bytes, string fileName)
     {
         using var form = new MultipartFormDataContent();
 
         form.Add(new StringContent("fileupload"), "reqtype");
         form.Add(new StringContent(time), "time");
-        form.Add(new StreamContent(stream));
+
+        var sc = new ByteArrayContent(bytes);
+        sc.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+        form.Add(sc, "fileToUpload", fileName + ".zip");
 
         var response = await http.PostAsync(api, form);
         return await response.Content.ReadAsStringAsync();
