@@ -7,6 +7,7 @@ using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Tomat.Teto.Utilities;
 
 namespace Tomat.Teto.Bot.Services.Hosting;
 

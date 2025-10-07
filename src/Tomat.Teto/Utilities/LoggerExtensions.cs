@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Discord;
 using Microsoft.Extensions.Logging;
 
-namespace Tomat.Teto.Bot;
+namespace Tomat.Teto.Utilities;
 
-internal static class LoggerExtensions
+public static class LoggerExtensions
 {
     public static void LogDiscordMessage(this ILogger logger, LogMessage message)
     {
