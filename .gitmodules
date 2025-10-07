@@ -1,3 +1,6 @@
 [submodule "src/fnb"]
 	path = src/fnb
 	url = https://github.com/steviegt6/fnb.git
+[submodule "src/ShareX"]
+	path = src/ShareX
+	url = https://github.com/steviegt6/ShareX

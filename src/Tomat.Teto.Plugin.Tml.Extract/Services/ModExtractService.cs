@@ -3,13 +3,10 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using CatBox.NET.Client;
-using CatBox.NET.Enums;
-using CatBox.NET.Requests;
 using Discord;
 using Microsoft.Extensions.DependencyInjection;
+using ShareX.UploadersLib.FileUploaders;
 using Tomat.FNB.TMOD;
 using Tomat.FNB.TMOD.Converters.Extractors;
 using Tomat.FNB.TMOD.Utilities;
@@ -76,10 +73,11 @@ public sealed class TmlExtractService(IServiceProvider services)
         }
     }
 
-    private const string api = "https://litterbox.catbox.moe/resources/internals/api.php";
-    private const string time = "12h";
+    /*private const string api = "https://uguu.se/upload.php?output=text";*/
 
     private static readonly HttpClient http = new();
+
+    private static readonly Uguu uguu = new();
 
     public async Task ExtractAndUploadFilesAsync(IMessage message, Func<string, Task> msgUpdate)
     {
@@ -108,6 +106,10 @@ public sealed class TmlExtractService(IServiceProvider services)
     {
         fileName = fileName.EndsWith(".tmod") ? Path.ChangeExtension(fileName, ".zip") : fileName + ".zip";
 
+        var result = uguu.Upload(new MemoryStream(bytes), fileName);
+        return result.IsSuccess ? result.Response : result.ResponseInfo.StatusCode.ToString();
+
+        /*
         using var scope = services.CreateScope();
         var client = scope.ServiceProvider.GetRequiredService<ILitterboxClient>();
         var response = await client.UploadImage(
@@ -129,6 +131,7 @@ public sealed class TmlExtractService(IServiceProvider services)
         }
 
         return response;
+        */
     }
 
     private static Stream Get(string url)

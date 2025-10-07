@@ -8,12 +8,9 @@
 
     <ItemGroup>
         <ProjectReference Include="..\fnb\src\Tomat.FNB.TMOD\Tomat.FNB.TMOD.csproj"/>
+        <ProjectReference Include="..\ShareX\ShareX.UploadersLib\ShareX.UploadersLib.csproj" />
         <ProjectReference Include="..\Tomat.Teto.Plugin.Default\Tomat.Teto.Plugin.Default.csproj"/>
         <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="CatBox.NET" Version="0.3.0"/>
     </ItemGroup>
 
 </Project>
