@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="tml_config.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tomat.Teto.Plugin.Default\Tomat.Teto.Plugin.Default.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
+    </ItemGroup>
+
+</Project>

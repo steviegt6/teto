@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\fnb\src\Tomat.FNB.TMOD\Tomat.FNB.TMOD.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto.Plugin.Default\Tomat.Teto.Plugin.Default.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
+    </ItemGroup>
+
+</Project>

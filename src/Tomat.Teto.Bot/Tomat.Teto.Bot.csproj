@@ -8,50 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\fnb\src\Tomat.FNB.TMOD\Tomat.FNB.TMOD.csproj"/>
         <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Update="IdData\AmmoIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\BuffIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\DustIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\GlowMaskIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\GoreIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\ItemIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\MountIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\NPCIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\PrefixIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\ProjectileIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\SoundIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="IdData\WallIDs.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="tml_config.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
+        <ProjectReference Include="..\Tomat.Teto.Plugin.Default\Tomat.Teto.Plugin.Default.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto.Plugin.Tml.Extract\Tomat.Teto.Plugin.Tml.Extract.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto.Plugin.Tml.Id\Tomat.Teto.Plugin.Tml.Id.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto.Plugin.Tml.Tag\Tomat.Teto.Plugin.Tml.Tag.csproj"/>
     </ItemGroup>
 
 </Project>

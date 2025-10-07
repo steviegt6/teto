@@ -1,6 +1,6 @@
 using System;
 
-namespace Tomat.Teto.Bot.Services;
+namespace Tomat.Teto.Plugin.Default.Services;
 
 public sealed class UptimeService
 {

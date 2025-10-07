@@ -1,17 +1,14 @@
-using Discord;
-using Discord.Interactions;
-
 using System;
 using System.Threading.Tasks;
+using Discord;
+using Discord.Interactions;
+using Tomat.Teto.Plugin.Tml.Id.Services;
 
-using Tomat.Teto.Bot.Services;
-using Tomat.Teto.Bot.Services.Tml;
+namespace Tomat.Teto.Plugin.Tml.Id.Modules;
 
-namespace Tomat.Teto.Bot.Modules.Terraria;
-
-public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionContext>
+public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public TmlIdService Ids { get; set; }
+    public TmlIdService IdLookup { get; set; }
 
     [SlashCommand("ammoid", description: "Gets data about an ammo using its ID or internal name.")]
     public async Task AmmoId(
@@ -111,7 +108,7 @@ public sealed class IdLookupModule : InteractionModuleBase<SocketInteractionCont
 
     private async Task ContentQuery(string idDisplayName, string content, string id)
     {
-        var search = Ids.SearchByContentType[content];
+        var search = IdLookup.SearchByContentType[content];
 
         if (!search.DataByNumericalId.TryGetValue(id, out var data)
          && !search.DataByInternalName.TryGetValue(id.ToLower(), out data))

@@ -3,9 +3,13 @@ using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Tomat.Teto;
+using Tomat.Teto.Bot;
 using Tomat.Teto.Bot.Services;
-using Tomat.Teto.Bot.Services.Hosting;
-using Tomat.Teto.Bot.Services.Tml;
+using Tomat.Teto.Plugin.Default;
+using Tomat.Teto.Plugin.Tml.Extract;
+using Tomat.Teto.Plugin.Tml.Id;
+using Tomat.Teto.Plugin.Tml.Tag;
 
 var builder = Host.CreateDefaultBuilder(args);
 
@@ -37,17 +41,13 @@ builder.ConfigureServices(
             }
         );
 
-        // Hosted services used to initialize the mod.
-        services.AddHostedService<InteractionHandler>();
-        services.AddHostedService<BotStartService>();
+        services.AddBotPlugin<DefaultPlugin>();
 
-        services.AddSingleton<MessageSelectService>();
-        services.AddSingleton<PasteService>();
-        services.AddSingleton<UptimeService>();
+        services.AddBotPlugin<TmlExtractPlugin>();
+        services.AddBotPlugin<TmlIdPlugin>();
+        services.AddBotPlugin<TmlTagPlugin>();
 
-        services.AddSingleton<ModExtractService>();
-        services.AddSingleton<TmlTagService>();
-        services.AddSingleton<TmlIdService>();
+        services.AddBotPlugin<HostPlugin>();
     }
 );
 

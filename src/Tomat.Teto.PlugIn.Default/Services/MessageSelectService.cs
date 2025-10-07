@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Discord;
 
-namespace Tomat.Teto.Bot.Services;
+namespace Tomat.Teto.Plugin.Default.Services;
 
 public sealed class MessageSelectService
 {

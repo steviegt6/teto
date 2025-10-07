@@ -1,11 +1,9 @@
 using System.Threading.Tasks;
-
 using Discord;
 using Discord.Interactions;
+using Tomat.Teto.Plugin.Default.Services;
 
-using Tomat.Teto.Bot.Services;
-
-namespace Tomat.Teto.Bot.Modules;
+namespace Tomat.Teto.Plugin.Default.Modules;
 
 public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext>
 {

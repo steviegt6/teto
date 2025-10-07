@@ -5,9 +5,8 @@ using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Tomat.Teto.Utilities;
 
-namespace Tomat.Teto.Bot.Services.Hosting;
+namespace Tomat.Teto.Bot.Services;
 
 internal sealed class BotStartService : IHostedService
 {

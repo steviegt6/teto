@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
-using Tomat.Teto.Bot.Services;
+using Tomat.Teto.Plugin.Default.Services;
 
-namespace Tomat.Teto.Bot.Modules;
+namespace Tomat.Teto.Plugin.Default.Modules;
 
 public sealed class PublicModule : InteractionModuleBase<SocketInteractionContext>
 {

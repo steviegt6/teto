@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.Json;
 using Discord;
 
-namespace Tomat.Teto.Bot.Services.Tml;
+namespace Tomat.Teto.Plugin.Tml.Id.Services;
 
 public sealed class TmlIdService
 {

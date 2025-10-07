@@ -1,17 +1,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-
 using Discord;
 using Discord.Interactions;
 using Discord.Interactions.Builders;
 using Discord.WebSocket;
+using Tomat.Teto.Plugin.Tml.Tag.Models;
+using Tomat.Teto.Plugin.Tml.Tag.Services;
 
-using Tomat.Teto.Bot.Models;
-using Tomat.Teto.Bot.Services;
-using Tomat.Teto.Bot.Services.Tml;
-
-namespace Tomat.Teto.Bot.Modules.Terraria;
+namespace Tomat.Teto.Plugin.Tml.Tag.Modules;
 
 public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContext>
 {

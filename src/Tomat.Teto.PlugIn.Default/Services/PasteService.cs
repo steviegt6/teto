@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Discord;
 
-namespace Tomat.Teto.Bot.Services;
+namespace Tomat.Teto.Plugin.Default.Services;
 
 public sealed class PasteService
 {

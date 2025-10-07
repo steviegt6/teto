@@ -1,17 +1,17 @@
 using System;
-using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Tomat.Teto.Utilities;
+using Tomat.Teto.Framework;
 
-namespace Tomat.Teto.Bot.Services.Hosting;
+namespace Tomat.Teto.Bot.Services;
 
-public sealed class InteractionHandler : IHostedService
+internal sealed class InteractionHandler : IHostedService
 {
     private readonly DiscordSocketClient client;
     private readonly InteractionService interactions;
@@ -41,7 +41,10 @@ public sealed class InteractionHandler : IHostedService
         client.InteractionCreated += HandleInteraction;
         interactions.InteractionExecuted += HandleInteractionExecute;
 
-        await interactions.AddModulesAsync(Assembly.GetEntryAssembly(), services);
+        foreach (var plugin in services.GetServices<BotPlugin>())
+        {
+            await interactions.AddModulesAsync(plugin.Assembly, services);
+        }
     }
 
     public Task StopAsync(CancellationToken cancellationToken)

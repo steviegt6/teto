@@ -1,18 +1,16 @@
 using System.Threading.Tasks;
-
 using Discord;
 using Discord.Interactions;
+using Tomat.Teto.Plugin.Default.Services;
+using Tomat.Teto.Plugin.Tml.Extract.Services;
 
-using Tomat.Teto.Bot.Services;
-using Tomat.Teto.Bot.Services.Tml;
-
-namespace Tomat.Teto.Bot.Modules.Terraria;
+namespace Tomat.Teto.Plugin.Tml.Extract.Modules;
 
 public sealed class ExtractTmodModule : InteractionModuleBase<SocketInteractionContext>
 {
     public MessageSelectService MessageSelect { get; set; }
 
-    public ModExtractService ModExtract { get; set; }
+    public TmlExtractService ModExtract { get; set; }
 
     [SlashCommand("extractmod", "Extracts .tmod files")]
     public async Task ExtractTmodAsync()

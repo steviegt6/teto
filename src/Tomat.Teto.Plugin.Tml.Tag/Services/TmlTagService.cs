@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using Discord;
-using Tomat.Teto.Bot.Models;
+using Tomat.Teto.Plugin.Tml.Tag.Models;
 
-namespace Tomat.Teto.Bot.Services.Tml;
+namespace Tomat.Teto.Plugin.Tml.Tag.Services;
 
 public sealed class TmlTagService
 {

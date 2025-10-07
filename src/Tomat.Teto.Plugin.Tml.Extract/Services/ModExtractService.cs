@@ -10,9 +10,9 @@ using Tomat.FNB.TMOD;
 using Tomat.FNB.TMOD.Converters.Extractors;
 using Tomat.FNB.TMOD.Utilities;
 
-namespace Tomat.Teto.Bot.Services.Tml;
+namespace Tomat.Teto.Plugin.Tml.Extract.Services;
 
-public sealed class ModExtractService
+public sealed class TmlExtractService
 {
     private sealed class ExtractRequest(IAttachment attachment)
     {

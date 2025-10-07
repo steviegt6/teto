@@ -1,12 +1,9 @@
 using System.Threading.Tasks;
-
 using Discord;
 using Discord.Interactions;
-using Discord.WebSocket;
+using Tomat.Teto.Plugin.Default.Services;
 
-using Tomat.Teto.Bot.Services;
-
-namespace Tomat.Teto.Bot.Modules;
+namespace Tomat.Teto.Plugin.Default.Modules;
 
 public sealed class MessageSelectModule : InteractionModuleBase<SocketInteractionContext>
 {
