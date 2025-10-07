@@ -1,55 +1,100 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-using Discord;
-using Discord.Interactions;
+﻿using Discord.Interactions;
 using Discord.WebSocket;
-
-using Tomat.Teto.Bot.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Tomat.Teto.Bot.Services;
+using Tomat.Teto.Bot.Services.Hosting;
+using Tomat.Teto.Bot.Services.Tml;
 
-namespace Tomat.Teto.Bot;
+var builder = Host.CreateDefaultBuilder(args);
 
-internal static class Program
-{
-    public static async Task Main()
+builder.ConfigureLogging(
+    loggingBuilder =>
     {
-        var token = Environment.GetEnvironmentVariable("TETO_BOT_TOKEN");
-        if (string.IsNullOrEmpty(token))
-        {
-            throw new InvalidOperationException("Cannot start bot with invalid or unspecified token; please set the TETO_BOT_TOKEN environment variable.");
-        }
-
-        var services = new ServiceProvider();
-        {
-            services.TryAddService(new DiscordSocketConfig()); // todo
-            services.TryAddService<DiscordSocketClient>();
-            services.TryAddService(new InteractionService(services.ExpectService<DiscordSocketClient>()));
-            services.TryAddService<InteractionHandler>();
-            services.TryAddService<TmlTagService>();
-            services.TryAddService<TmlIdService>();
-            services.TryAddService<PasteService>();
-            services.TryAddService<UptimeService>();
-            services.TryAddService<MessageSelectService>();
-            services.TryAddService<ModExtractService>();
-        }
-
-        var client = services.ExpectService<DiscordSocketClient>();
-
-        client.Log += async msg =>
-        {
-            Console.WriteLine(msg);
-            await Task.CompletedTask;
-        };
-
-        services.TryAddService(new InteractionService(client.Rest));
-
-        await services.ExpectService<InteractionHandler>().InitializeAsync();
-
-        await client.LoginAsync(TokenType.Bot, token);
-        await client.StartAsync();
-
-        await Task.Delay(Timeout.Infinite);
+        loggingBuilder.SetMinimumLevel(LogLevel.Trace);
     }
-}
+);
+
+/*
+builder.ConfigureAppConfiguration(
+    config =>
+    {
+        config.AddJsonFile("config.json", optional: true);
+
+        var tokenEnvVar = default(string?);
+        bool foundToken;
+        if (config.Properties.TryGetValue("token", out var tokenObj))
+        {
+            if (tokenObj is not string)
+            {
+                foundToken = false;
+            }
+            else if (tokenObj is string tokenString && tokenString.StartsWith('$'))
+            {
+                foundToken = false;
+                tokenEnvVar = tokenString[1..];
+            }
+            else
+            {
+                foundToken = true;
+            }
+        }
+        else
+        {
+            foundToken = false;
+        }
+
+        if (!foundToken)
+        {
+            tokenEnvVar ??= "TETO_BOT_TOKEN";
+            var token = Environment.GetEnvironmentVariable(tokenEnvVar);
+            if (string.IsNullOrEmpty(token))
+            {
+                throw new InvalidOperationException($"Cannot start bot with invalid or unspecified token; please set the '{tokenEnvVar}' environment variable.");
+            }
+
+            config.Properties["token"] = token;
+        }
+    }
+);
+*/
+
+builder.ConfigureServices(
+    services =>
+    {
+        // TODO: Look into proper configuration values.
+        services.AddSingleton(
+            new DiscordSocketConfig
+            {
+                AlwaysDownloadUsers = true,
+            }
+        );
+
+        // Singletons provided by Discord.NET needed elsewhere.
+        services.AddSingleton<DiscordSocketClient>();
+        services.AddSingleton(
+            sp =>
+            {
+                var client = sp.GetRequiredService<DiscordSocketClient>();
+                return new InteractionService(client);
+            }
+        );
+
+        // Hosted services used to initialize the mod.
+        services.AddHostedService<InteractionHandler>();
+        services.AddHostedService<BotStartService>();
+
+        services.AddSingleton<MessageSelectService>();
+        services.AddSingleton<PasteService>();
+        services.AddSingleton<UptimeService>();
+
+        services.AddSingleton<ModExtractService>();
+        services.AddSingleton<TmlTagService>();
+        services.AddSingleton<TmlIdService>();
+    }
+);
+
+using var host = builder.Build();
+
+await host.RunAsync();

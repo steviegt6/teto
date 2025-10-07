@@ -4,6 +4,7 @@ using Discord;
 using Discord.Interactions;
 
 using Tomat.Teto.Bot.Services;
+using Tomat.Teto.Bot.Services.Tml;
 
 namespace Tomat.Teto.Bot.Modules.Terraria;
 

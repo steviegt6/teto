@@ -5,17 +5,14 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-
 using Discord;
-
 using Tomat.FNB.TMOD;
 using Tomat.FNB.TMOD.Converters.Extractors;
 using Tomat.FNB.TMOD.Utilities;
-using Tomat.Teto.Bot.DependencyInjection;
 
-namespace Tomat.Teto.Bot.Services;
+namespace Tomat.Teto.Bot.Services.Tml;
 
-public sealed class ModExtractService : IService
+public sealed class ModExtractService
 {
     private sealed class ExtractRequest(IAttachment attachment)
     {
@@ -84,7 +81,8 @@ public sealed class ModExtractService : IService
     {
         var extractRequests = message.Attachments.Select(x => new ExtractRequest(x)).ToArray();
 
-        _ = Task.Run(() =>
+        _ = Task.Run(
+            () =>
             {
                 foreach (var r in extractRequests)
                 {

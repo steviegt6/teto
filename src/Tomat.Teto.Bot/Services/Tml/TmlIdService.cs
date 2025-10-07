@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-
 using Discord;
 
-using Tomat.Teto.Bot.DependencyInjection;
+namespace Tomat.Teto.Bot.Services.Tml;
 
-namespace Tomat.Teto.Bot.Services;
-
-public sealed class TmlIdService : IService
+public sealed class TmlIdService
 {
     public sealed class IdData(string id, string displayName, string link, string internalName)
     {

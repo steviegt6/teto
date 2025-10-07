@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Bot", "Tomat.Teto.Bot\Tomat.Teto.Bot.csproj", "{854E6660-EA8D-4DA4-835D-C8C768005AD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Tests", "Tomat.Teto.Tests\Tomat.Teto.Tests.csproj", "{E857AC8B-1BC5-4BE4-8377-5E01367962BE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.FNB.Common", "fnb\src\Tomat.FNB.Common\Tomat.FNB.Common.csproj", "{75572367-A1D5-4B9F-BD5F-93A70A190C10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.FNB.TMOD", "fnb\src\Tomat.FNB.TMOD\Tomat.FNB.TMOD.csproj", "{C2C6637D-AB90-40C4-8C0F-EEA1E0724ABE}"
@@ -26,10 +24,6 @@ Global
 		{854E6660-EA8D-4DA4-835D-C8C768005AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{854E6660-EA8D-4DA4-835D-C8C768005AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{854E6660-EA8D-4DA4-835D-C8C768005AD3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E857AC8B-1BC5-4BE4-8377-5E01367962BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E857AC8B-1BC5-4BE4-8377-5E01367962BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E857AC8B-1BC5-4BE4-8377-5E01367962BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E857AC8B-1BC5-4BE4-8377-5E01367962BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75572367-A1D5-4B9F-BD5F-93A70A190C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75572367-A1D5-4B9F-BD5F-93A70A190C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75572367-A1D5-4B9F-BD5F-93A70A190C10}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,12 +1,9 @@
 using System.Collections.Generic;
-
 using Discord;
-
-using Tomat.Teto.Bot.DependencyInjection;
 
 namespace Tomat.Teto.Bot.Services;
 
-public sealed class MessageSelectService : IService
+public sealed class MessageSelectService
 {
     private readonly Dictionary<ulong, IMessage?> selectedMessages = [];
 

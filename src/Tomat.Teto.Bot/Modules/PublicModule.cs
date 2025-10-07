@@ -1,11 +1,8 @@
-using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
 using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
-
 using Tomat.Teto.Bot.Services;
 
 namespace Tomat.Teto.Bot.Modules;
@@ -13,10 +10,6 @@ namespace Tomat.Teto.Bot.Modules;
 public sealed class PublicModule : InteractionModuleBase<SocketInteractionContext>
 {
     public DiscordSocketClient Client { get; set; }
-
-    public InteractionService Commands { get; set; }
-
-    public InteractionHandler Handler { get; set; }
 
     public UptimeService UptimeService { get; set; }
 
@@ -28,9 +21,11 @@ public sealed class PublicModule : InteractionModuleBase<SocketInteractionContex
             await RespondAsync(text: "Pinging...");
             s.Stop();
         }
+
         var responseLatency = s.ElapsedMilliseconds;
 
-        await ModifyOriginalResponseAsync(m =>
+        await ModifyOriginalResponseAsync(
+            m =>
             {
                 m.Embed = new EmbedBuilder()
                          .WithTitle("Pong!")

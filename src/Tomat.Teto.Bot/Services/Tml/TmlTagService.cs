@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-
 using Discord;
-
 using Tomat.Teto.Bot.Models;
 
-namespace Tomat.Teto.Bot.Services;
+namespace Tomat.Teto.Bot.Services.Tml;
 
 public sealed class TmlTagService
 {

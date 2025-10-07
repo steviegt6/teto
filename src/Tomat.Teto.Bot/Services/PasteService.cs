@@ -5,14 +5,11 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
 using Discord;
-
-using Tomat.Teto.Bot.DependencyInjection;
 
 namespace Tomat.Teto.Bot.Services;
 
-public sealed class PasteService : IService
+public sealed class PasteService
 {
     private sealed class HasteResponse
     {
