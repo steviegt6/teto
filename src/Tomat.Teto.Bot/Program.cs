@@ -5,7 +5,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Tomat.Teto;
 using Tomat.Teto.Bot;
-using Tomat.Teto.Bot.Services;
 using Tomat.Teto.Plugin.Default;
 using Tomat.Teto.Plugin.Tml.Extract;
 using Tomat.Teto.Plugin.Tml.Id;
