@@ -16,50 +16,6 @@ builder.ConfigureLogging(
     }
 );
 
-/*
-builder.ConfigureAppConfiguration(
-    config =>
-    {
-        config.AddJsonFile("config.json", optional: true);
-
-        var tokenEnvVar = default(string?);
-        bool foundToken;
-        if (config.Properties.TryGetValue("token", out var tokenObj))
-        {
-            if (tokenObj is not string)
-            {
-                foundToken = false;
-            }
-            else if (tokenObj is string tokenString && tokenString.StartsWith('$'))
-            {
-                foundToken = false;
-                tokenEnvVar = tokenString[1..];
-            }
-            else
-            {
-                foundToken = true;
-            }
-        }
-        else
-        {
-            foundToken = false;
-        }
-
-        if (!foundToken)
-        {
-            tokenEnvVar ??= "TETO_BOT_TOKEN";
-            var token = Environment.GetEnvironmentVariable(tokenEnvVar);
-            if (string.IsNullOrEmpty(token))
-            {
-                throw new InvalidOperationException($"Cannot start bot with invalid or unspecified token; please set the '{tokenEnvVar}' environment variable.");
-            }
-
-            config.Properties["token"] = token;
-        }
-    }
-);
-*/
-
 builder.ConfigureServices(
     services =>
     {
