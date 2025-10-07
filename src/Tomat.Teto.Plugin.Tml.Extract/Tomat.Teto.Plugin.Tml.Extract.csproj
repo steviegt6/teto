@@ -12,4 +12,8 @@
         <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="CatBox.NET" Version="0.3.0"/>
+    </ItemGroup>
+
 </Project>

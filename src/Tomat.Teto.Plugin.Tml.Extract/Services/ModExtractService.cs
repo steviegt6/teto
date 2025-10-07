@@ -5,16 +5,20 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using CatBox.NET.Client;
+using CatBox.NET.Enums;
+using CatBox.NET.Requests;
 using Discord;
+using Microsoft.Extensions.DependencyInjection;
 using Tomat.FNB.TMOD;
 using Tomat.FNB.TMOD.Converters.Extractors;
 using Tomat.FNB.TMOD.Utilities;
 
 namespace Tomat.Teto.Plugin.Tml.Extract.Services;
 
-public sealed class TmlExtractService
+public sealed class TmlExtractService(IServiceProvider services)
 {
-    private sealed class ExtractRequest(IAttachment attachment)
+    private sealed class ExtractRequest(IAttachment attachment, IServiceProvider services)
     {
         public volatile bool Done;
         public volatile string Status = "Not started";
@@ -49,7 +53,7 @@ public sealed class TmlExtractService
                     }
 
                     Status = "Uploading ZIP archive...";
-                    Status = UploadFileAsync(ms.ToArray(), attachment.Filename).GetAwaiter().GetResult();
+                    Status = UploadFileAsync(ms.ToArray(), attachment.Filename, services).GetAwaiter().GetResult();
 
                     Done = true;
                 }
@@ -79,7 +83,7 @@ public sealed class TmlExtractService
 
     public async Task ExtractAndUploadFilesAsync(IMessage message, Func<string, Task> msgUpdate)
     {
-        var extractRequests = message.Attachments.Select(x => new ExtractRequest(x)).ToArray();
+        var extractRequests = message.Attachments.Select(x => new ExtractRequest(x, services)).ToArray();
 
         _ = Task.Run(
             () =>
@@ -100,19 +104,31 @@ public sealed class TmlExtractService
         await msgUpdate(string.Join('\n', extractRequests.Select(x => x.ToString())));
     }
 
-    private static async Task<string> UploadFileAsync(byte[] bytes, string fileName)
+    private static async Task<string> UploadFileAsync(byte[] bytes, string fileName, IServiceProvider services)
     {
-        using var form = new MultipartFormDataContent();
+        fileName = fileName.EndsWith(".tmod") ? Path.ChangeExtension(fileName, ".zip") : fileName + ".zip";
 
-        form.Add(new StringContent("fileupload"), "reqtype");
-        form.Add(new StringContent(time), "time");
+        using var scope = services.CreateScope();
+        var client = scope.ServiceProvider.GetRequiredService<ILitterboxClient>();
+        var response = await client.UploadImage(
+            new TemporaryStreamUploadRequest
+            {
+                Expiry = ExpireAfter.OneHour,
+                FileName = fileName,
+                Stream = new MemoryStream(bytes),
+            }
+        );
 
-        var sc = new ByteArrayContent(bytes);
-        sc.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-        form.Add(sc, "fileToUpload", fileName + ".zip");
+        if (response is null)
+        {
+            response = "<null litterbox response>";
+        }
+        else if (response.Length > 100 || response.StartsWith("<!DOCTYPE"))
+        {
+            response = "uh oh";
+        }
 
-        var response = await http.PostAsync(api, form);
-        return await response.Content.ReadAsStringAsync();
+        return response;
     }
 
     private static Stream Get(string url)

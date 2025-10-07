@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using CatBox.NET;
+using Microsoft.Extensions.DependencyInjection;
 using Tomat.Teto.Framework;
 using Tomat.Teto.Plugin.Tml.Extract.Services;
 
@@ -15,5 +17,13 @@ public sealed class TmlExtractPlugin : PluginDescription
         base.AddServices(services);
 
         services.AddSingleton<TmlExtractService>();
+        
+        services.AddCatBoxServices(
+            setup =>
+            {
+                setup.CatBoxUrl = new Uri("https://catbox.moe/user/api.php");
+                setup.LitterboxUrl = new Uri("https://litterbox.catbox.moe/resources/internals/api.php");
+            }
+        );
     }
 }

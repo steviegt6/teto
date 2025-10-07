@@ -7,7 +7,7 @@ namespace Tomat.Teto.Plugin.Default.Modules;
 
 public sealed class MessageSelectModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public MessageSelectService MessageSelect { get; set; }
+    public required MessageSelectService MessageSelect { get; set; }
 
     [MessageCommand("Select message (for commands)")]
     public async Task SelectMessageAsync(IMessage message)

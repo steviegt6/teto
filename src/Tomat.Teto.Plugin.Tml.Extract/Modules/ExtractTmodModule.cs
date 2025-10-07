@@ -8,9 +8,9 @@ namespace Tomat.Teto.Plugin.Tml.Extract.Modules;
 
 public sealed class ExtractTmodModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public MessageSelectService MessageSelect { get; set; }
+    public required MessageSelectService MessageSelect { get; set; }
 
-    public TmlExtractService ModExtract { get; set; }
+    public required TmlExtractService ModExtract { get; set; }
 
     [SlashCommand("extractmod", "Extracts .tmod files")]
     public async Task ExtractTmodAsync()

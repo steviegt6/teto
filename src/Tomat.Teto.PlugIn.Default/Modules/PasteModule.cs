@@ -14,9 +14,9 @@ public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext
         Both,
     }
     
-    public PasteService Paste { get; set; }
+    public required PasteService Paste { get; set; }
 
-    public MessageSelectService MessageSelect { get; set; }
+    public required MessageSelectService MessageSelect { get; set; }
 
     [SlashCommand("genpastes", "Generates pastes")]
     public async Task GeneratePaste(Mode mode)

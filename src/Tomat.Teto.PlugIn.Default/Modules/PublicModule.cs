@@ -9,9 +9,9 @@ namespace Tomat.Teto.Plugin.Default.Modules;
 
 public sealed class PublicModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public DiscordSocketClient Client { get; set; }
+    public required DiscordSocketClient Client { get; set; }
 
-    public UptimeService UptimeService { get; set; }
+    public required UptimeService UptimeService { get; set; }
 
     [SlashCommand("status", "bot latency and other info")]
     public async Task StatusAsync()

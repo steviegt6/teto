@@ -14,7 +14,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 {
     private sealed class GenericTagAutocomplete : AutocompleteHandler
     {
-        public TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -35,7 +35,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private sealed class GlobalTagAutocomplete : AutocompleteHandler
     {
-        public TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -50,7 +50,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private sealed class AuthorTagAutocomplete : AutocompleteHandler
     {
-        public TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -65,7 +65,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private sealed class UserTagAutocomplete : AutocompleteHandler
     {
-        public TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -80,9 +80,9 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
         }
     }
 
-    public DiscordSocketClient Client { get; set; }
+    public required DiscordSocketClient Client { get; set; }
 
-    public TmlTagService Tags { get; set; }
+    public required TmlTagService Tags { get; set; }
 
     public override void Construct(ModuleBuilder builder, InteractionService commandService)
     {

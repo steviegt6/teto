@@ -8,7 +8,7 @@ namespace Tomat.Teto.Plugin.Tml.Id.Modules;
 
 public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public TmlIdService IdLookup { get; set; }
+    public required TmlIdService IdLookup { get; set; }
 
     [SlashCommand("ammoid", description: "Gets data about an ammo using its ID or internal name.")]
     public async Task AmmoId(
@@ -152,7 +152,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
     // todo: source gen these?
     private sealed class AmmoAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -172,7 +172,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class BuffAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -192,7 +192,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class DustAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -212,7 +212,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class GlowMaskAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -232,7 +232,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class GoreAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -252,7 +252,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class ItemAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -272,7 +272,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class MountAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -292,7 +292,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class NPCAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -312,7 +312,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class PrefixAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -332,7 +332,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class ProjectileAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -352,7 +352,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class SoundAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -372,7 +372,7 @@ public sealed class TmlIdModule : InteractionModuleBase<SocketInteractionContext
 
     private sealed class WallAutocomplete : AutocompleteHandler
     {
-        public TmlIdService Ids { get; set; }
+        public required TmlIdService Ids { get; set; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,

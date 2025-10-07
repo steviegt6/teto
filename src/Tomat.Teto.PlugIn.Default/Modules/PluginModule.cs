@@ -10,7 +10,7 @@ namespace Tomat.Teto.Plugin.Default.Modules;
 
 public sealed class PluginModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public IServiceProvider Services { get; set; }
+    public required IServiceProvider Services { get; set; }
 
     [SlashCommand("modules", "view loaded modules")]
     public async Task LoadedModules()
