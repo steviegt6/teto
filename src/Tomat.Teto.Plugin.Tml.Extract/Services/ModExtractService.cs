@@ -1,12 +1,12 @@
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Discord;
-using Microsoft.Extensions.DependencyInjection;
-using ShareX.UploadersLib.FileUploaders;
 using Tomat.FNB.TMOD;
 using Tomat.FNB.TMOD.Converters.Extractors;
 using Tomat.FNB.TMOD.Utilities;
@@ -73,11 +73,9 @@ public sealed class TmlExtractService(IServiceProvider services)
         }
     }
 
-    /*private const string api = "https://uguu.se/upload.php?output=text";*/
+    private const string api = "https://uguu.se/upload?output=text";
 
     private static readonly HttpClient http = new();
-
-    private static readonly Uguu uguu = new();
 
     public async Task ExtractAndUploadFilesAsync(IMessage message, Func<string, Task> msgUpdate)
     {
@@ -104,34 +102,45 @@ public sealed class TmlExtractService(IServiceProvider services)
 
     private static async Task<string> UploadFileAsync(byte[] bytes, string fileName, IServiceProvider services)
     {
-        fileName = fileName.EndsWith(".tmod") ? Path.ChangeExtension(fileName, ".zip") : fileName + ".zip";
+        if (bytes == null || bytes.Length == 0)
+            return "Error: File is empty.";
 
-        var result = uguu.Upload(new MemoryStream(bytes), fileName);
-        return result.IsSuccess ? result.Response : result.ResponseInfo.StatusCode.ToString();
+        // Normalize extension for Uguu
+        if (fileName.EndsWith(".tmod", StringComparison.OrdinalIgnoreCase))
+            fileName = Path.ChangeExtension(fileName, ".zip");
 
-        /*
-        using var scope = services.CreateScope();
-        var client = scope.ServiceProvider.GetRequiredService<ILitterboxClient>();
-        var response = await client.UploadImage(
-            new TemporaryStreamUploadRequest
-            {
-                Expiry = ExpireAfter.OneHour,
-                FileName = fileName,
-                Stream = new MemoryStream(bytes),
-            }
-        );
-
-        if (response is null)
+        var psi = new ProcessStartInfo
         {
-            response = "<null litterbox response>";
-        }
-        else if (response.Length > 100 || response.StartsWith("<!DOCTYPE"))
-        {
-            response = "uh oh";
-        }
+            FileName = "curl",
+            Arguments = $"-s -F \"files[]=@-;filename={fileName}\" \"https://uguu.se/upload?output=text\"",
+            RedirectStandardInput = true,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            UseShellExecute = false,
+            CreateNoWindow = true
+        };
 
-        return response;
-        */
+        try
+        {
+            using var process = Process.Start(psi);
+
+            // Write the file bytes directly into curl’s stdin
+            await process.StandardInput.BaseStream.WriteAsync(bytes, 0, bytes.Length);
+            process.StandardInput.Close();
+
+            var output = await process.StandardOutput.ReadToEndAsync();
+            var error = await process.StandardError.ReadToEndAsync();
+            await process.WaitForExitAsync();
+
+            if (process.ExitCode != 0)
+                return $"Error: curl failed ({process.ExitCode}): {error.Trim()}";
+
+            return output.Trim();
+        }
+        catch (Exception ex)
+        {
+            return $"Error: {ex.Message}";
+        }
     }
 
     private static Stream Get(string url)
