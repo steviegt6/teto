@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto.Abstractions\Tomat.Teto.Abstractions.csproj" />
         <ProjectReference Include="..\Tomat.Teto.Plugin.Default\Tomat.Teto.Plugin.Default.csproj"/>
         <ProjectReference Include="..\Tomat.Teto.Plugin.Tml.Extract\Tomat.Teto.Plugin.Tml.Extract.csproj"/>
         <ProjectReference Include="..\Tomat.Teto.Plugin.Tml.Id\Tomat.Teto.Plugin.Tml.Id.csproj"/>

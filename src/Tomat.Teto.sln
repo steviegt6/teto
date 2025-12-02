@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fnb", "fnb", "{7ED907A4-D21
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{E3613FFA-4219-4C28-94DC-2498D55059F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto", "Tomat.Teto\Tomat.Teto.csproj", "{7B4A7126-5E6B-415A-B118-F1C2DD0861F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Abstractions", "Tomat.Teto.Abstractions\Tomat.Teto.Abstractions.csproj", "{7B4A7126-5E6B-415A-B118-F1C2DD0861F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Plugin.Tml.Tag", "Tomat.Teto.Plugin.Tml.Tag\Tomat.Teto.Plugin.Tml.Tag.csproj", "{A22BC668-8E1E-42FE-AAF0-9A407A67D7E0}"
 EndProject

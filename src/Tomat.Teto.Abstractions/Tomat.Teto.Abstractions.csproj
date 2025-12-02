@@ -4,6 +4,8 @@
         <TargetFramework>net10.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
+
+        <RootNamespace>Tomat.Teto</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Tomat.Teto\Tomat.Teto.csproj"/>
+        <ProjectReference Include="..\Tomat.Teto.Abstractions\Tomat.Teto.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>
