@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Bot", "Tomat.Teto.Bot\Tomat.Teto.Bot.csproj", "{854E6660-EA8D-4DA4-835D-C8C768005AD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teto.Discord.Bot", "Teto.Discord.Bot\Teto.Discord.Bot.csproj", "{854E6660-EA8D-4DA4-835D-C8C768005AD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.FNB.Common", "fnb\src\Tomat.FNB.Common\Tomat.FNB.Common.csproj", "{75572367-A1D5-4B9F-BD5F-93A70A190C10}"
 EndProject
@@ -15,15 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fnb", "fnb", "{7ED907A4-D21
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{E3613FFA-4219-4C28-94DC-2498D55059F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Abstractions", "Tomat.Teto.Abstractions\Tomat.Teto.Abstractions.csproj", "{7B4A7126-5E6B-415A-B118-F1C2DD0861F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teto.Discord.Abstractions", "Teto.Discord.Abstractions\Teto.Discord.Abstractions.csproj", "{7B4A7126-5E6B-415A-B118-F1C2DD0861F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Plugin.Tml.Tag", "Tomat.Teto.Plugin.Tml.Tag\Tomat.Teto.Plugin.Tml.Tag.csproj", "{A22BC668-8E1E-42FE-AAF0-9A407A67D7E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tml.Plugin.Tag", "Tml.Plugin.Tag\Tml.Plugin.Tag.csproj", "{A22BC668-8E1E-42FE-AAF0-9A407A67D7E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Plugin.Tml.Id", "Tomat.Teto.Plugin.Tml.Id\Tomat.Teto.Plugin.Tml.Id.csproj", "{E7E6C3DA-7E44-464F-9A71-02F8A7466190}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tml.Plugin.Id", "Tml.Plugin.Id\Tml.Plugin.Id.csproj", "{E7E6C3DA-7E44-464F-9A71-02F8A7466190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Plugin.Tml.Extract", "Tomat.Teto.Plugin.Tml.Extract\Tomat.Teto.Plugin.Tml.Extract.csproj", "{7AF80374-8229-4C58-BF66-E818826E4FAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tml.Plugin.Extract", "Tml.Plugin.Extract\Tml.Plugin.Extract.csproj", "{7AF80374-8229-4C58-BF66-E818826E4FAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.Teto.Plugin.Default", "Tomat.Teto.Plugin.Default\Tomat.Teto.Plugin.Default.csproj", "{E667E3D7-6A75-4B82-8DC9-9D206779112D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teto.Plugin.Default", "Teto.Plugin.Default\Teto.Plugin.Default.csproj", "{E667E3D7-6A75-4B82-8DC9-9D206779112D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

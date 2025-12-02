@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\fnb\src\Tomat.FNB.TMOD\Tomat.FNB.TMOD.csproj"/>
+        <ProjectReference Include="..\Teto.Plugin.Default\Teto.Plugin.Default.csproj"/>
+        <ProjectReference Include="..\Teto.Discord.Abstractions\Teto.Discord.Abstractions.csproj"/>
+    </ItemGroup>
+
+</Project>
