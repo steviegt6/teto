@@ -14,7 +14,7 @@ public sealed class PasteService
     private sealed class HasteResponse
     {
         [JsonPropertyName("key")]
-        public string Key { get; set; } = string.Empty;
+        public string Key { get; init; } = string.Empty;
     }
 
     private const string endpoint = "https://paste.ppeb.me";

@@ -13,10 +13,10 @@ public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext
         Attachments,
         Both,
     }
-    
-    public required PasteService Paste { get; set; }
 
-    public required MessageSelectService MessageSelect { get; set; }
+    public required PasteService Paste { get; init; }
+
+    public required MessageSelectService MessageSelect { get; init; }
 
     [SlashCommand("genpastes", "Generates pastes")]
     public async Task GeneratePaste(Mode mode)
@@ -26,7 +26,7 @@ public sealed class PasteModule : InteractionModuleBase<SocketInteractionContext
             await RespondAsync("No message selected!", ephemeral: true);
             return;
         }
-        
+
         await GeneratePastes(msg, genMessage: mode is Mode.Message or Mode.Both, genAttachments: mode is Mode.Attachments or Mode.Both);
     }
 

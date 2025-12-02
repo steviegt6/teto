@@ -28,7 +28,7 @@ public sealed class TmlIdService
 
     private sealed class IdCollection
     {
-        public List<IdData> Ids { get; set; } = [];
+        public List<IdData> Ids { get; init; } = [];
     }
 
     private const int auto_max = 25;

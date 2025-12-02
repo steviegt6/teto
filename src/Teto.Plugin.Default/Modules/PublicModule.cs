@@ -9,9 +9,9 @@ namespace Teto.Plugin.Default.Modules;
 
 public sealed class PublicModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public required DiscordSocketClient Client { get; set; }
+    public required DiscordSocketClient Client { get; init; }
 
-    public required UptimeService UptimeService { get; set; }
+    public required UptimeService UptimeService { get; init; }
 
     [SlashCommand("status", "bot latency and other info")]
     public async Task StatusAsync()

@@ -10,7 +10,7 @@ namespace Teto.Plugin.Default.Modules;
 
 public sealed class PluginModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public required IServiceProvider Services { get; set; }
+    public required IServiceProvider Services { get; init; }
 
     [SlashCommand("modules", "view loaded modules")]
     public async Task LoadedModules()

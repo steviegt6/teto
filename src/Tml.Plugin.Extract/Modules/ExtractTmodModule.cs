@@ -8,9 +8,9 @@ namespace Tml.Plugin.Extract.Modules;
 
 public sealed class ExtractTmodModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public required MessageSelectService MessageSelect { get; set; }
+    public required MessageSelectService MessageSelect { get; init; }
 
-    public required TmlExtractService ModExtract { get; set; }
+    public required TmlExtractService ModExtract { get; init; }
 
     [SlashCommand("extractmod", "Extracts .tmod files")]
     public async Task ExtractTmodAsync()

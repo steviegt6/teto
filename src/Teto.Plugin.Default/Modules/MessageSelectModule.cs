@@ -7,7 +7,7 @@ namespace Teto.Plugin.Default.Modules;
 
 public sealed class MessageSelectModule : InteractionModuleBase<SocketInteractionContext>
 {
-    public required MessageSelectService MessageSelect { get; set; }
+    public required MessageSelectService MessageSelect { get; init; }
 
     [MessageCommand("Select message (for commands)")]
     public async Task SelectMessageAsync(IMessage message)

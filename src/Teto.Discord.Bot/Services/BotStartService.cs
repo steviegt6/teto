@@ -8,6 +8,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Teto.Discord.Bot.Services;
 
+/// <summary>
+///     Initializes the Discord bot client and handles starting and stopping it.
+/// </summary>
 internal sealed class BotStartService : IHostedService
 {
     private readonly DiscordSocketClient client;

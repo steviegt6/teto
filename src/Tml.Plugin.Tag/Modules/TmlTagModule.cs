@@ -14,7 +14,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 {
     private sealed class GenericTagAutocomplete : AutocompleteHandler
     {
-        public required TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; init; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -35,7 +35,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private sealed class GlobalTagAutocomplete : AutocompleteHandler
     {
-        public required TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; init; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -50,7 +50,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private sealed class AuthorTagAutocomplete : AutocompleteHandler
     {
-        public required TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; init; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -65,7 +65,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     private sealed class UserTagAutocomplete : AutocompleteHandler
     {
-        public required TmlTagService Tags { get; set; }
+        public required TmlTagService Tags { get; init; }
 
         public override Task<AutocompletionResult> GenerateSuggestionsAsync(
             IInteractionContext context,
@@ -80,9 +80,9 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
         }
     }
 
-    public required DiscordSocketClient Client { get; set; }
+    public required DiscordSocketClient Client { get; init; }
 
-    public required TmlTagService Tags { get; set; }
+    public required TmlTagService Tags { get; init; }
 
     public override void Construct(ModuleBuilder builder, InteractionService commandService)
     {
@@ -93,8 +93,8 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     [SlashCommand("t", description: "Displays a global or user tML tag")]
     public async Task GenericTag(
-        [Autocomplete(typeof(AuthorTagAutocomplete)), Discord.Interactions.Summary("user", "User @ or ID")] IUser? user = null,
-        [Autocomplete(typeof(GenericTagAutocomplete)), Discord.Interactions.Summary("name", "Tag name")] string? name = null
+        [Autocomplete(typeof(AuthorTagAutocomplete)), Summary("user", "User @ or ID")] IUser? user = null,
+        [Autocomplete(typeof(GenericTagAutocomplete)), Summary("name", "Tag name")] string? name = null
     )
     {
         if (name is null)
@@ -111,7 +111,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
         if (user is not null)
         {
-            if (!Tags.UserTags.TryGetValue(user.Id.ToString(), out var userTags))
+            if (!Tags.UserTags.ContainsKey(user.Id.ToString()))
             {
                 await RespondAsync(
                     embed: new EmbedBuilder()
@@ -127,7 +127,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
         }
         else
         {
-            if (!Tags.GlobalTags.TryGetValue(name.ToLowerInvariant(), out var tag))
+            if (!Tags.GlobalTags.ContainsKey(name.ToLowerInvariant()))
             {
                 await RespondAsync(
                     embed: new EmbedBuilder()
@@ -145,7 +145,7 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     [SlashCommand("global-tag", description: "Displays a global tML tag")]
     public async Task GlobalTag(
-        [Autocomplete(typeof(GlobalTagAutocomplete)), Discord.Interactions.Summary("name", "Tag name")] string name
+        [Autocomplete(typeof(GlobalTagAutocomplete)), Summary("name", "Tag name")] string name
     )
     {
         if (!Tags.GlobalTags.TryGetValue(name.ToLowerInvariant(), out var tag))
@@ -165,8 +165,8 @@ public sealed class TmlTagModule : InteractionModuleBase<SocketInteractionContex
 
     [SlashCommand("user-tag", description: "Displays a user-specific tML tag")]
     public async Task UserTag(
-        [Autocomplete(typeof(AuthorTagAutocomplete)), Discord.Interactions.Summary("user", "User @ or ID")] IUser user,
-        [Autocomplete(typeof(UserTagAutocomplete)), Discord.Interactions.Summary("name", "Tag name")] string name
+        [Autocomplete(typeof(AuthorTagAutocomplete)), Summary("user", "User @ or ID")] IUser user,
+        [Autocomplete(typeof(UserTagAutocomplete)), Summary("name", "Tag name")] string name
     )
     {
         if (!Tags.UserTags.TryGetValue(user.Id.ToString(), out var userTags))

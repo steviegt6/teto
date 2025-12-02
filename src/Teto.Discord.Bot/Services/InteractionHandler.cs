@@ -11,6 +11,9 @@ using Teto.Discord.Framework;
 
 namespace Teto.Discord.Bot.Services;
 
+/// <summary>
+///     Handles client-bot interactions.
+/// </summary>
 internal sealed class InteractionHandler : IHostedService
 {
     private readonly DiscordSocketClient client;
@@ -83,26 +86,12 @@ internal sealed class InteractionHandler : IHostedService
         }
     }
 
-    private static Task HandleInteractionExecute(ICommandInfo commandInfo, IInteractionContext context, IResult result)
+    private static Task HandleInteractionExecute(
+        ICommandInfo commandInfo,
+        IInteractionContext context,
+        IResult result
+    )
     {
-        if (result.IsSuccess)
-        {
-            return Task.CompletedTask;
-        }
-
-        // TODO
-        /*
-        switch (result.Error)
-        {
-            case InteractionCommandError.UnmetPrecondition:
-                // implement
-                break;
-
-            default:
-                break;
-        }
-        */
-
         return Task.CompletedTask;
     }
 }
