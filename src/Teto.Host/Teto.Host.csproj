@@ -8,11 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Teto.Discord.Abstractions\Teto.Discord.Abstractions.csproj"/>
-        <ProjectReference Include="..\Teto.Plugin.Default\Teto.Plugin.Default.csproj"/>
-        <ProjectReference Include="..\Tml.Plugin.Extract\Tml.Plugin.Extract.csproj"/>
-        <ProjectReference Include="..\Tml.Plugin.Id\Tml.Plugin.Id.csproj"/>
-        <ProjectReference Include="..\Tml.Plugin.Tag\Tml.Plugin.Tag.csproj"/>
+        <ProjectReference Include="..\Teto.Bot\Teto.Bot.csproj"/>
+        <ProjectReference Include="..\Teto.Web\Teto.Web.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -20,6 +17,10 @@
         <PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0"/>
         <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1"/>
         <PackageReference Include="Serilog.Sinks.File" Version="8.0.0-dev-02318"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\" />
     </ItemGroup>
 
 </Project>

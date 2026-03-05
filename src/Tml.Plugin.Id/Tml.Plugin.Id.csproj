@@ -14,7 +14,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Teto.Plugin.Default\Teto.Plugin.Default.csproj"/>
-        <ProjectReference Include="..\Teto.Discord.Abstractions\Teto.Discord.Abstractions.csproj"/>
+        <ProjectReference Include="..\Teto.Core\Teto.Core.csproj" />
     </ItemGroup>
 
 </Project>

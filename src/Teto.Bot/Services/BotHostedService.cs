@@ -6,17 +6,17 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Teto.Discord.Bot.Services;
+namespace Teto.Bot.Services;
 
 /// <summary>
 ///     Initializes the Discord bot client and handles starting and stopping it.
 /// </summary>
-internal sealed class BotStartService : IHostedService
+public sealed class BotHostedService : IHostedService
 {
     private readonly DiscordSocketClient client;
     private readonly IConfiguration config;
 
-    public BotStartService(
+    public BotHostedService(
         DiscordSocketClient client,
         IConfiguration config,
         ILogger<DiscordSocketClient> logger

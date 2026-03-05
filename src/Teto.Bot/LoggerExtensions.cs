@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Discord;
 using Microsoft.Extensions.Logging;
 
-namespace Teto.Discord;
+namespace Teto.Bot;
 
 /// <summary>
 ///     <see cref="ILogger"/> extension methods for Discord bot interfaces.

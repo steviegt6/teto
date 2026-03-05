@@ -7,8 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Teto.Plugin.Default\Teto.Plugin.Default.csproj"/>
-        <ProjectReference Include="..\Teto.Core\Teto.Core.csproj" />
+        <ProjectReference Include="..\Teto.Core\Teto.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Discord.Net" Version="3.19.0"/>
     </ItemGroup>
 
 </Project>

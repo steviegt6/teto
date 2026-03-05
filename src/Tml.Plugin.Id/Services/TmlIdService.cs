@@ -8,16 +8,7 @@ namespace Tml.Plugin.Id.Services;
 
 public sealed class TmlIdService
 {
-    public sealed class IdData(string id, string displayName, string link, string internalName)
-    {
-        public string Id { get; set; } = id;
 
-        public string DisplayName { get; set; } = displayName;
-
-        public string Link { get; set; } = link;
-
-        public string InternalName { get; set; } = internalName;
-    }
 
     public sealed class IdSearch
     {
@@ -26,10 +17,7 @@ public sealed class TmlIdService
         public Dictionary<string, IdData?> DataByInternalName { get; set; } = [];
     }
 
-    private sealed class IdCollection
-    {
-        public List<IdData> Ids { get; init; } = [];
-    }
+
 
     private const int auto_max = 25;
     private const string id_directory = "IdData";
@@ -51,7 +39,6 @@ public sealed class TmlIdService
         {
             var data = File.ReadAllText(idFile);
 
-            var idData = JsonSerializer.Deserialize<IdCollection>(data) ?? throw new Exception();
 
             var lowerId = Path.GetFileNameWithoutExtension(idFile).ToLower();
 

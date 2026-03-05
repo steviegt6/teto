@@ -8,12 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
-using Teto.Discord;
-using Teto.Discord.Bot;
-using Teto.Plugin.Default;
-using Tml.Plugin.Extract;
-using Tml.Plugin.Id;
-using Tml.Plugin.Tag;
+using Teto.Bot.Services;
 
 var builder = Host.CreateApplicationBuilder(args);
 
@@ -41,7 +36,8 @@ var consoleTheme = new SystemConsoleTheme(
         [ConsoleThemeStyle.LevelWarning] = new() { Foreground = ConsoleColor.Yellow },
         [ConsoleThemeStyle.LevelError] = new() { Foreground = ConsoleColor.White, Background = ConsoleColor.Red },
         [ConsoleThemeStyle.LevelFatal] = new() { Foreground = ConsoleColor.White, Background = ConsoleColor.Red },
-    });
+    }
+);
 
 // TODO: Begin writing to file?
 var logger = new LoggerConfiguration()
@@ -75,13 +71,8 @@ builder.Services.AddSingleton(
     }
 );
 
-builder.Services.AddBotPlugin<DefaultPlugin>();
-
-builder.Services.AddBotPlugin<TmlExtractPlugin>();
-builder.Services.AddBotPlugin<TmlIdPlugin>();
-builder.Services.AddBotPlugin<TmlTagPlugin>();
-
-builder.Services.AddBotPlugin<HostPlugin>();
+builder.Services.AddHostedService<InteractionHandler>();
+builder.Services.AddHostedService<BotHostedService>();
 
 using var host = builder.Build();
 

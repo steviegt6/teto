@@ -9,7 +9,7 @@
     <ItemGroup>
         <ProjectReference Include="..\fnb\src\Tomat.FNB.TMOD\Tomat.FNB.TMOD.csproj"/>
         <ProjectReference Include="..\Teto.Plugin.Default\Teto.Plugin.Default.csproj"/>
-        <ProjectReference Include="..\Teto.Discord.Abstractions\Teto.Discord.Abstractions.csproj"/>
+        <ProjectReference Include="..\Teto.Core\Teto.Core.csproj" />
     </ItemGroup>
 
 </Project>

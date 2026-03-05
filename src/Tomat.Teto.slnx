@@ -10,6 +10,12 @@
     <Project Path="Tml.Plugin.Id/Tml.Plugin.Id.csproj" />
     <Project Path="Tml.Plugin.Tag/Tml.Plugin.Tag.csproj" />
   </Folder>
-  <Project Path="Teto.Discord.Abstractions/Teto.Discord.Abstractions.csproj" />
-  <Project Path="Teto.Discord.Bot/Teto.Discord.Bot.csproj" />
+  <Folder Name="/tools/">
+    <Project Path="Teto.Tool.TagDbGenerator/Teto.Tool.TagDbGenerator.csproj" />
+    <Project Path="Teto.Tool.TerrariaContentGenerator/Teto.Tool.TerrariaContentGenerator.csproj" />
+  </Folder>
+  <Project Path="Teto.Bot/Teto.Bot.csproj" />
+  <Project Path="Teto.Core/Teto.Core.csproj" />
+  <Project Path="Teto.Host/Teto.Host.csproj" />
+  <Project Path="Teto.Web/Teto.Web.csproj" />
 </Solution>

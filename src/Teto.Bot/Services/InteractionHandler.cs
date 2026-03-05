@@ -4,17 +4,15 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Teto.Discord.Framework;
 
-namespace Teto.Discord.Bot.Services;
+namespace Teto.Bot.Services;
 
 /// <summary>
 ///     Handles client-bot interactions.
 /// </summary>
-internal sealed class InteractionHandler : IHostedService
+public sealed class InteractionHandler : IHostedService
 {
     private readonly DiscordSocketClient client;
     private readonly InteractionService interactions;
@@ -44,10 +42,7 @@ internal sealed class InteractionHandler : IHostedService
         client.InteractionCreated += HandleInteraction;
         interactions.InteractionExecuted += HandleInteractionExecute;
 
-        foreach (var plugin in services.GetServices<BotPlugin>())
-        {
-            await interactions.AddModulesAsync(plugin.Assembly, services);
-        }
+        await interactions.AddModulesAsync(typeof(InteractionHandler).Assembly, services);
     }
 
     public Task StopAsync(CancellationToken cancellationToken)

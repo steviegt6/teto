@@ -7,8 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Teto.Plugin.Default\Teto.Plugin.Default.csproj"/>
-        <ProjectReference Include="..\Teto.Core\Teto.Core.csproj" />
+        <ProjectReference Include="..\Teto.Core\Teto.Core.csproj"/>
     </ItemGroup>
 
 </Project>

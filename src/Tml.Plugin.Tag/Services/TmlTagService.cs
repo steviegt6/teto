@@ -10,21 +10,7 @@ namespace Tml.Plugin.Tag.Services;
 
 public sealed class TmlTagService
 {
-    private sealed class GuildTag
-    {
-        public ulong OwnerId { get; set; }
 
-        public string Name { get; set; } = string.Empty;
-
-        public string Value { get; set; } = string.Empty;
-
-        public bool IsGlobal { get; set; }
-    }
-
-    private sealed class TmlConfig
-    {
-        public List<GuildTag> GuildTags { get; set; } = [];
-    }
 
     private const int auto_max = 25;
     private const string path = "tml_config.json";
@@ -40,13 +26,7 @@ public sealed class TmlTagService
 
     public TmlTagService()
     {
-        var tmlConfig = File.ReadAllText(path);
 
-        var config = JsonSerializer.Deserialize<TmlConfig>(tmlConfig);
-        if (config is null)
-        {
-            throw new Exception();
-        }
 
         foreach (var tag in config.GuildTags)
         {
