@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using Discord.Interactions;
 using Discord.WebSocket;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
-using Serilog.Context;
 using Serilog.Sinks.SystemConsole.Themes;
 using Teto.Discord;
 using Teto.Discord.Bot;
@@ -16,6 +16,9 @@ using Tml.Plugin.Id;
 using Tml.Plugin.Tag;
 
 var builder = Host.CreateApplicationBuilder(args);
+
+var appSettingsPath = Environment.GetEnvironmentVariable("TETO_APP_SETTINGS_PATH") ?? "config/appsettings.json";
+builder.Configuration.AddJsonFile(appSettingsPath);
 
 // Transcribed and modified from the System Literate theme (NOT Console Literate
 // theme!).
@@ -47,10 +50,11 @@ var logger = new LoggerConfiguration()
                  outputTemplate: "{Timestamp:HH:mm:ss} {Level:w3} {Message:lj}{NewLine}{Exception}",
                  theme: consoleTheme
              )
+            .MinimumLevel.Information()
             .CreateLogger();
 
 builder.Logging.ClearProviders();
-builder.Logging.SetMinimumLevel(LogLevel.Trace);
+builder.Logging.SetMinimumLevel(LogLevel.Information);
 builder.Logging.AddSerilog(logger);
 
 // TODO: Look into proper configuration values.

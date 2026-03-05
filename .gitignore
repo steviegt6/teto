@@ -6,3 +6,12 @@ bin/
 obj/
 
 *.user
+
+# Local files used for unique hosting.
+
+## Contains configuration-specific app data like tokens and database locations.
+config/appsettings.json
+
+## Writable databases.
+data/discord-bot.db
+data/discord-tags.db

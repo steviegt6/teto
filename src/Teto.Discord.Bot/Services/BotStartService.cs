@@ -30,7 +30,7 @@ internal sealed class BotStartService : IHostedService
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        await client.LoginAsync(TokenType.Bot, config["TETO_BOT_TOKEN"]);
+        await client.LoginAsync(TokenType.Bot, config.GetRequiredSection("app").GetRequiredSection("discord")["token"]);
         await client.StartAsync();
     }
 
