@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/fnb/">
+    <Project Path="fnb/src/LibDeflate.NET/src/Tomat.FNB.Deflate/Tomat.FNB.Deflate.csproj" />
+    <Project Path="fnb/src/Tomat.FNB.Common/Tomat.FNB.Common.csproj" />
+    <Project Path="fnb/src/Tomat.FNB.TMOD/Tomat.FNB.TMOD.csproj" />
+  </Folder>
+  <Folder Name="/plugins/">
+    <Project Path="Teto.Plugin.Default/Teto.Plugin.Default.csproj" />
+    <Project Path="Tml.Plugin.Extract/Tml.Plugin.Extract.csproj" />
+    <Project Path="Tml.Plugin.Id/Tml.Plugin.Id.csproj" />
+    <Project Path="Tml.Plugin.Tag/Tml.Plugin.Tag.csproj" />
+  </Folder>
+  <Project Path="Teto.Discord.Abstractions/Teto.Discord.Abstractions.csproj" />
+  <Project Path="Teto.Discord.Bot/Teto.Discord.Bot.csproj" />
+</Solution>
