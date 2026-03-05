@@ -44,7 +44,7 @@ public static class LoggerExtensions
         {
             ArgumentNullException.ThrowIfNull(logger);
 
-            logger.GetMessageHandler(message)?.Invoke(message.ToString(), []);
+            logger.GetMessageHandler(message)?.Invoke(message.ToString(prependTimestamp: false), []);
         }
 
         /// <summary>
