@@ -15,4 +15,11 @@
         <ProjectReference Include="..\Tml.Plugin.Tag\Tml.Plugin.Tag.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Serilog" Version="4.3.2-dev-02419"/>
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="8.0.0-dev-02318"/>
+    </ItemGroup>
+
 </Project>
