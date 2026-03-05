@@ -10,45 +10,35 @@ using Tml.Plugin.Extract;
 using Tml.Plugin.Id;
 using Tml.Plugin.Tag;
 
-var builder = Host.CreateDefaultBuilder(args);
+var builder = Host.CreateApplicationBuilder(args);
 
-builder.ConfigureLogging(
-    loggingBuilder =>
+builder.Logging.SetMinimumLevel(LogLevel.Trace);
+
+// TODO: Look into proper configuration values.
+builder.Services.AddSingleton(
+    new DiscordSocketConfig
     {
-        loggingBuilder.SetMinimumLevel(LogLevel.Trace);
+        AlwaysDownloadUsers = true,
     }
 );
 
-builder.ConfigureServices(
-    services =>
+// Singletons provided by Discord.NET needed elsewhere.
+builder.Services.AddSingleton<DiscordSocketClient>();
+builder.Services.AddSingleton(
+    sp =>
     {
-        // TODO: Look into proper configuration values.
-        services.AddSingleton(
-            new DiscordSocketConfig
-            {
-                AlwaysDownloadUsers = true,
-            }
-        );
-
-        // Singletons provided by Discord.NET needed elsewhere.
-        services.AddSingleton<DiscordSocketClient>();
-        services.AddSingleton(
-            sp =>
-            {
-                var client = sp.GetRequiredService<DiscordSocketClient>();
-                return new InteractionService(client);
-            }
-        );
-
-        services.AddBotPlugin<DefaultPlugin>();
-
-        services.AddBotPlugin<TmlExtractPlugin>();
-        services.AddBotPlugin<TmlIdPlugin>();
-        services.AddBotPlugin<TmlTagPlugin>();
-
-        services.AddBotPlugin<HostPlugin>();
+        var client = sp.GetRequiredService<DiscordSocketClient>();
+        return new InteractionService(client);
     }
 );
+
+builder.Services.AddBotPlugin<DefaultPlugin>();
+
+builder.Services.AddBotPlugin<TmlExtractPlugin>();
+builder.Services.AddBotPlugin<TmlIdPlugin>();
+builder.Services.AddBotPlugin<TmlTagPlugin>();
+
+builder.Services.AddBotPlugin<HostPlugin>();
 
 using var host = builder.Build();
 
